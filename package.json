@@ -1,0 +1,8 @@
+{
+  "name": "site_dying_light",
+  "version": "1.0.0",
+  "description": "Фан-сайт по игре Dying Light",
+  "scripts": {
+    "build": "node build.js"
+  }
+}
