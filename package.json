@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "Фан-сайт по игре Dying Light",
   "scripts": {
-    "build": "node build.js"
+    "build": "node build.js",
+    "start": "node watch.js & live-server dist"
+  },
+  "devDependencies": {
+    "chokidar": "^4.0.3",
+    "live-server": "^1.2.2"
   }
 }
