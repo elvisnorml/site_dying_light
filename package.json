@@ -3,11 +3,21 @@
   "version": "1.0.0",
   "description": "Фан-сайт по игре Dying Light",
   "scripts": {
-    "build": "node build.js",
-    "start": "node watch.js & live-server dist"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
-    "chokidar": "^4.0.3",
-    "live-server": "^1.2.2"
+    "prettier": "^3.6.2",
+    "unplugin-auto-import": "0.16.6",
+    "unplugin-vue-components": "0.25.1",
+    "vite": "^5.0.0",
+    "vite-plugin-vuetify": "^2.1.2"
+  },
+  "dependencies": {
+    "@vitejs/plugin-vue": "5.0.3",
+    "vue": "^3.5.22",
+    "vue-router": "^4.5.1",
+    "vuetify": "^3.10.4"
   }
 }
