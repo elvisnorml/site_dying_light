@@ -1,0 +1,1 @@
+import{_ as n,c as o,a as e,e as s}from"./index-lsQO3asH.js";const r={},c={class:"intro"};function a(l,t){return s(),o("section",c,[...t[0]||(t[0]=[e("h1",null,"Сюжет Dying Light",-1),e("p",null," - ",-1),e("p",null," - ",-1)])])}const i=n(r,[["render",a]]);export{i as default};
