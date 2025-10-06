@@ -1,13 +1,19 @@
+<script setup>
+import { menuItems } from './constant'
+import { RouterLink } from 'vue-router'
+</script>
+
 <template>
   <header>
-    <nav>
-      <router-link to="/">Главная</router-link>
-      <router-link to="/story">Сюжет</router-link>
-      <router-link to="/gameplay">Геймплей</router-link>
-      <router-link to="/weapons">Оружие</router-link>
-      <router-link to="/map">Карта</router-link>
-      <router-link to="/news">Новости</router-link>
-      <router-link to="/gallery">Галерея</router-link>
-    </nav>
+    <VMenu open-on-hover v-for="item in menuItems" :key="item.name">
+      <template v-slot:activator="{ props }">
+        <VBtn color="primary" v-bind="props" :to="item.link"> {{ item.name }} </VBtn>
+      </template>
+      <VList>
+        <VListItem v-for="subItem in item.subItems" :key="subItem.name" :value="index">
+          <RouterLink :to="subItem.link">{{ subItem.name }}</RouterLink>
+        </VListItem>
+      </VList>
+    </VMenu>
   </header>
 </template>

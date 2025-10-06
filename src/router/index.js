@@ -5,37 +5,37 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      component: () => import('@/pages/Main.vue'),
-      meta: { layout: 'DefaultLayout' }
+      component: () => import('@/pages/Main/Main.vue'),
+      meta: { layout: 'MainPageLayout' }
     },
     {
       path: '/story',
-      component: () => import('@/pages/Story.vue'),
+      component: () => import('@/pages/Story/Story.vue'),
       meta: { layout: 'DefaultLayout' }
     },
     {
       path: '/gameplay',
-      component: () => import('@/pages/Gameplay.vue'),
+      component: () => import('@/pages/Gameplay/Gameplay.vue'),
       meta: { layout: 'DefaultLayout' }
     },
     {
       path: '/weapons',
-      component: () => import('@/pages/Weapons.vue'),
+      component: () => import('@/pages/Weapons/Weapons.vue'),
       meta: { layout: 'DefaultLayout' }
     },
     {
       path: '/map',
-      component: () => import('@/pages/Map.vue'),
+      component: () => import('@/pages/Map/Map.vue'),
       meta: { layout: 'DefaultLayout' }
     },
     {
       path: '/news',
-      component: () => import('@/pages/News.vue'),
+      component: () => import('@/pages/News/News.vue'),
       meta: { layout: 'DefaultLayout' }
     },
     {
       path: '/gallery',
-      component: () => import('@/pages/Gallery.vue'),
+      component: () => import('@/pages/Gallery/Gallery.vue'),
       meta: { layout: 'DefaultLayout' }
     }
   ]

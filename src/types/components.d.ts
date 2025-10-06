@@ -9,15 +9,16 @@ declare module 'vue' {
   export interface GlobalComponents {
     DefaultLayout: typeof import('./../layout/DefaultLayout/DefaultLayout.vue')['default']
     Footer: typeof import('./../components/Footer/Footer.vue')['default']
-    Gallery: typeof import('./../pages/Gallery.vue')['default']
-    Gameplay: typeof import('./../pages/Gameplay.vue')['default']
+    Gallery: typeof import('./../pages/Gallery/Gallery.vue')['default']
+    Gameplay: typeof import('./../pages/Gameplay/Gameplay.vue')['default']
     Header: typeof import('./../components/Header/Header.vue')['default']
-    Main: typeof import('./../pages/Main.vue')['default']
-    Map: typeof import('./../pages/Map.vue')['default']
-    News: typeof import('./../pages/News.vue')['default']
+    Main: typeof import('./../pages/Main/Main.vue')['default']
+    MainPageLayout: typeof import('./../layout/MainPageLayout/MainPageLayout.vue')['default']
+    Map: typeof import('./../pages/Map/Map.vue')['default']
+    News: typeof import('./../pages/News/News.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    Story: typeof import('./../pages/Story.vue')['default']
-    Weapons: typeof import('./../pages/Weapons.vue')['default']
+    Story: typeof import('./../pages/Story/Story.vue')['default']
+    Weapons: typeof import('./../pages/Weapons/Weapons.vue')['default']
   }
 }
