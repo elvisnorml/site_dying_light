@@ -1,11 +1,7 @@
 export const menuItems = [
   {
     name: 'Главная',
-    link: '/',
-    subItems: [
-      { name: 'Пункт 1', link: '#' },
-      { name: 'Пункт 2', link: '#' }
-    ]
+    link: '/'
   },
   {
     name: 'Сюжет',
