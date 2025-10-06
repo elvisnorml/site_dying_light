@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="position-fixed">
     <nav>
       <router-link to="/">Главная</router-link>
       <router-link to="/story">Сюжет</router-link>

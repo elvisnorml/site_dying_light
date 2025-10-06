@@ -8,6 +8,7 @@ export default defineConfig({
   root: path.resolve(__dirname, 'src/lib'), // корень проекта, где index.html
   resolve: {
     alias: {
+      '#': path.resolve(__dirname, './'),
       '@': path.resolve(__dirname, 'src')
     }
   },
