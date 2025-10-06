@@ -2,12 +2,16 @@
   "name": "site_dying_light",
   "version": "1.0.0",
   "description": "Фан-сайт по игре Dying Light",
+  "homepage": "https://elvisnorml.github.io/site_dying_light/",
+  "author": "elvisnorml",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "vite build && gh-pages -d dist"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "prettier": "^3.6.2",
     "unplugin-auto-import": "0.16.6",
     "unplugin-vue-components": "0.25.1",
