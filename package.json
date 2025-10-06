@@ -5,10 +5,11 @@
   "homepage": "https://elvisnorml.github.io/site_dying_light/",
   "author": "elvisnorml",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "vite --mode dev",
+    "build": "vite build --mode dev",
+    "build-prod": "vite build --mode prod",
     "preview": "vite preview",
-    "deploy": "vite build && gh-pages -d dist"
+    "deploy": "vite build --mode prod && gh-pages -d dist"
   },
   "devDependencies": {
     "gh-pages": "^6.3.0",
