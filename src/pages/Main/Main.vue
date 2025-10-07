@@ -1,10 +1,11 @@
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 import { blocks } from './constant'
 import { mdiArrowUp, mdiChevronDown, mdiChevronUp } from '@mdi/js'
 
 const currentIndex = ref(0)
 let isScrolling = false
+let handleWheel = null
 
 const scrollToTop = () => {
   const container = document.querySelector('.scroll-wrapper')
@@ -34,27 +35,29 @@ onMounted(() => {
   const container = document.querySelector('.scroll-wrapper')
   container.style.overflow = 'hidden'
   container.style.position = 'relative'
-  container.style.height = blocks.length * 100 + 'vh' // Важное изменение
+  container.style.height = blocks.length * 100 + 'vh'
 
-  window.addEventListener(
-    'wheel',
-    e => {
-      e.preventDefault()
-      if (isScrolling) return
-      isScrolling = true
+  handleWheel = e => {
+    e.preventDefault()
+    if (isScrolling) return
+    isScrolling = true
 
-      const direction = e.deltaY > 0 ? 1 : -1
-      currentIndex.value += direction
-      if (currentIndex.value < 0) currentIndex.value = 0
-      if (currentIndex.value >= blocks.length) currentIndex.value = blocks.length - 1
+    const direction = e.deltaY > 0 ? 1 : -1
+    currentIndex.value += direction
+    if (currentIndex.value < 0) currentIndex.value = 0
+    if (currentIndex.value >= blocks.length) currentIndex.value = blocks.length - 1
 
-      container.style.transform = `translateY(-${currentIndex.value * 100}vh)`
-      container.style.transition = 'transform 0.8s ease'
+    container.style.transform = `translateY(-${currentIndex.value * 100}vh)`
+    container.style.transition = 'transform 0.8s ease'
 
-      setTimeout(() => (isScrolling = false), 800)
-    },
-    { passive: false }
-  )
+    setTimeout(() => (isScrolling = false), 800)
+  }
+
+  window.addEventListener('wheel', handleWheel, { passive: false })
+})
+
+onUnmounted(() => {
+  if (handleWheel) window.removeEventListener('wheel', handleWheel)
 })
 </script>
 
