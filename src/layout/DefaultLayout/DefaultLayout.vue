@@ -1,15 +1,9 @@
 <template>
   <Header />
 
-  <<<<<<< HEAD
-  <VContainer>
-    <RouterView />
-  </VContainer>
-  =======
-  <VMain>
+  <VMain class="bg-black">
     <RouterView />
   </VMain>
-  >>>>>>> vue/general
 
   <Footer />
 </template>
