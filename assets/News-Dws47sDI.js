@@ -1,0 +1,1 @@
+import{_ as s,c as t,a as e,e as o}from"./index-kWmkwsip.js";const c={},r={class:"intro"};function a(l,n){return o(),t("section",r,[...n[0]||(n[0]=[e("h1",null,"Новости Dying Light",-1),e("p",null," - ",-1),e("p",null," - ",-1)])])}const i=s(c,[["render",a]]);export{i as default};

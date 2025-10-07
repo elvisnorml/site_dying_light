@@ -1,1 +1,0 @@
-import{_ as t,c as s,a as e,e as o}from"./index-BzfdAfAC.js";const c={},r={class:"intro"};function a(l,n){return o(),s("section",r,[...n[0]||(n[0]=[e("h1",null,"Карта Dying Light",-1),e("p",null," - ",-1),e("p",null," - ",-1)])])}const i=t(c,[["render",a]]);export{i as default};
