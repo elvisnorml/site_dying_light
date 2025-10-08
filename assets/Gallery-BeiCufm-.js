@@ -1,1 +1,0 @@
-import{_ as t,c as s,b as e,f as o}from"./index-BaSgUJGq.js";const r={},c={class:"intro"};function l(a,n){return o(),s("section",c,[...n[0]||(n[0]=[e("h1",null,"Галлерея Dying Light",-1),e("p",null," - ",-1),e("p",null," - ",-1)])])}const i=t(r,[["render",l]]);export{i as default};
