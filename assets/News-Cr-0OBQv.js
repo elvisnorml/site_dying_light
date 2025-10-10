@@ -1,1 +1,0 @@
-import{_ as s,c as t,b as e,f as o}from"./index-DwIf06Hj.js";const c={},r={class:"intro"};function l(a,n){return o(),t("section",r,[...n[0]||(n[0]=[e("h1",null,"Новости Dying Light",-1),e("p",null," - ",-1),e("p",null," - ",-1)])])}const i=s(c,[["render",l]]);export{i as default};
