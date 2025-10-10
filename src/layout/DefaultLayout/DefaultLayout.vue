@@ -1,7 +1,9 @@
 <template>
   <Header />
-  <VMain>
+
+  <VMain class="bg-black">
     <RouterView />
   </VMain>
+
   <Footer />
 </template>
