@@ -3,6 +3,9 @@ import { ref, onMounted, onUnmounted } from 'vue'
 import { blocks } from './constant'
 import { mdiArrowUp, mdiChevronDown, mdiChevronUp } from '@mdi/js'
 
+import { useDisplay } from 'vuetify'
+const { smAndDown } = useDisplay()
+
 const currentIndex = ref(0)
 let isScrolling = false
 let handleWheel = null
@@ -74,11 +77,12 @@ onUnmounted(() => {
       <VCol
         cols="12"
         md="6"
-        class="pa-6 rounded d-flex flex-column align-center"
-        style="background-color: rgba(0, 0, 0, 0.6); max-height: 50%; overflow-y: auto"
+        class="pa-2 pa-md-6 rounded d-flex flex-column align-center"
+        style="background-color: rgba(0, 0, 0, 0.6); overflow-y: auto"
+        :style="smAndDown ? 'max-height: 80%' : 'max-height: 50%'"
       >
         <div class="text-center flex-grow-1 d-flex flex-column justify-center">
-          <h1 class="text-white mb-4">{{ block.title }}</h1>
+          <p class="text-white mb-4 text-h6 text-sm-h4">{{ block.title }}</p>
           <p class="text-white">{{ block.text }}</p>
         </div>
 
@@ -88,17 +92,25 @@ onUnmounted(() => {
   </div>
   <VBtn
     color="black"
-    size="x-large"
-    class="position-fixed right-0 bottom-0 mr-10 mb-10"
+    :size="smAndDown ? 'default' : 'x-large'"
+    class="position-fixed right-0 bottom-0 mr-2 mb-2 mr-md-10 mb-md-10"
     @click="scrollToTop"
     :icon="mdiArrowUp"
   />
 
   <div
     class="position-fixed d-flex flex-column align-center"
-    style="top: 50%; left: 20px; transform: translateY(-50%); z-index: 10"
+    :class="smAndDown && 'left-0 bottom-0 ml-2'"
+    :style="!smAndDown && 'top: 50%; left: 20px; transform: translateY(-50%); z-index: 10'"
   >
-    <VBtn color="black" size="x-large" @click="scrollToPrev" :icon="mdiChevronUp" class="mb-6" />
-    <VBtn color="black" size="x-large" @click="scrollToNext" :icon="mdiChevronDown" />
+    <VBtn
+      color="black"
+      :size="smAndDown ? 'default' : 'x-large'"
+      @click="scrollToPrev"
+      :icon="mdiChevronUp"
+      class="mb-2 mb-md-6"
+    />
+
+    <VBtn color="black" :size="smAndDown ? 'default' : 'x-large'" @click="scrollToNext" :icon="mdiChevronDown" />
   </div>
 </template>
