@@ -57,10 +57,44 @@ onMounted(() => {
   }
 
   window.addEventListener('wheel', handleWheel, { passive: false })
+
+  let startY = 0
+  let endY = 0
+
+  const handleTouchStart = e => {
+    startY = e.touches[0].clientY
+  }
+
+  const handleTouchEnd = e => {
+    endY = e.changedTouches[0].clientY
+    const diff = startY - endY
+    if (Math.abs(diff) < 50 || isScrolling) return // защита от ложных срабатываний
+
+    isScrolling = true
+    if (diff > 0 && currentIndex.value < blocks.length - 1) currentIndex.value++
+    else if (diff < 0 && currentIndex.value > 0) currentIndex.value--
+
+    container.style.transform = `translateY(-${currentIndex.value * 100}vh)`
+    container.style.transition = 'transform 0.8s ease'
+
+    setTimeout(() => (isScrolling = false), 800)
+  }
+
+  container.addEventListener('touchstart', handleTouchStart, { passive: true })
+  container.addEventListener('touchend', handleTouchEnd, { passive: true })
+
+  container._handleTouchStart = handleTouchStart
+  container._handleTouchEnd = handleTouchEnd
 })
 
 onUnmounted(() => {
   if (handleWheel) window.removeEventListener('wheel', handleWheel)
+
+  const container = document.querySelector('.scroll-wrapper')
+  if (container && container._handleTouchStart && container._handleTouchEnd) {
+    container.removeEventListener('touchstart', container._handleTouchStart)
+    container.removeEventListener('touchend', container._handleTouchEnd)
+  }
 })
 </script>
 
@@ -99,8 +133,8 @@ onUnmounted(() => {
   />
 
   <div
-    class="position-fixed d-flex flex-column align-center"
-    :class="smAndDown && 'left-0 bottom-0 ml-2'"
+    class="position-fixed d-flex flex-md-column align-center"
+    :class="smAndDown && 'left-0 bottom-0 ml-2 mb-2'"
     :style="!smAndDown && 'top: 50%; left: 20px; transform: translateY(-50%); z-index: 10'"
   >
     <VBtn
@@ -108,7 +142,7 @@ onUnmounted(() => {
       :size="smAndDown ? 'default' : 'x-large'"
       @click="scrollToPrev"
       :icon="mdiChevronUp"
-      class="mb-2 mb-md-6"
+      class="mr-2 mr-md-0 mb-md-6"
     />
 
     <VBtn color="black" :size="smAndDown ? 'default' : 'x-large'" @click="scrollToNext" :icon="mdiChevronDown" />

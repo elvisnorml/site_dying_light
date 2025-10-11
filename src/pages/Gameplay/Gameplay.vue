@@ -8,7 +8,7 @@ const selectedAspect = ref('daynight')
   <VContainer fluid class="pa-6 bg-grey-lighten-4">
     <VRow justify="center" class="mb-8">
       <VCol cols="12" md="8">
-        <VCard elevation="3" class="pa-6">
+        <VCard elevation="3" class="pa-6" id="gameplay1">
           <h1 class="text-h4 font-weight-bold mb-3 text-center">Геймплей — Dying Light</h1>
           <p class="text-body-1">
             Геймплей Dying Light сочетает элементы паркура, выживания и боя с заражёнными в открытом мире. Игроку
@@ -29,7 +29,7 @@ const selectedAspect = ref('daynight')
       </VCol>
     </VRow>
 
-    <VRow justify="center" class="mb-10">
+    <VRow justify="center" class="mb-10" id="gameplay2">
       <VCol cols="12" md="8">
         <VCard elevation="2" class="pa-4">
           <h2 class="text-h6 font-weight-medium mb-3">Основные механики</h2>
@@ -86,7 +86,7 @@ const selectedAspect = ref('daynight')
       </VCol>
     </VRow>
 
-    <VRow justify="center" class="mb-10">
+    <VRow justify="center" class="mb-10" id="gameplay3">
       <VCol cols="12" md="8">
         <h2 class="text-h6 font-weight-medium mb-4 text-center">Развитие персонажа</h2>
         <VCard elevation="2" class="pa-4">
@@ -103,7 +103,7 @@ const selectedAspect = ref('daynight')
       </VCol>
     </VRow>
 
-    <VRow justify="center" class="mb-10">
+    <VRow justify="center" class="mb-10" id="gameplay4">
       <VCol cols="12" md="8">
         <h2 class="text-h6 font-weight-medium mb-4 text-center">Этапы выживания</h2>
         <VTimeline side="end">
