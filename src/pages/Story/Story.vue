@@ -37,7 +37,7 @@ function openModal(src) {
   <VContainer fluid class="pa-6 bg-grey-lighten-4">
     <VRow justify="center" class="mb-8">
       <VCol cols="12" md="8">
-        <VCard elevation="3" class="pa-6">
+        <VCard elevation="3" class="pa-6" id="story1">
           <h1 class="text-h4 font-weight-bold mb-3 text-center">Сюжет — Dying Light</h1>
           <p class="text-body-1">
             После внезапной вспышки неизвестного вируса город Харран оказался полностью изолирован от внешнего мира.
@@ -70,7 +70,7 @@ function openModal(src) {
       </VCol>
     </VRow>
 
-    <VRow justify="center" class="mb-10" dense>
+    <VRow justify="center" class="mb-10" dense id="story2">
       <VCol cols="12" md="4" v-for="(item, index) in images" :key="index">
         <VCard elevation="2" class="pa-4">
           <VImg
@@ -87,7 +87,7 @@ function openModal(src) {
       </VCol>
     </VRow>
 
-    <VRow justify="center" class="mb-10">
+    <VRow justify="center" class="mb-10" id="story3">
       <VCol cols="12" md="8">
         <VCard elevation="2" class="pa-4">
           <h2 class="text-h6 font-weight-medium mb-3">Фракции выживших</h2>
@@ -135,7 +135,7 @@ function openModal(src) {
       </VCol>
     </VRow>
 
-    <VRow justify="center" class="mb-10">
+    <VRow justify="center" class="mb-10" id="story4">
       <VCol cols="12" md="8">
         <h2 class="text-h6 font-weight-medium mb-4 text-center">Ключевые события</h2>
         <VTimeline side="end">
