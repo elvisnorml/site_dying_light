@@ -44,6 +44,19 @@ export default defineConfig(({ mode }) => {
       port: 5173,
       fs: { strict: false },
       historyApiFallback: true
+    },
+    test: {
+      root: path.resolve(__dirname, 'src'),
+      environment: 'jsdom',
+      globals: true,
+      setupFiles: './vitest.setup.js',
+      include: ['**/*.spec.{js,ts}', '**/test/**/*.spec.{js,ts}'],
+      exclude: ['node_modules', 'dist'],
+      server: {
+        deps: {
+          inline: [/vuetify/]
+        }
+      }
     }
   }
 })

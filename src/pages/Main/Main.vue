@@ -68,7 +68,7 @@ onMounted(() => {
   const handleTouchEnd = e => {
     endY = e.changedTouches[0].clientY
     const diff = startY - endY
-    if (Math.abs(diff) < 50 || isScrolling) return // защита от ложных срабатываний
+    if (Math.abs(diff) < 50 || isScrolling) return
 
     isScrolling = true
     if (diff > 0 && currentIndex.value < blocks.length - 1) currentIndex.value++
