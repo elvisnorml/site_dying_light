@@ -27,7 +27,15 @@ function openModal(src) {
       <VCol cols="12" md="8">
         <VCarousel hide-delimiters show-arrows-on-hover height="600">
           <VCarouselItem v-for="(item, index) in slides" :key="index">
-            <VImg :src="item" height="600" cover class="rounded-lg" style="cursor: pointer" @click="openModal(item)" />
+            <VImg
+              :src="item"
+              height="600"
+              cover
+              class="rounded-lg"
+              style="cursor: pointer"
+              @click="openModal(item)"
+              eager
+            />
           </VCarouselItem>
         </VCarousel>
       </VCol>

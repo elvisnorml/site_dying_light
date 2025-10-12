@@ -3,7 +3,7 @@ import { news } from './constant'
 </script>
 
 <template>
-  <VContainer fluid class="pa-6 bg-grey-lighten-4">
+  <VContainer fluid class="pa-6 bg-grey-lighten-4 fill-height">
     <VRow justify="center" class="mb-8">
       <VCol cols="12" md="8">
         <VCard elevation="3" class="pa-6">
@@ -25,5 +25,7 @@ import { news } from './constant'
         </VCard>
       </VCol>
     </VRow>
+
+    <VSpacer style="height: 20px" />
   </VContainer>
 </template>

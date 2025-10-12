@@ -49,7 +49,7 @@ describe('Main.vue', () => {
       attachTo: container
     })
 
-    const sheets = wrapper.findAllComponents({ name: 'VSheet' }) // ищем все VSheet
+    const sheets = wrapper.findAllComponents({ name: 'VSheet' })
     expect(sheets.length).toBe(8)
   })
 
