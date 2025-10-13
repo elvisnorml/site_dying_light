@@ -66,7 +66,26 @@ const router = createRouter({
         description: 'Оцените визуальный стиль, концепт-арты и скриншоты из Dying Light.'
       }
     }
-  ]
+  ],
+
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition
+    }
+
+    if (to.query.scroll) {
+      const el = document.getElementById(to.query.scroll)
+      if (el) {
+        return {
+          el: `#${to.query.scroll}`,
+          top: 80,
+          behavior: 'smooth'
+        }
+      }
+    }
+
+    return { top: 0, behavior: 'smooth' }
+  }
 })
 
 router.afterEach(to => {
