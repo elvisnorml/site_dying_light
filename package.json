@@ -9,6 +9,7 @@
     "build": "vite build --mode dev",
     "build-prod": "vite build --mode prod",
     "preview": "vite preview",
+    "predeploy": "rm -rf node_modules/.cache/gh-pages",
     "deploy": "vite build --mode prod && gh-pages -d dist",
     "test:unit": "vitest --environment jsdom"
   },
