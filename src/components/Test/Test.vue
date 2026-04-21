@@ -2,11 +2,8 @@
 import { ref, computed, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 import { useDisplay } from 'vuetify'
-const { mobile } = useDisplay()
 
 import { mdiCheckCircle, mdiAlertCircle, mdiEyeOutline } from '@mdi/js'
-
-const route = useRoute()
 
 const props = defineProps({
   datatest: {
@@ -14,6 +11,30 @@ const props = defineProps({
     required: true
   }
 })
+const route = useRoute()
+const { mobile } = useDisplay()
+
+const feedbackStatus = ref<'correct' | 'error' | null>(null)
+let feedbackTimer: any = null
+
+const checkCurrentQuestion = () => {
+  // Сбрасываем старый таймер, если он был
+  if (feedbackTimer) clearTimeout(feedbackTimer)
+
+  const currentQuestion = questions.value[currentStep.value]
+  const isCorrect = isQuestionCorrect(currentQuestion)
+
+  feedbackStatus.value = isCorrect ? 'correct' : 'error'
+
+  // Убираем фон через 5 секунд
+  feedbackTimer = setTimeout(() => {
+    feedbackStatus.value = null
+  }, 5000)
+}
+const clearFeedback = () => {
+  feedbackStatus.value = null
+  if (feedbackTimer) clearTimeout(feedbackTimer)
+}
 
 // Состояние
 const testTitle = ref('')
@@ -199,7 +220,11 @@ onMounted(() => {
 
       <template v-else>
         <VCardItem class="bg-primary text-white py-4">
-          <VCardTitle class="text-h5 text-wrap">{{ testTitle }}</VCardTitle>
+          <!-- <VCardTitle class="text-h5 text-wrap">{{ testTitle }}</VCardTitle> -->
+          <div class="d-flex align-center justify-space-between mb-6" :class="mobile && 'flex-column'">
+            <VCardTitle class="text-h5 text-wrap">{{ testTitle }}</VCardTitle>
+            <VBtn color="green" :icon="mdiCheckCircle" class="ml-4" @click="checkCurrentQuestion" />
+          </div>
           <VCardSubtitle class="text-white opacity-80 mt-1">
             Вопрос {{ currentStep + 1 }} из {{ questions.length }}
           </VCardSubtitle>
@@ -207,7 +232,13 @@ onMounted(() => {
 
         <VProgressLinear :model-value="progress" color="secondary" height="6"></VProgressLinear>
 
-        <VCardText class="pa-6">
+        <VCardText
+          class="pa-6"
+          :class="{
+            'bg-pink-lighten-4': feedbackStatus === 'error',
+            'bg-lime-lighten-4': feedbackStatus === 'correct'
+          }"
+        >
           <VWindow v-model="currentStep" :touch="false">
             <VWindowItem v-for="(question, index) in questions" :key="question.id" :value="index">
               <div class="text-h6 mb-6 font-weight-medium">{{ question.text }}</div>
