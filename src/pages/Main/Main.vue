@@ -123,6 +123,7 @@ onUnmounted(() => {
         <VBtn v-if="block.link" :to="block.link" color="black" class="align-self-end mt-6"> Перейти </VBtn>
       </VCol>
     </VSheet>
+    <VBtn to="test" color="black" class="align-self-end mt-6"> Перейти </VBtn>
   </div>
   <VBtn
     color="black"

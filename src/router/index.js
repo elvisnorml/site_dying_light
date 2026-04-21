@@ -9,7 +9,8 @@ const router = createRouter({
       meta: {
         layout: 'MainPageLayout',
         title: 'Главная — Dying Light',
-        description: 'Добро пожаловать на официальный сайт Dying Light — узнайте больше о мире игры, героях и истории.'
+        description: 'Добро пожаловать на официальный сайт Dying Light — узнайте больше о мире игры, героях и истории.',
+        name: 'main'
       }
     },
     {
@@ -18,7 +19,8 @@ const router = createRouter({
       meta: {
         layout: 'DefaultLayout',
         title: 'История — Dying Light',
-        description: 'Узнайте предысторию событий Dying Light и тайны, скрытые за падением цивилизации.'
+        description: 'Узнайте предысторию событий Dying Light и тайны, скрытые за падением цивилизации.',
+        name: 'story'
       }
     },
     {
@@ -27,7 +29,8 @@ const router = createRouter({
       meta: {
         layout: 'DefaultLayout',
         title: 'Геймплей — Dying Light',
-        description: 'Изучите игровые механики, систему прогресса и боевые особенности Dying Light.'
+        description: 'Изучите игровые механики, систему прогресса и боевые особенности Dying Light.',
+        name: 'gameplay'
       }
     },
     {
@@ -36,7 +39,8 @@ const router = createRouter({
       meta: {
         layout: 'DefaultLayout',
         title: 'Оружие — Dying Light',
-        description: 'Посмотрите полный арсенал оружия Dying Light: от экспериментальных пушек до древних артефактов.'
+        description: 'Посмотрите полный арсенал оружия Dying Light: от экспериментальных пушек до древних артефактов.',
+        name: 'weapons'
       }
     },
     {
@@ -45,7 +49,8 @@ const router = createRouter({
       meta: {
         layout: 'DefaultLayout',
         title: 'Карта — Dying Light',
-        description: 'Откройте для себя опасные локации и загадочные территории мира Dying Light.'
+        description: 'Откройте для себя опасные локации и загадочные территории мира Dying Light.',
+        name: 'map'
       }
     },
     {
@@ -54,7 +59,8 @@ const router = createRouter({
       meta: {
         layout: 'DefaultLayout',
         title: 'Новости — Dying Light',
-        description: 'Будьте в курсе последних обновлений, патчей и событий в мире Dying Light.'
+        description: 'Будьте в курсе последних обновлений, патчей и событий в мире Dying Light.',
+        name: 'news'
       }
     },
     {
@@ -63,7 +69,18 @@ const router = createRouter({
       meta: {
         layout: 'DefaultLayout',
         title: 'Галерея — Dying Light',
-        description: 'Оцените визуальный стиль, концепт-арты и скриншоты из Dying Light.'
+        description: 'Оцените визуальный стиль, концепт-арты и скриншоты из Dying Light.',
+        name: 'gallery'
+      }
+    },
+    {
+      path: '/test',
+      component: () => import('@/pages/TestPage/TestPage.vue'),
+      meta: {
+        layout: 'DefaultLayout',
+        title: 'Тест',
+        description: 'Тест',
+        name: 'test'
       }
     }
   ],
