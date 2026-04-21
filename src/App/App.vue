@@ -2,12 +2,14 @@
 import { useRoute } from 'vue-router'
 import DefaultLayout from '@/layout/DefaultLayout/DefaultLayout.vue'
 import MainPageLayout from '@/layout/MainPageLayout/MainPageLayout.vue'
+import TestLayout from '@/layout/TestLayout/TestLayout.vue'
 
 const route = useRoute()
 
 const components = {
   DefaultLayout,
-  MainPageLayout
+  MainPageLayout,
+  TestLayout
 }
 </script>
 

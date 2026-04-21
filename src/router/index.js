@@ -77,7 +77,7 @@ const router = createRouter({
       path: '/test',
       component: () => import('@/pages/TestPage/TestPage.vue'),
       meta: {
-        layout: 'DefaultLayout',
+        layout: 'TestLayout',
         title: 'Тест',
         description: 'Тест',
         name: 'test'
