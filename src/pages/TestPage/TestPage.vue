@@ -8,6 +8,7 @@ import { management } from './constant/management.js'
 import { javascript } from './constant/javascript.js'
 import { web } from './constant/web.js'
 import { business } from './constant/business.js'
+import { global } from './constant/global.js'
 
 const route = useRoute()
 const savedScores = ref<Record<string, string | null>>({})
@@ -17,7 +18,8 @@ const dataMap = {
   management,
   javascript,
   web,
-  business
+  business,
+  global
 }
 
 const currentData = computed(() => {
@@ -61,7 +63,8 @@ watch(
           { id: 'management', text: 'Информационный менеджмент' },
           { id: 'javascript', text: 'Разработка web-приложений на языке JavaScript' },
           { id: 'web', text: 'Разработка серверных приложений для WEB' },
-          { id: 'business', text: 'Реинжиниринг бизнес-процессов' }
+          { id: 'business', text: 'Реинжиниринг бизнес-процессов' },
+          { id: 'global', text: 'Все предметы в 1 тесте' }
         ]"
         :key="test.id"
         class="d-flex align-center mb-4"

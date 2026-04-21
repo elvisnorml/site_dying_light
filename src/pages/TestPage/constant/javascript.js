@@ -1119,7 +1119,7 @@ export const javascript = {
       correctAnswer: '6'
     },
     {
-      id: 10,
+      id: 919,
       type: 'open',
       text: 'Чему будет равно значение переменной i после выполнения следующего кода?\nlet i=1;\ni=(i==1)?100:200;',
       correctAnswer: '100'

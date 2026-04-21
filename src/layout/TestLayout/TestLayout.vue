@@ -5,7 +5,7 @@ import tiles from './img/gray-texture-2.jpg'
 <template>
   <VAppBar color="rgba(0,0,0,0.8)" elevate-on-scroll>
     <VToolbarTitle>
-      <RouterLink :to="'/test'" class="text-white"> Выбор предмета </RouterLink>
+      <RouterLink :to="'/test'" class="text-white"> Выбор теста </RouterLink>
     </VToolbarTitle>
   </VAppBar>
 

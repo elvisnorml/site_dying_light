@@ -1,0 +1,6084 @@
+export const global = {
+  title: 'Разработка web-приложений на языке JavaScript',
+  questions: [
+    {
+      id: 1,
+      type: 'single',
+      text: 'Тип и формат содержимого документа определяет тег …',
+      options: [
+        { id: 'А', text: '<!Doctype>' },
+        { id: 'Б', text: '<base>' },
+        { id: 'В', text: '<body>' },
+        { id: 'Г', text: '<spad>' }
+      ],
+      correctAnswer: 'А'
+    },
+    {
+      id: 2,
+      type: 'single',
+      text: 'Что будет результатом выполнения выражения? "23"+17-"10"+20',
+      options: [
+        { id: 'А', text: '50' },
+        { id: 'Б', text: '2327' },
+        { id: 'В', text: '1297' },
+        { id: 'Г', text: 'ошибка' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 3,
+      type: 'single',
+      text: 'Какому году соответствует выражение с new Date()? new Date(parseInt("2020-10-03"))',
+      options: [
+        { id: 'А', text: '1970' },
+        { id: 'Б', text: '2019' },
+        { id: 'В', text: '2020' },
+        { id: 'Г', text: '2003' }
+      ],
+      correctAnswer: 'А'
+    },
+    {
+      id: 4,
+      type: 'single',
+      text: 'Что будет результатом выполнения выражения? 3>4 ? 5:6',
+      options: [
+        { id: 'А', text: '3' },
+        { id: 'Б', text: '4' },
+        { id: 'В', text: '5' },
+        { id: 'Г', text: '6' }
+      ],
+      correctAnswer: 'Г'
+    },
+    {
+      id: 5,
+      type: 'single',
+      text: 'Что вернёт функция sum? function sum(a,b=3){ a+b; } console.log(sum(2));',
+      options: [
+        { id: 'А', text: '2' },
+        { id: 'Б', text: '3' },
+        { id: 'В', text: '5' },
+        { id: 'Г', text: 'undefined' }
+      ],
+      correctAnswer: 'Г'
+    },
+    {
+      id: 6,
+      type: 'single',
+      text: 'Какой оператор определяет тип переменной?',
+      options: [
+        { id: 'А', text: 'instanceof' },
+        { id: 'Б', text: 'typeof' },
+        { id: 'В', text: '!' },
+        { id: 'Г', text: 'in' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 7,
+      type: 'single',
+      text: 'С какой версии ECMAScript для объявления переменной стали использовать let?',
+      options: [
+        { id: 'А', text: 'ES7' },
+        { id: 'Б', text: 'ES8' },
+        { id: 'В', text: 'ES6' },
+        { id: 'Г', text: 'ES4' }
+      ],
+      correctAnswer: 'В'
+    },
+    {
+      id: 8,
+      type: 'single',
+      text: 'Сколько операторов return может содержать функция?',
+      options: [
+        { id: 'А', text: '0' },
+        { id: 'Б', text: '1' },
+        { id: 'В', text: '2' },
+        { id: 'Г', text: 'сколько угодно' }
+      ],
+      correctAnswer: 'Г'
+    },
+    {
+      id: 9,
+      type: 'single',
+      text: 'Чему будет равно значение переменной i после выполнения следующего кода? let i=1; i=(i==1)?100:200;',
+      options: [
+        { id: 'А', text: '1' },
+        { id: 'Б', text: '100' },
+        { id: 'В', text: '101' },
+        { id: 'Г', text: '200' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 10,
+      type: 'single',
+      text: 'Какой результат даст вычисление логического выражения (на втором месте строка с символом пробела) : false || " " || !0 ?',
+      options: [
+        { id: 'А', text: 'строка с символом пробела' },
+        { id: 'Б', text: 'false' },
+        { id: 'В', text: 'true' },
+        { id: 'Г', text: '0' }
+      ],
+      correctAnswer: 'А'
+    },
+    {
+      id: 11,
+      type: 'single',
+      text: 'Что будет результатом выражения 67 + "45"?',
+      options: [
+        { id: 'А', text: '"6745"' },
+        { id: 'Б', text: '"112"' },
+        { id: 'В', text: '112' },
+        { id: 'Г', text: '6745' }
+      ],
+      correctAnswer: 'А'
+    },
+    {
+      id: 12,
+      type: 'single',
+      text: 'Какой из операторов конкатенирует (склеивает) строки?',
+      options: [
+        { id: 'А', text: '%' },
+        { id: 'Б', text: '/' },
+        { id: 'В', text: '*' },
+        { id: 'Г', text: '+' }
+      ],
+      correctAnswer: 'Г'
+    },
+    {
+      id: 13,
+      type: 'single',
+      text: 'Какой из операторов находит остаток от деления?',
+      options: [
+        { id: 'А', text: '*' },
+        { id: 'Б', text: '/' },
+        { id: 'В', text: '%' },
+        { id: 'Г', text: '+' }
+      ],
+      correctAnswer: 'В'
+    },
+    {
+      id: 14,
+      type: 'single',
+      text: 'Сколько переменных определено в записи: let myVar, myvar, _myvar?',
+      options: [
+        { id: 'А', text: '1' },
+        { id: 'Б', text: '2' },
+        { id: 'В', text: '3' },
+        { id: 'Г', text: '4' }
+      ],
+      correctAnswer: 'В'
+    },
+    {
+      id: 15,
+      type: 'single',
+      text: 'Какой результат дает логическое выражение: !0 && "privet" && 56?',
+      options: [
+        { id: 'А', text: 'true' },
+        { id: 'Б', text: '"privet"' },
+        { id: 'В', text: '56' },
+        { id: 'Г', text: 'false' }
+      ],
+      correctAnswer: 'В'
+    },
+    {
+      id: 16,
+      type: 'single',
+      text: 'Какое значение переменной i первым выводит следующий цикл? let i=0; while (i>5){ i++; }',
+      options: [
+        { id: 'А', text: '0' },
+        { id: 'Б', text: '4' },
+        { id: 'В', text: '5' },
+        { id: 'Г', text: '6' }
+      ],
+      correctAnswer: 'А'
+    },
+    {
+      id: 17,
+      type: 'single',
+      text: 'Какой метод изменяет порядок элементов массива, не копируя его?',
+      options: [
+        { id: 'А', text: 'unshift' },
+        { id: 'Б', text: 'push' },
+        { id: 'В', text: 'reverse' },
+        { id: 'Г', text: 'concat' }
+      ],
+      correctAnswer: 'В'
+    },
+    {
+      id: 18,
+      type: 'single',
+      text: 'Какой метод используется для объединения двух, или более массивов в один?',
+      options: [
+        { id: 'А', text: 'unshift' },
+        { id: 'Б', text: 'push' },
+        { id: 'В', text: 'reverse' },
+        { id: 'Г', text: 'concat' }
+      ],
+      correctAnswer: 'Г'
+    },
+    {
+      id: 19,
+      type: 'single',
+      text: 'Что называют функциональными литералами?',
+      options: [
+        { id: 'А', text: 'функциональные выражения' },
+        { id: 'Б', text: 'стрелочные функции' },
+        { id: 'В', text: 'классические функции' },
+        { id: 'Г', text: 'паттерн IIFE' }
+      ],
+      correctAnswer: 'А'
+    },
+    {
+      id: 20,
+      type: 'single',
+      text: 'Задает ширину текстового поля в символах аттрибут …',
+      options: [
+        { id: 'А', text: 'cols' },
+        { id: 'Б', text: 'rows' },
+        { id: 'В', text: 'readonly' },
+        { id: 'Г', text: 'size' }
+      ],
+      correctAnswer: 'А'
+    },
+    {
+      id: 21,
+      type: 'single',
+      text: 'Флаг в регулярном выражении, который позволяет искать все совпадения, без него будет найдено только первое',
+      options: [
+        { id: 'А', text: 's' },
+        { id: 'Б', text: 'm' },
+        { id: 'В', text: 'g' },
+        { id: 'Г', text: 'i' }
+      ],
+      correctAnswer: 'В'
+    },
+    {
+      id: 22,
+      type: 'single',
+      text: 'C помощью тега <img> в HTML-документе можно разместить …',
+      options: [
+        { id: 'А', text: 'объект мультимедиа' },
+        { id: 'Б', text: 'таблицу' },
+        { id: 'В', text: 'графический объект' },
+        { id: 'Г', text: 'гиперссылку' }
+      ],
+      correctAnswer: 'В'
+    },
+    {
+      id: 23,
+      type: 'single',
+      text: 'Какое значение свойства display позволит сделать из блока грид-контейнер',
+      options: [
+        { id: 'А', text: 'display: block' },
+        { id: 'Б', text: 'display:flex' },
+        { id: 'В', text: 'display: inline' },
+        { id: 'Г', text: 'display: grid' }
+      ],
+      correctAnswer: 'Г'
+    },
+    {
+      id: 24,
+      type: 'single',
+      text: 'Флаг в регулярном выражении, который задаёт режим поиска на конкретной позиции в тексте',
+      options: [
+        { id: 'А', text: 's' },
+        { id: 'Б', text: 'm' },
+        { id: 'В', text: 'y' },
+        { id: 'Г', text: 'i' }
+      ],
+      correctAnswer: 'В'
+    },
+    {
+      id: 25,
+      type: 'single',
+      text: 'Какой из следующих методов используется для добавления нового элемента в конец массива в JavaScript?',
+      options: [
+        { id: 'А', text: 'array.push()' },
+        { id: 'Б', text: 'array.add()' },
+        { id: 'В', text: 'array.insert()' },
+        { id: 'Г', text: 'array.append()' }
+      ],
+      correctAnswer: 'А'
+    },
+    {
+      id: 26,
+      type: 'single',
+      text: 'Где верно указан запуск всплывающего окна?',
+      options: [
+        { id: 'А', text: 'new alert ("Hi")' },
+        { id: 'Б', text: 'info ("Hi")' },
+        { id: 'В', text: 'Нет верных вариантов' },
+        { id: 'Г', text: 'alert ("Hi")' }
+      ],
+      correctAnswer: 'Г'
+    },
+    {
+      id: 27,
+      type: 'single',
+      text: 'В чем отличие между локальной и глобальной переменной?',
+      options: [
+        { id: 'А', text: 'Локальные видны повсюду, глобальные только в функциях' },
+        { id: 'Б', text: 'Глобальные можно переопределять, локальные нельзя' },
+        { id: 'В', text: 'Локальные можно переопределять, глобальные нельзя' },
+        { id: 'Г', text: 'Глобальные видны повсюду, локальные только в функциях' }
+      ],
+      correctAnswer: 'Г'
+    },
+    {
+      id: 28,
+      type: 'single',
+      text: 'Где верно указан вывод данных?',
+      options: [
+        { id: 'А', text: 'print(Hello);' },
+        { id: 'Б', text: 'prompt("Hello")' },
+        { id: 'В', text: 'write("Hello");' },
+        { id: 'Г', text: 'console.log("Hello");' }
+      ],
+      correctAnswer: 'Г'
+    },
+    {
+      id: 29,
+      type: 'single',
+      text: 'Какая переменная записана неверно?',
+      options: [
+        { id: 'А', text: 'var num = "STRING";' },
+        { id: 'Б', text: 'var isDone = 0;' },
+        { id: 'В', text: 'var b = false;' },
+        { id: 'Г', text: 'var number = 12,5;' }
+      ],
+      correctAnswer: 'Г'
+    },
+    {
+      id: 30,
+      type: 'single',
+      text: 'Какие циклы есть в языке JavaScript?',
+      options: [
+        { id: 'А', text: 'or, forMap, foreach, while' },
+        { id: 'Б', text: 'for, forMap, foreach, while, do while' },
+        { id: 'В', text: 'for, while, do while, foreach' },
+        { id: 'Г', text: 'for, while, do while' }
+      ],
+      correctAnswer: 'Г'
+    },
+    {
+      id: 31,
+      type: 'multiple',
+      text: 'Какие методы используются для обработки строк?',
+      options: [
+        { id: 'А', text: 'toUpperCase()' },
+        { id: 'Б', text: 'replace()' },
+        { id: 'В', text: 'parse' },
+        { id: 'Г', text: 'верного ответа нет' }
+      ],
+      correctAnswer: ['А', 'Б']
+    },
+    {
+      id: 32,
+      type: 'multiple',
+      text: 'Укажите утверждения верные для функций в JavaScript',
+      options: [
+        { id: 'А', text: 'функция может содержать несколько операторов return' },
+        { id: 'Б', text: 'аргументам функции можно задавать значения по умолчанию' },
+        { id: 'В', text: 'внутри функции можно использовать arguments' },
+        { id: 'Г', text: 'функция не может принимать в качестве аргументов другую функцию' }
+      ],
+      correctAnswer: ['А', 'Б', 'В']
+    },
+    {
+      id: 33,
+      type: 'multiple',
+      text: 'Какие методы используются для работы с таймерами?',
+      options: [
+        { id: 'А', text: 'setTimeout()' },
+        { id: 'Б', text: 'typeof()' },
+        { id: 'В', text: 'setInterval()' },
+        { id: 'Г', text: 'Number()' }
+      ],
+      correctAnswer: ['А', 'В']
+    },
+    {
+      id: 34,
+      type: 'multiple',
+      text: 'Как обратиться к свойству name объекта? const user={ name:"Иван" }',
+      options: [
+        { id: 'А', text: 'user.name' },
+        { id: 'Б', text: 'user["name"]' },
+        { id: 'В', text: 'user[name]' },
+        { id: 'Г', text: 'user(name)' }
+      ],
+      correctAnswer: ['А', 'Б']
+    },
+    {
+      id: 35,
+      type: 'multiple',
+      text: 'Дана переменная let n = 0. Как увеличить переменную на 5?',
+      options: [
+        { id: 'А', text: 'n = n + 5' },
+        { id: 'Б', text: 'n += 5' },
+        { id: 'В', text: 'n = n - 5' },
+        { id: 'Г', text: 'n -= 5' }
+      ],
+      correctAnswer: ['А', 'Б']
+    },
+    {
+      id: 36,
+      type: 'multiple',
+      text: 'Преобразует строку в число',
+      options: [
+        { id: 'А', text: 'Number()' },
+        { id: 'Б', text: '+' },
+        { id: 'В', text: 'true' },
+        { id: 'Г', text: 'false' }
+      ],
+      correctAnswer: ['А', 'Б']
+    },
+    {
+      id: 37,
+      type: 'multiple',
+      text: 'Какие типы данных есть в JavaScript?',
+      options: [
+        { id: 'А', text: 'integer' },
+        { id: 'Б', text: 'string' },
+        { id: 'В', text: 'boolean' },
+        { id: 'Г', text: 'number' }
+      ],
+      correctAnswer: ['Б', 'В', 'Г']
+    },
+    {
+      id: 38,
+      type: 'multiple',
+      text: 'Какие варианты задания переменных/констант есть в JavaScript?',
+      options: [
+        { id: 'А', text: 'declare' },
+        { id: 'Б', text: 'var' },
+        { id: 'В', text: 'let' },
+        { id: 'Г', text: 'constant' }
+      ],
+      correctAnswer: ['Б', 'В', 'Г']
+    },
+    {
+      id: 39,
+      type: 'multiple',
+      text: 'Какое из следующих свойств используется для заливки фона блочных элементов?',
+      options: [
+        { id: 'А', text: 'background-color' },
+        { id: 'Б', text: 'color' },
+        { id: 'В', text: 'background' },
+        { id: 'Г', text: 'font-color' }
+      ],
+      correctAnswer: ['А', 'В']
+    },
+    {
+      id: 40,
+      type: 'multiple',
+      text: 'Какие методы используются для работы с элементом <canvas>?',
+      options: [
+        { id: 'А', text: 'getContext()' },
+        { id: 'Б', text: 'fillRect()' },
+        { id: 'В', text: 'array.add()' },
+        { id: 'Г', text: 'map()' }
+      ],
+      correctAnswer: ['А', 'Б']
+    },
+    {
+      id: 41,
+      type: 'multiple',
+      text: 'Какие методы добавляют элементы в массив?',
+      options: [
+        { id: 'А', text: 'unshift' },
+        { id: 'Б', text: 'push' },
+        { id: 'В', text: 'reverse' },
+        { id: 'Г', text: 'concat' }
+      ],
+      correctAnswer: ['А', 'Б']
+    },
+    {
+      id: 42,
+      type: 'multiple',
+      text: 'Директива, которая указывает режим загрузки кода JavaScript',
+      options: [
+        { id: 'А', text: 'use strict' },
+        { id: 'Б', text: 'defer' },
+        { id: 'В', text: '#ifdef' },
+        { id: 'Г', text: 'async' }
+      ],
+      correctAnswer: ['Б', 'Г']
+    },
+    {
+      id: 43,
+      type: 'multiple',
+      text: 'Что является атрибутом однострочного поля ввода?',
+      options: [
+        { id: 'А', text: 'placeholder' },
+        { id: 'Б', text: 'required' },
+        { id: 'В', text: 'selected' },
+        { id: 'Г', text: 'checked' }
+      ],
+      correctAnswer: ['А', 'Б']
+    },
+    {
+      id: 44,
+      type: 'multiple',
+      text: 'Укажите арифметические операторы в JavaScript',
+      options: [
+        { id: 'А', text: '+' },
+        { id: 'Б', text: '&&' },
+        { id: 'В', text: '>=' },
+        { id: 'Г', text: '*' }
+      ],
+      correctAnswer: ['А', 'Г']
+    },
+    {
+      id: 45,
+      type: 'multiple',
+      text: 'Укажите флаги для регулярного выражения',
+      options: [
+        { id: 'А', text: 'b' },
+        { id: 'Б', text: 'с' },
+        { id: 'В', text: 'g' },
+        { id: 'Г', text: 'i' }
+      ],
+      correctAnswer: ['В', 'Г']
+    },
+    {
+      id: 46,
+      type: 'multiple',
+      text: 'Параметр href является обязательным для тегов',
+      options: [
+        { id: 'А', text: '<a>' },
+        { id: 'Б', text: '<ol>' },
+        { id: 'В', text: '<link>' },
+        { id: 'Г', text: '<img>' }
+      ],
+      correctAnswer: ['А', 'В']
+    },
+    {
+      id: 47,
+      type: 'multiple',
+      text: 'Какой из следующих операторов нельзя использовать для сравнения в JavaScript?',
+      options: [
+        { id: 'А', text: '==' },
+        { id: 'Б', text: '===' },
+        { id: 'В', text: '=' },
+        { id: 'Г', text: '!=' }
+      ],
+      correctAnswer: ['В', 'Г']
+    },
+    {
+      id: 48,
+      type: 'multiple',
+      text: 'Где можно использовать JavaScript?',
+      options: [
+        { id: 'А', text: 'Веб-приложения' },
+        { id: 'Б', text: 'Серверные приложения' },
+        { id: 'В', text: 'Прикладное программное обеспечение' },
+        { id: 'Г', text: 'Системное программирование' }
+      ],
+      correctAnswer: ['А', 'Б', 'В']
+    },
+    {
+      id: 49,
+      type: 'multiple',
+      text: 'Где верно указано имя переменной?',
+      options: [
+        { id: 'А', text: 'var 2num' },
+        { id: 'Б', text: 'ver num' },
+        { id: 'В', text: 'let num2' },
+        { id: 'Г', text: 'var num1' }
+      ],
+      correctAnswer: ['В', 'Г']
+    },
+    {
+      id: 50,
+      type: 'multiple',
+      text: 'Какой метод используется для работы с числами?',
+      options: [
+        { id: 'А', text: 'isInteger()' },
+        { id: 'Б', text: 'toString()' },
+        { id: 'В', text: 'Number()' },
+        { id: 'Г', text: 'Все вышеперечисленные' }
+      ],
+      correctAnswer: ['А', 'В']
+    },
+    {
+      id: 51,
+      type: 'matching',
+      text: 'Поставьте в соответствие методы JavaScript и их действия',
+      matchItems: [
+        { id: '1', text: 'querySelectorAll' },
+        { id: '2', text: 'createElement' },
+        { id: '3', text: 'innerHTML' },
+        { id: '4', text: 'remove' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'позволяет удалить элемент (применяется к тому элементу, который нужно удалить)' },
+        { id: 'Б', text: 'позволяет создать новый элемент, передав в параметре имя тега' },
+        { id: 'В', text: 'позволяет добавить или изменить элементу текст' },
+        { id: 'Г', text: 'возвращает все элементы, удовлетворяющие CSS-селектору' }
+      ],
+      correctAnswer: { 1: 'Г', 2: 'Б', 3: 'В', 4: 'А' }
+    },
+    {
+      id: 52,
+      type: 'matching',
+      text: 'Поставьте в соответствие события JavaScript и их действия',
+      matchItems: [
+        { id: '1', text: 'onFocus' },
+        { id: '2', text: 'onKeyDown' },
+        { id: '3', text: 'onDblClick' },
+        { id: '4', text: 'onLoad' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'Двойной щелчок' },
+        { id: 'Б', text: 'Закончена загрузка документа' },
+        { id: 'В', text: 'Нажата и отпущена клавиша на клавиатуре' },
+        {
+          id: 'Г',
+          text: 'Получение элементом фокуса (щелчок мышью на элементе или очередное нажатие клавиши табуляции)'
+        }
+      ],
+      correctAnswer: { 1: 'Г', 2: 'В', 3: 'А', 4: 'Б' }
+    },
+    {
+      id: 53,
+      type: 'matching',
+      text: 'Поставьте в соответствие операторы JavaScript и их обозначение',
+      matchItems: [
+        { id: '1', text: 'Побитовое И' },
+        { id: '2', text: 'Побитовое ИЛИ' },
+        { id: '3', text: 'Побитовое исключающее ИЛИ' },
+        { id: '4', text: 'Побитовый сдвиг влево' }
+      ],
+      matchTargets: [
+        { id: 'А', text: '&' },
+        { id: 'Б', text: '|' },
+        { id: 'В', text: '^' },
+        { id: 'Г', text: '<<' }
+      ],
+      correctAnswer: { 1: 'А', 2: 'Б', 3: 'В', 4: 'Г' }
+    },
+    {
+      id: 54,
+      type: 'matching',
+      text: 'Поставьте в соответствие методы JS и их назначение',
+      matchItems: [
+        { id: '1', text: 'toUpperCase()' },
+        { id: '2', text: 'indexOf()' },
+        { id: '3', text: 'substr()' },
+        { id: '4', text: 'shift()' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'используется для преобразования всех символов в строке в верхний регистр' },
+        { id: 'Б', text: 'возвращает индекс первого вхождения указанного значения в строке' },
+        { id: 'В', text: 'возвращает указанное количество символов из строки, начиная с указанной позиции' },
+        { id: 'Г', text: 'удаляет первый элемент из массива и возвращает его значение' }
+      ],
+      correctAnswer: { 1: 'А', 2: 'Б', 3: 'В', 4: 'Г' }
+    },
+    {
+      id: 55,
+      type: 'matching',
+      text: 'Поставьте в соответствие методы объекта Math и их назначение',
+      matchItems: [
+        { id: '1', text: 'абсолютная величина аргумента' },
+        { id: '2', text: 'наименьшее/большее или равное целое' },
+        { id: '3', text: 'наибольшее/наименьшее/равное число' },
+        { id: '4', text: 'округление до целого' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'abs' },
+        { id: 'Б', text: 'ceil' },
+        { id: 'В', text: 'floor' },
+        { id: 'Г', text: 'round' }
+      ],
+      correctAnswer: { 1: 'А', 2: 'Б', 3: 'В', 4: 'Г' }
+    },
+    {
+      id: 56,
+      type: 'matching',
+      text: 'Поставьте в соответствие методы для работы с объектами в JavaScript и их назначение',
+      matchItems: [
+        { id: '1', text: 'Object.values()' },
+        { id: '2', text: 'Object.keys()' },
+        { id: '3', text: 'Object.freeze()' },
+        { id: '4', text: 'Object.seal()' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'Позволяет получить все значения, заключённые в объекте' },
+        { id: 'Б', text: 'Возвращает массив, содержащий все ключи внутри объекта' },
+        { id: 'В', text: 'Позволяет заморозить объект, передаваемый ему в качестве аргумента' },
+        { id: 'Г', text: 'Предотвращает добавление новых свойств к объекту' }
+      ],
+      correctAnswer: { 1: 'А', 2: 'Б', 3: 'В', 4: 'Г' }
+    },
+    {
+      id: 57,
+      type: 'matching',
+      text: 'Поставьте в соответствие методы для работы с объектами в JavaScript и их назначение',
+      matchItems: [
+        { id: '1', text: 'Object.values()' },
+        { id: '2', text: 'Object.keys()' },
+        { id: '3', text: 'Object.create()' },
+        { id: '4', text: 'Object.assign()' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'Позволяет получить все значения, заключённые в объекте' },
+        { id: 'Б', text: 'Возвращает массив, содержащий все ключи внутри объекта' },
+        { id: 'В', text: 'Позволяет создавать новые объекты и соединять их с прототипами существующих объектов' },
+        { id: 'Г', text: 'Копирует значения из одного объекта в другой' }
+      ],
+      correctAnswer: { 1: 'А', 2: 'Б', 3: 'В', 4: 'Г' }
+    },
+    {
+      id: 58,
+      type: 'matching',
+      text: 'Поставьте в соответствие операции сравнения и их обозначение',
+      matchItems: [
+        { id: '1', text: 'равенство' },
+        { id: '2', text: 'строгое равенство' },
+        { id: '3', text: 'неравенство' },
+        { id: '4', text: 'строгое неравенство' }
+      ],
+      matchTargets: [
+        { id: 'А', text: '==' },
+        { id: 'Б', text: '===' },
+        { id: 'В', text: '!=' },
+        { id: 'Г', text: '!==' }
+      ],
+      correctAnswer: { 1: 'А', 2: 'Б', 3: 'В', 4: 'Г' }
+    },
+    {
+      id: 59,
+      type: 'matching',
+      text: 'Поставьте в соответствие операторы и их обозначение',
+      matchItems: [
+        { id: '1', text: 'увеличивает значение переменной на единицу' },
+        { id: '2', text: 'уменьшают значение переменной на единицу' },
+        { id: '3', text: 'используется для сокращённой записи условных выражений' },
+        { id: '4', text: 'позволяет выполнить несколько выражений в одной строке кода' }
+      ],
+      matchTargets: [
+        { id: 'А', text: '++' },
+        { id: 'Б', text: '--' },
+        { id: 'В', text: '? :' },
+        { id: 'Г', text: ',' }
+      ],
+      correctAnswer: { 1: 'А', 2: 'Б', 3: 'В', 4: 'Г' }
+    },
+    {
+      id: 60,
+      type: 'matching',
+      text: 'Подставьте в соответствие свойства элемента form и их назначение',
+      matchItems: [
+        { id: '1', text: 'Тип содержимого, используемый для отправки формы на сервер' },
+        {
+          id: '2',
+          text: 'Имя окна или фрейма для загрузки документа, сгенерированного сценарием на основании принятых из формы данных'
+        },
+        { id: '3', text: 'Количество элементов формы' },
+        { id: '4', text: 'Массив элементов формы' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'encoding' },
+        { id: 'Б', text: 'etype' },
+        { id: 'В', text: 'length' },
+        { id: 'Г', text: 'elements[]' }
+      ],
+      correctAnswer: { 1: 'А', 2: 'Б', 3: 'В', 4: 'Г' }
+    },
+    {
+      id: 61,
+      type: 'matching',
+      text: 'Поставьте в соответствие обработчики событий и их описание',
+      matchItems: [
+        { id: '1', text: 'onClick' },
+        { id: '2', text: 'onDblClick' },
+        { id: '3', text: 'onFocus' },
+        { id: '4', text: 'onKeyDown' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'Одинарный щелчок (нажата и отпущена кнопка мыши)' },
+        { id: 'Б', text: 'Двойной щелчок' },
+        {
+          id: 'В',
+          text: 'Получение элементом фокуса (щелчок мышью на элементе или очередное нажатие клавиши табуляции)'
+        },
+        { id: 'Г', text: 'Нажата клавиша на клавиатуре' }
+      ],
+      correctAnswer: { 1: 'А', 2: 'Б', 3: 'В', 4: 'Г' }
+    },
+    {
+      id: 62,
+      type: 'matching',
+      text: 'Подставьте в соответствие основные атрибуты элемента form и их назначение',
+      matchItems: [
+        { id: '1', text: 'список кодировок символов ввода данных, которые будут обрабатываться сервером' },
+        { id: '2', text: 'тип содержимого, используемый для отправки формы на сервер' },
+        { id: '3', text: 'метод передачи данных серверу' },
+        { id: '4', text: 'адрес файла серверного сценария, который будет обрабатывать заполненную и переданную форму' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'accept-charset' },
+        { id: 'Б', text: 'enctype' },
+        { id: 'В', text: 'method' },
+        { id: 'Г', text: 'action' }
+      ],
+      correctAnswer: { 1: 'А', 2: 'Б', 3: 'В', 4: 'Г' }
+    },
+    {
+      id: 63,
+      type: 'matching',
+      text: 'Поставьте в соответствие обработчики событий и их описание',
+      matchItems: [
+        { id: '1', text: 'onMouseDown' },
+        { id: '2', text: 'onMouseMove' },
+        { id: '3', text: 'onMouseOut' },
+        { id: '4', text: 'onMouseOver' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'Нажата кнопка мыши в пределах текущего элемента' },
+        { id: 'Б', text: 'Перемещение курсора мыши в пределах текущего элемента' },
+        { id: 'В', text: 'Курсор мыши выведен за пределы текущего элемента' },
+        { id: 'Г', text: 'Курсор мыши наведен на текущий элемент' }
+      ],
+      correctAnswer: { 1: 'А', 2: 'Б', 3: 'В', 4: 'Г' }
+    },
+    {
+      id: 64,
+      type: 'matching',
+      text: 'Поставьте в соответствие обработчики событий и их описание',
+      matchItems: [
+        { id: '1', text: 'onMouseUp' },
+        { id: '2', text: 'onKeyPress' },
+        { id: '3', text: 'onKeyUp' },
+        { id: '4', text: 'onFocus' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'Отпущена кнопка мыши в пределах текущего элемента' },
+        { id: 'Б', text: 'Нажата и отпущена клавиша на клавиатуре' },
+        { id: 'В', text: 'Отпущена клавиша на клавиатуре' },
+        {
+          id: 'Г',
+          text: 'Получение элементом фокуса (щелчок мышью на элементе или очередное нажатие клавиши табуляции)'
+        }
+      ],
+      correctAnswer: { 1: 'А', 2: 'Б', 3: 'В', 4: 'Г' }
+    },
+    {
+      id: 65,
+      type: 'matching',
+      text: 'Приведите в соответствие операторы и их группы',
+      matchItems: [
+        { id: '1', text: 'Арифметические' },
+        { id: '2', text: 'Логические' },
+        { id: '3', text: 'Операторы инкремента' },
+        { id: '4', text: 'Операторы сравнения' }
+      ],
+      matchTargets: [
+        { id: 'А', text: '%' },
+        { id: 'Б', text: '&&' },
+        { id: 'В', text: '++' },
+        { id: 'Г', text: '!=' }
+      ],
+      correctAnswer: { 1: 'А', 2: 'Б', 3: 'В', 4: 'Г' }
+    },
+    {
+      id: 66,
+      type: 'sequence',
+      text: 'Установите последовательность появления тегов в HTML-документе',
+      options: [
+        { id: 'А', text: '<head>' },
+        { id: 'Б', text: '<body>' },
+        { id: 'В', text: '<title>' },
+        { id: 'Г', text: '</div>' },
+        { id: 'Д', text: '</html>' }
+      ],
+      correctAnswer: ['А', 'В', 'Б', 'Г', 'Д']
+    },
+    {
+      id: 67,
+      type: 'sequence',
+      text: 'Установите верную последовательность появления фреймворков JS',
+      options: [
+        { id: 'А', text: 'Angular' },
+        { id: 'Б', text: 'React' },
+        { id: 'В', text: 'Vue' },
+        { id: 'Г', text: 'jQuery' }
+      ],
+      correctAnswer: ['Г', 'А', 'Б', 'В']
+    },
+    {
+      id: 68,
+      type: 'sequence',
+      text: 'Установите верную последовательность появления версий ECMAScript',
+      options: [
+        { id: 'А', text: 'ES2015' },
+        { id: 'Б', text: 'ES7' },
+        { id: 'В', text: 'ES8' },
+        { id: 'Г', text: 'ES3' }
+      ],
+      correctAnswer: ['Г', 'А', 'Б', 'В']
+    },
+    {
+      id: 69,
+      type: 'sequence',
+      text: 'Установите приоритет выполнения операций в JavaScript (по возрастанию)',
+      options: [
+        { id: 'А', text: 'Присваивание' },
+        { id: 'Б', text: 'Деление' },
+        { id: 'В', text: 'Возведение в степень' },
+        { id: 'Г', text: 'Унарный минус' }
+      ],
+      correctAnswer: ['А', 'Б', 'В', 'Г']
+    },
+    {
+      id: 70,
+      type: 'sequence',
+      text: 'Установите приоритет выполнения операций в JavaScript (по возрастанию)',
+      options: [
+        { id: 'А', text: 'Возведение в степень' },
+        { id: 'Б', text: 'Сложение' },
+        { id: 'В', text: 'Умножение' },
+        { id: 'Г', text: 'Унарный плюс' }
+      ],
+      correctAnswer: ['Б', 'В', 'А', 'Г']
+    },
+    {
+      id: 71,
+      type: 'sequence',
+      text: 'Установите последовательность появления в HTML-документах тегов',
+      options: [
+        { id: 'А', text: '<head>' },
+        { id: 'Б', text: '<!Doctype>' },
+        { id: 'В', text: '<html>' },
+        { id: 'Г', text: '</html>' }
+      ],
+      correctAnswer: ['Б', 'В', 'А', 'Г']
+    },
+    {
+      id: 72,
+      type: 'sequence',
+      text: 'Установите последовательность появления в HTML-документах тегов',
+      options: [
+        { id: 'А', text: '<head>' },
+        { id: 'Б', text: '<title>' },
+        { id: 'В', text: '<html>' },
+        { id: 'Г', text: '<h1>' }
+      ],
+      correctAnswer: ['В', 'А', 'Б', 'Г']
+    },
+    {
+      id: 73,
+      type: 'sequence',
+      text: 'Установите последовательность появления в HTML-документах тегов',
+      options: [
+        { id: 'А', text: '<body>' },
+        { id: 'Б', text: '<title>' },
+        { id: 'В', text: '</body>' },
+        { id: 'Г', text: '<nav>' }
+      ],
+      correctAnswer: ['Б', 'А', 'Г', 'В']
+    },
+    {
+      id: 74,
+      type: 'sequence',
+      text: 'Установите последовательность появления версий языка разметки HTML',
+      options: [
+        { id: 'А', text: 'XHTML1.0' },
+        { id: 'Б', text: 'HTML2' },
+        { id: 'В', text: 'HTML4.01' },
+        { id: 'Г', text: 'HTML5.0' }
+      ],
+      correctAnswer: ['Б', 'В', 'А', 'Г']
+    },
+    {
+      id: 75,
+      type: 'sequence',
+      text: 'Установите последовательность появления тегов в HTML-документе',
+      options: [
+        { id: 'А', text: 'title' },
+        { id: 'Б', text: 'head' },
+        { id: 'В', text: 'header' },
+        { id: 'Г', text: 'footer' }
+      ],
+      correctAnswer: ['Б', 'А', 'В', 'Г']
+    },
+    {
+      id: 76,
+      type: 'sequence',
+      text: 'Установите последовательность появления тегов в HTML-документе',
+      options: [
+        { id: 'А', text: 'meta' },
+        { id: 'Б', text: 'head' },
+        { id: 'В', text: 'h1' },
+        { id: 'Г', text: 'body' }
+      ],
+      correctAnswer: ['Б', 'А', 'Г', 'В']
+    },
+    {
+      id: 77,
+      type: 'sequence',
+      text: 'Установите последовательность появления тегов в HTML-документе',
+      options: [
+        { id: 'А', text: 'meta' },
+        { id: 'Б', text: '/head' },
+        { id: 'В', text: '/h1' },
+        { id: 'Г', text: '/body' }
+      ],
+      correctAnswer: ['А', 'Б', 'В', 'Г']
+    },
+    {
+      id: 78,
+      type: 'sequence',
+      text: 'Установите последовательность появления тегов в HTML-документе',
+      options: [
+        { id: 'А', text: '/nav' },
+        { id: 'Б', text: 'head' },
+        { id: 'В', text: 'html' },
+        { id: 'Г', text: 'body' }
+      ],
+      correctAnswer: ['В', 'Б', 'Г', 'А']
+    },
+    {
+      id: 79,
+      type: 'sequence',
+      text: 'Установите последовательность появления технологий раскладки объектов на веб-странице',
+      options: [
+        { id: 'А', text: 'табличная верстка' },
+        { id: 'Б', text: 'flexbox' },
+        { id: 'В', text: 'стиль float' },
+        { id: 'Г', text: 'вёрстка фреймами' }
+      ],
+      correctAnswer: ['А', 'Г', 'В', 'Б']
+    },
+    {
+      id: 80,
+      type: 'sequence',
+      text: 'Установите последовательность появления технологий раскладки объектов на веб-странице',
+      options: [
+        { id: 'А', text: 'табличная верстка' },
+        { id: 'Б', text: 'вёрстка фреймами' },
+        { id: 'В', text: 'CSS Grid' },
+        { id: 'Г', text: 'раскладка с помощью position' }
+      ],
+      correctAnswer: ['А', 'Б', 'Г', 'В']
+    },
+    {
+      id: 81,
+      type: 'open',
+      text: 'Какое значение переменной i первым выводит следующий цикл?\nlet i=0;\nwhile (i>5){\ni++;\n}',
+      correctAnswer: '0'
+    },
+    {
+      id: 82,
+      type: 'open',
+      text: 'Как правильно в переменную d поместить температуру человеческого тела тридцать шесть целых и шесть десятых?',
+      correctAnswer: 'let d=36.6;//разделитель - точка'
+    },
+    {
+      id: 83,
+      type: 'open',
+      text: 'Чему будет равно значение переменной i после выполнения следующего кода?\nlet i=1;\ni=(i==1)?100:200;',
+      correctAnswer: '100'
+    },
+    {
+      id: 84,
+      type: 'open',
+      text: 'Что будет результатом выполнения выражения? 3>4 ? 5:6',
+      correctAnswer: '6'
+    },
+    {
+      id: 85,
+      type: 'open',
+      text: 'Что вернёт функция sum?\nfunction sum(a,b=3){\na+b;\n}\nconsole.log(sum(2));',
+      correctAnswer: 'undefined'
+    },
+    {
+      id: 86,
+      type: 'open',
+      text: 'Какой оператор определяет тип переменной?',
+      correctAnswer: 'typeof'
+    },
+    {
+      id: 87,
+      type: 'open',
+      text: 'Что будет результатом выполнения выражения? "23"+17-"10"+20',
+      correctAnswer: '2327'
+    },
+    {
+      id: 88,
+      type: 'open',
+      text: 'Какому году соответствует выражение с new Date()? new Date(parseInt("2020-10-03"))',
+      correctAnswer: '1970'
+    },
+    {
+      id: 90,
+      type: 'open',
+      text: 'Что будет результатом выполнения выражения? 3>4 ? 5:6',
+      correctAnswer: '6'
+    },
+    {
+      id: 919,
+      type: 'open',
+      text: 'Чему будет равно значение переменной i после выполнения следующего кода?\nlet i=1;\ni=(i==1)?100:200;',
+      correctAnswer: '100'
+    }
+  ],
+  title: 'Информационный менеджмент',
+  questions: [
+    {
+      id: 91,
+      type: 'single',
+      text: 'Какой метод сбора данных чаще всего используется на начальном этапе взаимодействия с заказчиком?',
+      options: [
+        { id: 'А', text: 'Наблюдение' },
+        { id: 'Б', text: 'Анкетирование' },
+        {
+          id: 'В',
+          text: 'Интервью'
+        },
+        { id: 'Г', text: 'Анализ документов' }
+      ],
+      correctAnswer: 'В' // ID правильного варианта
+    },
+    {
+      id: 92,
+      type: 'single',
+      text: 'Какой метод обычно используется для выявления требований заказчика к ИС?',
+      options: [
+        { id: 'А', text: 'Интервью' },
+        { id: 'Б', text: 'Опросы' },
+        { id: 'В', text: 'Наблюдения' },
+        { id: 'Г', text: 'Все вышеперечисленное' }
+      ],
+      correctAnswer: 'В' // ID правильного варианта
+    },
+    {
+      id: 93,
+      type: 'single',
+      text: 'Какова цель процесса контроля изменений требований к исполнению проекта?',
+      options: [
+        { id: 'А', text: 'Управлять изменениями требований клиентов' },
+        { id: 'Б', text: 'Предотвращать любые изменения требований заказчика' },
+        { id: 'В', text: 'Расставить приоритеты в изменениях требований клиентов' },
+        { id: 'Г', text: 'Документировать историю изменений требований заказчика' }
+      ],
+      correctAnswer: 'А' // ID правильного варианта
+    },
+    {
+      id: 94,
+      type: 'single',
+      text: 'Какой инструмент обычно используется для совместной работы и обмена информацией по требованиям?',
+      options: [
+        { id: 'А', text: 'Программное обеспечение для отслеживания проблем' },
+        { id: 'Б', text: 'Программное обеспечение для контроля версий' },
+        { id: 'В', text: 'Программное обеспечение для управления требованиями' },
+        { id: 'Г', text: 'Программное обеспечение для управления проектами' }
+      ],
+      correctAnswer: 'В' // ID правильного варианта
+    },
+    {
+      id: 95,
+      type: 'single',
+      text: 'Какой метод предполагает сбор информации о потенциальных клиентах непосредственно из источника?',
+      options: [
+        { id: 'А', text: 'Вторичные исследования ' },
+        { id: 'Б', text: 'Фокус-группы' },
+        { id: 'В', text: 'Опросы' },
+        { id: 'Г', text: 'Наблюдение' }
+      ],
+      correctAnswer: 'В' // ID правильного варианта
+    },
+    {
+      id: 96,
+      type: 'single',
+      text: 'Какова основная цель проведения анализа рынка ИТ-продуктов?',
+      options: [
+        { id: 'А', text: 'Определение рыночных тенденций' },
+        { id: 'Б', text: 'Оценка конкурентов ' },
+        { id: 'В', text: 'Определение потребностей клиентов ' },
+        { id: 'Г', text: 'все вышеперечисленное' }
+      ],
+      correctAnswer: 'Г' // ID правильного варианта
+    },
+    {
+      id: 97,
+      type: 'single',
+      text: 'На чем следует сосредоточить внимание при анализе конкурентов при проведении исследования новых рынков ИТ-продуктов?',
+      options: [
+        { id: 'А', text: 'Анализ ценовой стратегии конкурентов ' },
+        { id: 'Б', text: 'Оценка предложений продуктов конкурентов' },
+        { id: 'В', text: 'Определение целевых рынков конкурентов ' },
+        { id: 'Г', text: 'все вышеперечисленное' }
+      ],
+      correctAnswer: 'Г' // ID правильного варианта
+    },
+    {
+      id: 98,
+      type: 'single',
+      text: 'Какой подход предполагает партнерство с местными предприятиями или организациями для получения информации о новых рынках ИТ-продуктов?',
+      options: [
+        { id: 'А', text: 'Совместные предприятия' },
+        { id: 'Б', text: 'Лицензионные' },
+        { id: 'В', text: 'Стратегические альянсы' },
+        { id: 'Г', text: 'все вышеперечисленное' }
+      ],
+      correctAnswer: 'А' // ID правильного варианта
+    },
+    {
+      id: 99,
+      type: 'single',
+      text: 'Какова цель сегментации рынка при исследовании новых рынков ИТ-продуктов?',
+      options: [
+        { id: 'А', text: 'Определение конкретных целевых групп клиентов ' },
+        { id: 'Б', text: 'Адаптация маркетинговых стратегий к различным сегментам' },
+        { id: 'В', text: 'Максимизация доли рынка в каждом сегменте' },
+        { id: 'Г', text: 'все вышеперечисленное' }
+      ],
+      correctAnswer: 'Г' // ID правильного варианта
+    },
+    {
+      id: 100,
+      type: 'single',
+      text: 'Какой метод исследования предполагает проведение интервью и опросов для сбора данных в сфере информационно-коммуникационных технологий?',
+      options: [
+        { id: 'А', text: 'Экспериментальные исследования ' },
+        { id: 'Б', text: 'Количественные исследования' },
+        { id: 'В', text: 'Качественные исследования ' },
+        { id: 'Г', text: 'Наблюдательные исследования' }
+      ],
+      correctAnswer: 'В' // ID правильного варианта
+    },
+    {
+      id: 101,
+      type: 'single',
+      text: 'Что из перечисленного НЕ является основным источником информации для проведения исследований в области информационных и коммуникационных технологий?',
+      options: [
+        { id: 'А', text: 'Статьи в научных журналах' },
+        { id: 'Б', text: 'Отчеты об исследованиях' },
+        { id: 'В', text: 'Веб-сайты и блоги' },
+        { id: 'Г', text: 'Личные интервью' }
+      ],
+      correctAnswer: 'В' // ID правильного варианта
+    },
+    {
+      id: 102,
+      type: 'single',
+      text: 'Какой метод исследования лучше всего подходит для изучения опыта пользователей и взаимодействия с конкретной технологией или приложением?',
+      options: [
+        { id: 'А', text: 'Исследование контент-анализа' },
+        { id: 'Б', text: 'Этнографические исследования ' },
+        { id: 'В', text: 'Тематическое исследование ' },
+        { id: 'Г', text: 'Исследование действий' }
+      ],
+      correctAnswer: 'Б' // ID правильного варианта
+    },
+    {
+      id: 103,
+      type: 'single',
+      text: 'Какой документ фиксирует окончательное утверждение выполненной работы?',
+      options: [
+        { id: 'А', text: 'Акт сдачи-приемки' },
+        { id: 'Б', text: 'Техническое задание' },
+        { id: 'В', text: 'Протокол разногласий' },
+        { id: 'Г', text: 'Договор подряда' }
+      ],
+      correctAnswer: 'А' // ID правильного варианта
+    },
+    {
+      id: 104,
+      type: 'single',
+      text: 'Кто обычно утверждает итоговую версию документации?',
+      options: [
+        { id: 'А', text: 'Разработчик' },
+        { id: 'Б', text: 'Менеджер проекта' },
+        { id: 'В', text: 'Заказчик' },
+        { id: 'Г', text: 'Тестировщик' }
+      ],
+      correctAnswer: 'В' // ID правильного варианта
+    },
+    {
+      id: 105,
+      type: 'single',
+      text: 'Какой этап идет после согласования документации?',
+      options: [
+        { id: 'А', text: 'Корректировка' },
+        { id: 'Б', text: 'Утверждение' },
+        { id: 'В', text: 'Архивация' },
+        { id: 'Г', text: 'Тестирование' }
+      ],
+      correctAnswer: 'Б' // ID правильного варианта
+    },
+    {
+      id: 106,
+      type: 'single',
+      text: 'Какой метод чаще всего используется для первичного сбора информации о ПО на рынке?',
+      options: [
+        { id: 'А', text: 'Анализ данных CRM' },
+        { id: 'Б', text: 'Изучение отзывов на форумах' },
+        { id: 'В', text: 'Проведение опросов пользователей' },
+        { id: 'Г', text: 'Аудит кода конкурентов' }
+      ],
+      correctAnswer: 'Б' // ID правильного варианта
+    },
+    {
+      id: 107,
+      type: 'single',
+      text: 'Какой документ является основой для разработки функциональной спецификации?',
+      options: [
+        { id: 'А', text: 'Техническое задание' },
+        { id: 'Б', text: 'Бизнес-план' },
+        { id: 'В', text: 'Пользовательские истории' },
+        { id: 'Г', text: 'Маркетинговое исследование' }
+      ],
+      correctAnswer: 'А' // ID правильного варианта
+    },
+    {
+      id: 108,
+      type: 'single',
+      text: 'Какой метод обычно используется для выявления требований заказчика к ИС?',
+      options: [
+        { id: 'А', text: 'Интервью' },
+        { id: 'Б', text: 'Опросы' },
+        { id: 'В', text: 'Наблюдения' },
+        { id: 'Г', text: 'Все вышеперечисленное' }
+      ],
+      correctAnswer: 'Г' // ID правильного варианта
+    },
+    {
+      id: 109,
+      type: 'single',
+      text: 'Какой из перечисленных элементов НЕ входит в функциональную спецификацию?',
+      options: [
+        { id: 'А', text: 'Диаграммы последовательности' },
+        { id: 'Б', text: 'Требования к интерфейсу' },
+        { id: 'В', text: 'Финансовый план проекта' },
+        { id: 'Г', text: 'Описание бизнес-процессов' }
+      ],
+      correctAnswer: 'В' // ID правильного варианта
+    },
+    {
+      id: 110,
+      type: 'single',
+      text: 'Какой стандарт чаще всего используется для документирования архитектуры ИС?',
+      options: [
+        { id: 'А', text: 'ГОСТ 34' },
+        { id: 'Б', text: 'ISO 9001' },
+        { id: 'В', text: 'IEEE 830' },
+        { id: 'Г', text: 'ITIL' }
+      ],
+      correctAnswer: 'А' // ID правильного варианта
+    },
+    {
+      id: 111,
+      type: 'single',
+      text: 'Какой инструмент чаще всего используется для отслеживания правок в документации?',
+      options: [
+        { id: 'А', text: 'Excel' },
+        { id: 'Б', text: 'Система контроля версий (Git, SVN)' },
+        { id: 'В', text: 'PowerPoint' },
+        { id: 'Г', text: 'Trello' }
+      ],
+      correctAnswer: 'Б' // ID правильного варианта
+    },
+    {
+      id: 112,
+      type: 'single',
+      text: 'Какой документ фиксирует замечания по проектной документации?',
+      options: [
+        { id: 'А', text: 'Протокол совещания' },
+        { id: 'Б', text: 'Акт выполненных работ' },
+        { id: 'В', text: 'Реестр замечаний' },
+        { id: 'Г', text: 'Дополнительное соглашение' }
+      ],
+      correctAnswer: 'В' // ID правильного варианта
+    },
+    {
+      id: 113,
+      type: 'single',
+      text: 'Какой метод согласования документации наиболее формализован?',
+      options: [
+        { id: 'А', text: 'Устные договоренности' },
+        { id: 'Б', text: 'Электронная переписка' },
+        { id: 'В', text: 'Подписание бумажного экземпляра' },
+        { id: 'Г', text: 'Видеозвонок' }
+      ],
+      correctAnswer: 'В' // ID правильного варианта
+    },
+    {
+      id: 114,
+      type: 'single',
+      text: 'Какой инструмент помогает автоматизировать сбор данных о ПО?',
+      options: [
+        { id: 'А', text: 'Google Analytics' },
+        { id: 'Б', text: 'SEMrush' },
+        { id: 'В', text: 'Jira' },
+        { id: 'Г', text: 'Photoshop' }
+      ],
+      correctAnswer: 'Б' // ID правильного варианта
+    },
+    {
+      id: 115,
+      type: 'single',
+      text: 'Какой статус документа означает, что он готов к утверждению?',
+      options: [
+        { id: 'А', text: 'Черновик' },
+        { id: 'Б', text: 'На согласовании' },
+        { id: 'В', text: 'Утвержден' },
+        { id: 'Г', text: 'Архивный' }
+      ],
+      correctAnswer: 'Б' // ID правильного варианта
+    },
+    {
+      id: 116,
+      type: 'single',
+      text: 'Какой документ подтверждает, что все замечания устранены?',
+      options: [
+        { id: 'А', text: 'Акт устранения недостатков' },
+        { id: 'Б', text: 'Технический отчет' },
+        { id: 'В', text: 'Письмо о завершении работ' },
+        { id: 'Г', text: 'Финансовый отчет' }
+      ],
+      correctAnswer: 'А'
+    },
+    {
+      id: 117,
+      type: 'single',
+      text: 'Какой из перечисленных этапов НЕ относится к процессу согласования?',
+      options: [
+        { id: 'А', text: 'Сбор подписей' },
+        { id: 'Б', text: 'Внесение правок' },
+        { id: 'В', text: 'Проведение оплаты' },
+        { id: 'Г', text: 'Проверка на соответствие требованиям' }
+      ],
+      correctAnswer: 'В'
+    },
+    {
+      id: 118,
+      type: 'single',
+      text: 'Какой методологический подход в управлении проектами подчеркивает важность тщательного планирования и последовательного исполнения?',
+      options: [
+        { id: 'А', text: 'Гибкий' },
+        { id: 'Б', text: 'Водопад' },
+        { id: 'В', text: 'Метод критического пути' },
+        { id: 'Г', text: 'Скрам' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 119,
+      type: 'single',
+      text: 'Какой этап предполагает получение необходимых ресурсов для проекта?',
+      options: [
+        { id: 'А', text: 'Инициирование' },
+        { id: 'Б', text: 'Планирование' },
+        { id: 'В', text: 'Исполнение' },
+        { id: 'Г', text: 'Мониторинг и контроль' }
+      ],
+      correctAnswer: 'А'
+    },
+    {
+      id: 120,
+      type: 'single',
+      text: 'На каком этапе команда проекта разрабатывает подробный план проекта?',
+      options: [
+        { id: 'А', text: 'Инициирование' },
+        { id: 'Б', text: 'Планирование' },
+        { id: 'В', text: 'Исполнение' },
+        { id: 'Г', text: 'Закрытие' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 121,
+      type: 'multiple',
+      text: 'Оценить настроения сотрудников в команде, атмосферу и климат в коллективе поможет метрика?',
+      options: [
+        { id: 'А', text: 'Метрика Happy Index' },
+        { id: 'Б', text: 'Метрика Customer Lifetime Value' },
+        { id: 'В', text: 'Метрика Effectiveness' },
+        { id: 'Г', text: 'Метрика eNPS' }
+      ],
+      correctAnswer: ['А', 'Г']
+    },
+    {
+      id: 122,
+      type: 'multiple',
+      text: 'Технологии управления человеческими ресурсами включают…?',
+      options: [
+        { id: 'А', text: 'Корпоративные Веб-сайты' },
+        { id: 'Б', text: 'Капитал' },
+        { id: 'В', text: 'Рабочие и служащие' },
+        { id: 'Г', text: 'Профессиональные Интернет-сообщества и социальные сети организации' }
+      ],
+      correctAnswer: ['А', 'Г']
+    },
+    {
+      id: 123,
+      type: 'multiple',
+      text: 'Дорожная карта (Roadmap) ИТ-отдела в чем помогает?',
+      options: [
+        { id: 'А', text: 'Работнику и компании согласовать цели' },
+        { id: 'Б', text: 'Самоутвердиться' },
+        { id: 'В', text: 'Обеспечит гибкость при использовании ресурсов' },
+        { id: 'Г', text: 'Формализовать пожелания, сделав их реалистичными и достижимыми' }
+      ],
+      correctAnswer: ['А', 'В', 'Г']
+    },
+    {
+      id: 124,
+      type: 'multiple',
+      text: 'Какой раздел важен для API-документации?',
+      options: [
+        { id: 'А', text: 'Примеры запросов и ответов' },
+        { id: 'Б', text: 'Примеры ответов' },
+        { id: 'В', text: 'Диаграмма вариантов использования' },
+        { id: 'Г', text: 'Раздел индекс' }
+      ],
+      correctAnswer: ['А', 'Б']
+    },
+    {
+      id: 125,
+      type: 'multiple',
+      text: 'Какие методы планирования используются при управлении командной работой над проектом?',
+      options: [
+        { id: 'А', text: 'Оценка затрат и времени выполнения проекта' },
+        { id: 'Б', text: 'Разработка бюджета на выполнение проекта' },
+        { id: 'В', text: 'Разработка графика выполнения проекта' },
+        { id: 'Г', text: 'Разработка и утверждение плана проекта' }
+      ],
+      correctAnswer: ['В', 'Г']
+    },
+    {
+      id: 126,
+      type: 'multiple',
+      text: 'Какие инструменты применяются для стратегического управления ИС?',
+      options: [
+        { id: 'А', text: 'SWOT-анализ' },
+        { id: 'Б', text: 'Финансовый анализ' },
+        { id: 'В', text: 'Balanced Scorecard' },
+        { id: 'Г', text: 'Контроль процессов' }
+      ],
+      correctAnswer: ['А', 'В']
+    },
+    {
+      id: 127,
+      type: 'multiple',
+      text: 'Какие источники информации применяются в информационном менеджменте?',
+      options: [
+        { id: 'А', text: 'Внутренние данные' },
+        { id: 'Б', text: 'Социальные опросы' },
+        { id: 'В', text: 'Внешние отчеты' },
+        { id: 'Г', text: 'Медиа' }
+      ],
+      correctAnswer: ['А', 'В']
+    },
+    {
+      id: 128,
+      type: 'multiple',
+      text: 'Какие техники моделирования бизнес-процессов широко используются?',
+      options: [
+        { id: 'А', text: 'BPMN' },
+        { id: 'Б', text: 'UML' },
+        { id: 'В', text: 'EPC' },
+        { id: 'Г', text: 'SWOT' }
+      ],
+      correctAnswer: ['А', 'Б']
+    },
+    {
+      id: 129,
+      type: 'multiple',
+      text: 'Какие требования предъявляются к технической документации?',
+      options: [
+        { id: 'А', text: 'Полнота описания' },
+        { id: 'Б', text: 'Обновляемость' },
+        { id: 'В', text: 'Точность' },
+        { id: 'Г', text: 'Гибкость' }
+      ],
+      correctAnswer: ['А', 'В']
+    },
+    {
+      id: 130,
+      type: 'multiple',
+      text: 'Какие методы используются при стратегическом планировании ИС?',
+      options: [
+        { id: 'А', text: 'Финансовое моделирование' },
+        { id: 'Б', text: 'SWOT-анализ' },
+        { id: 'В', text: 'Анализ сценариев' },
+        { id: 'Г', text: 'Матрица Ансоффа' }
+      ],
+      correctAnswer: ['А', 'Б']
+    },
+    {
+      id: 131,
+      type: 'multiple',
+      text: 'Какие задачи решает информационный менеджмент на предприятии?',
+      options: [
+        { id: 'А', text: 'Координация процессов' },
+        { id: 'Б', text: 'Обеспечение качественной информации' },
+        { id: 'В', text: 'Оптимизация ресурсов' },
+        { id: 'Г', text: 'Управление персоналом' }
+      ],
+      correctAnswer: ['А', 'Б']
+    },
+    {
+      id: 132,
+      type: 'multiple',
+      text: 'Какие методы оптимизации бизнес-процессов используются?',
+      options: [
+        { id: 'А', text: 'Диаграммы потоков' },
+        { id: 'Б', text: 'Карты процессов' },
+        { id: 'В', text: 'KANBAN' },
+        { id: 'Г', text: 'Диаграммы Ганта' }
+      ],
+      correctAnswer: ['А', 'Б']
+    },
+    {
+      id: 133,
+      type: 'multiple',
+      text: 'Какие рекомендации важны при подготовке технической документации?',
+      options: [
+        { id: 'А', text: 'Обеспечить ясность' },
+        { id: 'Б', text: 'Использовать шаблоны' },
+        { id: 'В', text: 'Включать необходимые разделы' },
+        { id: 'Г', text: 'Использовать сложный язык' }
+      ],
+      correctAnswer: ['А', 'Б']
+    },
+    {
+      id: 134,
+      type: 'multiple',
+      text: 'Какие задачи включает стратегическое планирование ИС?',
+      options: [
+        { id: 'А', text: 'Внедрение технологий' },
+        { id: 'Б', text: 'Определение приоритетов' },
+        { id: 'В', text: 'Распределение ресурсов' },
+        { id: 'Г', text: 'Обучение персонала' }
+      ],
+      correctAnswer: ['А', 'Б']
+    },
+    {
+      id: 135,
+      type: 'multiple',
+      text: 'Какие критерии качества информации важны для информационного менеджмента?',
+      options: [
+        { id: 'А', text: 'Актуальность' },
+        { id: 'Б', text: 'Точность' },
+        { id: 'В', text: 'Достоверность' },
+        { id: 'Г', text: 'Форматирование' }
+      ],
+      correctAnswer: ['А', 'В']
+    },
+    {
+      id: 136,
+      type: 'multiple',
+      text: 'Какие виды технической документации существуют?',
+      options: [
+        { id: 'А', text: 'Пользовательская' },
+        { id: 'Б', text: 'Финансовая' },
+        { id: 'В', text: 'Системная' },
+        { id: 'Г', text: 'Проектная' }
+      ],
+      correctAnswer: ['А', 'В']
+    },
+    {
+      id: 137,
+      type: 'multiple',
+      text: 'Какие ключевые этапы входят в стратегическое планирование ИС?',
+      options: [
+        { id: 'А', text: 'Разработка стратегии' },
+        { id: 'Б', text: 'Распределение ресурсов' },
+        { id: 'В', text: 'Формулирование миссии' },
+        { id: 'Г', text: 'Контроль реализации' }
+      ],
+      correctAnswer: ['А', 'В']
+    },
+    {
+      id: 138,
+      type: 'multiple',
+      text: 'Какие технологии широко применяются в информационном менеджменте?',
+      options: [
+        { id: 'А', text: 'Системы управления проектами' },
+        { id: 'Б', text: 'Базы данных' },
+        { id: 'В', text: 'Информационные порталы' },
+        { id: 'Г', text: 'Социальные сети' }
+      ],
+      correctAnswer: ['Б', 'В']
+    },
+    {
+      id: 139,
+      type: 'multiple',
+      text: 'Какие преимущества приносит моделирование бизнес-процессов?',
+      options: [
+        { id: 'А', text: 'Оптимизация работы' },
+        { id: 'Б', text: 'Сокращение затрат' },
+        { id: 'В', text: 'Улучшение коммуникаций' },
+        { id: 'Г', text: 'Повышение бюрократии' }
+      ],
+      correctAnswer: ['А', 'В']
+    },
+    {
+      id: 140,
+      type: 'multiple',
+      text: 'Какие принципы важны при разработке технической документации?',
+      options: [
+        { id: 'А', text: 'Ясность' },
+        { id: 'Б', text: 'Структурированность' },
+        { id: 'В', text: 'Логичность' },
+        { id: 'Г', text: 'Сложность' }
+      ],
+      correctAnswer: ['А', 'В']
+    },
+    {
+      id: 141,
+      type: 'sequence',
+      text: 'Определите последовательность процесса планирования работ по определению первоначальных требований заказчика к ИС',
+      options: [
+        {
+          id: 'А',
+          text: 'Проверка документированных требований с заинтересованными сторонами для обеспечения точности'
+        },
+        {
+          id: 'Б',
+          text: 'Проведите интервью с заинтересованными сторонами, чтобы собрать их первоначальные требования'
+        },
+        { id: 'В', text: 'Определите ключевых заинтересованных сторон, участвующих в проекте информационной системы' },
+        { id: 'Г', text: 'Задокументируйте собранные требования в ясной и краткой форме' }
+      ],
+      correctAnswer: ['В', 'Б', 'Г', 'А']
+    },
+    {
+      id: 142,
+      type: 'sequence',
+      text: 'Определите последовательность процесса определения требований заказчика к ИС',
+      options: [
+        {
+          id: 'А',
+          text: 'Расставьте приоритеты и классифицируйте собранные требования в зависимости от их важности и осуществимости'
+        },
+        {
+          id: 'Б',
+          text: 'Представьте классифицированные требования заинтересованным сторонам для проверки и обратной связи'
+        },
+        {
+          id: 'В',
+          text: 'Проведите семинары или мозговые штурмы с заинтересованными сторонами, чтобы выявить их первоначальные требования'
+        },
+        {
+          id: 'Г',
+          text: 'Организуйте дискуссии и побудите заинтересованные стороны поделиться своими идеями и ожиданиями'
+        }
+      ],
+      correctAnswer: ['В', 'Г', 'А', 'Б']
+    },
+    {
+      id: 143,
+      type: 'sequence',
+      text: 'Определите последовательность процесса планирования работ по определению первоначальных требований заказчика к ИС',
+      options: [
+        {
+          id: 'А',
+          text: 'Создайте предлагаемую карту процесса, включающую собранные требования для рассмотрения и обратной связи'
+        },
+        {
+          id: 'Б',
+          text: 'Анализ существующих бизнес-процессов и рабочих процессов, связанных с информационной системой'
+        },
+        { id: 'В', text: 'Определите области, где улучшения или автоматизация могут повысить эффективность' },
+        {
+          id: 'Г',
+          text: 'Обсудите потенциальные изменения процесса с соответствующими заинтересованными сторонами, чтобы собрать их требования'
+        }
+      ],
+      correctAnswer: ['Б', 'В', 'Г', 'А']
+    },
+    {
+      id: 144,
+      type: 'sequence',
+      text: 'Определите последовательность задокументирования ограничений и болевых точек существующей информационной системы',
+      options: [
+        {
+          id: 'А',
+          text: 'Определить и задокументировать ограничения и болевые точки существующей информационной системы'
+        },
+        {
+          id: 'Б',
+          text: 'Сотрудничайте с технической командой для изучения потенциальных решений, соответствующих выявленным требованиям'
+        },
+        { id: 'В', text: 'Представьте предлагаемые решения заинтересованным сторонам для их участия и одобрения' },
+        {
+          id: 'Г',
+          text: 'Взаимодействуйте с конечными пользователями, чтобы понять их конкретные требования и болевые точки'
+        }
+      ],
+      correctAnswer: ['А', 'Г', 'Б', 'В']
+    },
+    {
+      id: 145,
+      type: 'sequence',
+      text: 'Упорядочьте процесс контроля выполнения работ по проекту',
+      options: [
+        { id: 'А', text: 'Регулярно анализировать процесс реализации мер по снижению рисков' },
+        { id: 'Б', text: 'Контролировать и документировать проблемы проекта по мере их возникновения' },
+        { id: 'В', text: 'Разработать стратегии снижения рисков и планы действий для каждого выявленного риска' },
+        { id: 'Г', text: 'Назначать ответственных лиц для решения проблем и контролировать ход их решения' }
+      ],
+      correctAnswer: ['В', 'А', 'Б', 'Г']
+    },
+    {
+      id: 146,
+      type: 'sequence',
+      text: 'Расположите в правильной последовательности процесс разработки регламентных документов проекта',
+      options: [
+        {
+          id: 'А',
+          text: 'Провести анализ пробелов, чтобы определить области, где необходимы новые или обновленные документы'
+        },
+        {
+          id: 'Б',
+          text: 'Проконсультируйтесь с заинтересованными сторонами и профильными экспертами для сбора информации'
+        },
+        { id: 'В', text: 'Рассмотрение существующих нормативных документов по аналогичным проектам' },
+        { id: 'Г', text: 'Разработать предварительную схему нормативных документов' }
+      ],
+      correctAnswer: ['В', 'А', 'Г', 'Б']
+    },
+    {
+      id: 147,
+      type: 'sequence',
+      text: 'Упорядочьте процесс оценки корректирующих мероприятий по проекту',
+      options: [
+        { id: 'А', text: 'Смягчение выявленных рисков' },
+        { id: 'Б', text: 'Определить риски проекта' },
+        { id: 'В', text: 'Решение проблем по проекту' },
+        { id: 'Г', text: 'Мониторинг корректирующих мероприятий по снижению рисков' }
+      ],
+      correctAnswer: ['Б', 'А', 'Г', 'В']
+    },
+    {
+      id: 148,
+      type: 'sequence',
+      text: 'Упорядочите уровни иерархии ролей специалистов IT-компаний, работающих над реализацией проекта (в порядке возрастания)',
+      options: [
+        { id: 'А', text: 'Middle' },
+        { id: 'Б', text: 'Leader Team' },
+        { id: 'В', text: 'Junior' },
+        { id: 'Г', text: 'Senior' }
+      ],
+      correctAnswer: ['В', 'А', 'Г', 'Б']
+    },
+    {
+      id: 149,
+      type: 'sequence',
+      text: 'Определите последовательность процесса проведения исследования новых рынков',
+      options: [
+        {
+          id: 'А',
+          text: 'Обсудите и сузьте тему исследования, исходя из интересов членов группы и имеющихся ресурсов'
+        },
+        { id: 'Б', text: 'Завершение темы и целей исследования' },
+        { id: 'В', text: 'Проведите мозговой штурм по потенциальным направлениям исследований' },
+        {
+          id: 'Г',
+          text: 'Проведите онлайн-поиск и используйте инструменты для совместной работы для сбора соответствующей информации'
+        }
+      ],
+      correctAnswer: ['В', 'Г', 'А', 'Б']
+    },
+    {
+      id: 150,
+      type: 'sequence',
+      text: 'Определите последовательность этапов составления плана исследования новых рынков ИТ-продуктов',
+      options: [
+        { id: 'А', text: 'Разделите исследование на управляемые разделы и распределите обязанности' },
+        {
+          id: 'Б',
+          text: 'Обсудить и окончательно утвердить методологию исследования и методы сбора данных, которые будут использоваться'
+        },
+        { id: 'В', text: 'Создайте комплексный план исследования, включая подробный план и распределение ресурсов' },
+        {
+          id: 'Г',
+          text: 'Используйте платформы для совместной работы, чтобы создать общий график и установить сроки для каждой задачи'
+        }
+      ],
+      correctAnswer: ['А', 'Г', 'Б', 'В']
+    },
+    {
+      id: 151,
+      type: 'sequence',
+      text: 'Определите последовательность этапов сбора данных',
+      options: [
+        {
+          id: 'А',
+          text: 'Используйте инструменты онлайн-опросов или проводите интервью удаленно для сбора первичных данных'
+        },
+        {
+          id: 'Б',
+          text: 'Совместная работа с использованием облачных платформ для безопасного сбора и хранения данных исследований'
+        },
+        {
+          id: 'В',
+          text: 'Регулярное обновление и отслеживание хода сбора данных, обеспечивая качество и надежность данных'
+        },
+        { id: 'Г', text: 'Определить соответствующие источники, базы данных и цифровые библиотеки для сбора данных' }
+      ],
+      correctAnswer: ['Г', 'А', 'Б', 'В']
+    },
+    {
+      id: 152,
+      type: 'sequence',
+      text: 'Определите последовательность оптимизации методики управления ИТ-проектами',
+      options: [
+        { id: 'А', text: 'Оценить возможность внедрения новых проектов' },
+        { id: 'Б', text: 'Выявите лишние или неэффективные продукты для возможного устранения' },
+        {
+          id: 'В',
+          text: 'Постоянно отслеживайте и анализируйте портфель ИТ-продуктов для обеспечения постоянной оптимизации'
+        },
+        { id: 'Г', text: 'Изучите возможности консолидации или интеграции продуктов в один проект' }
+      ],
+      correctAnswer: ['Б', 'Г', 'А', 'В']
+    },
+    {
+      id: 153,
+      type: 'sequence',
+      text: 'Расположите в правильной последовательности процесс разработки нормативных документов проекта',
+      options: [
+        { id: 'А', text: 'Рассмотрите и отредактируйте проект, чтобы устранить любые пробелы или неясности' },
+        {
+          id: 'Б',
+          text: 'Напишите первоначальный проект каждого нормативного документа, обеспечив ясность и последовательность'
+        },
+        { id: 'В', text: 'Обеспечить соблюдение применимых нормативных стандартов и руководств' },
+        { id: 'Г', text: 'При необходимости включите соответствующие ссылки, цитаты и приложения' }
+      ],
+      correctAnswer: ['Б', 'Г', 'А', 'В']
+    },
+    {
+      id: 154,
+      type: 'sequence',
+      text: 'Расположите в правильной последовательности процесс внедрения и сопровождения проектной документации ИТ-проекта',
+      options: [
+        { id: 'А', text: 'Установить порядок распространения утвержденных нормативных документов' },
+        {
+          id: 'Б',
+          text: 'Контролировать соблюдение нормативных документов на протяжении всего жизненного цикла проекта'
+        },
+        { id: 'В', text: 'Проводить учебные занятия, чтобы заинтересованные стороны понимали требования' },
+        { id: 'Г', text: 'Разработать систему отслеживания и управления обновлениями и исправлениями' }
+      ],
+      correctAnswer: ['А', 'В', 'Г', 'Б']
+    },
+    {
+      id: 155,
+      type: 'sequence',
+      text: 'Определите последовательность процесса анализа источников информации необходимой для реализации ИС',
+      options: [
+        {
+          id: 'А',
+          text: 'Организовать встречу с заинтересованными сторонами для обсуждения и уточнения выявленных требований'
+        },
+        { id: 'Б', text: 'Создайте анкету или опрос для сбора требований клиентов к информационной системе' },
+        { id: 'В', text: 'Распространите анкету среди соответствующих заинтересованных сторон и соберите их ответы' },
+        { id: 'Г', text: 'Проанализируйте собранные данные из анкеты, чтобы определить общие темы и требования' }
+      ],
+      correctAnswer: ['Б', 'В', 'Г', 'А']
+    },
+    {
+      id: 156,
+      type: 'matching',
+      text: 'Соотнесите понятие инструментов и методов моделирования бизнес-процессов с их содержанием',
+      matchItems: [
+        { id: '1', text: 'Диаграмма действий' },
+        { id: '2', text: 'Бизнес-процесс' },
+        { id: '3', text: 'BPMN' },
+        { id: '4', text: 'Диаграмма сотрудничества' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'Стандартизированная графическая нотация для моделирования бизнес-процессов' },
+        { id: 'Б', text: 'Визуальное представление бизнес-процесса, иллюстрирующее последовательность действий' },
+        {
+          id: 'В',
+          text: 'Визуальное представление взаимодействия между различными участниками или компонентами бизнес-процесса'
+        },
+        { id: 'Г', text: 'Ряд взаимосвязанных задач или действий, предпринимаемых для достижения конкретной цели' }
+      ],
+      correctAnswer: { 1: 'Б', 2: 'Г', 3: 'А', 4: 'В' }
+    },
+    {
+      id: 157,
+      type: 'matching',
+      text: 'Сопоставьте определения этапов управления проектами с их понятиями',
+      matchItems: [
+        { id: '1', text: 'Этап Инициирование проекта' },
+        { id: '2', text: 'Этап Планирование проекта' },
+        { id: '3', text: 'Этап Управление содержанием' },
+        { id: '4', text: 'Этап Управление качеством' }
+      ],
+      matchTargets: [
+        {
+          id: 'А',
+          text: 'Практика определения и контроля содержания проекта, обеспечивающая четкое определение результатов и целей проекта'
+        },
+        { id: 'Б', text: 'Определяются и документируются цели, объем и осуществимость проекта' },
+        {
+          id: 'В',
+          text: 'Процесс планирования, реализации и мониторинга деятельности проекта, направленный на обеспечение соответствия результатов проекта определенным стандартам'
+        },
+        {
+          id: 'Г',
+          text: 'Процесс определения мероприятий проекта, сроков, ресурсов и контрольных точек для достижения целей проекта'
+        }
+      ],
+      correctAnswer: { 1: 'Б', 2: 'Г', 3: 'А', 4: 'В' }
+    },
+    {
+      id: 158,
+      type: 'matching',
+      text: 'Соотнесите определения сбора, систематизации и анализа информации в процессе реализации проекта с их понятиями',
+      matchItems: [
+        { id: '1', text: 'Внедрение' },
+        { id: '2', text: 'Методы сбора данных' },
+        { id: '3', text: 'Аналитические основы' },
+        { id: '4', text: 'Управление информацией' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'Выполнение и реализация ИТ-проекта на основе собранной и проанализированной информации' },
+        { id: 'Б', text: 'Структуры или модели, используемые для критического анализа информации' },
+        {
+          id: 'В',
+          text: 'Общий процесс сбора, систематизации, анализа и эффективного использования информации в ИТ-проектах'
+        },
+        {
+          id: 'Г',
+          text: 'Методы и инструменты, используемые для сбора информации, такие как опросы, интервью, наблюдения, анализ документов и интеллектуальный анализ данных'
+        }
+      ],
+      correctAnswer: { 1: 'А', 2: 'Г', 3: 'Б', 4: 'В' }
+    },
+    {
+      id: 159,
+      type: 'matching',
+      text: 'Соотнесите понятие инструментов и методов моделирования бизнес-процессов с их содержанием',
+      matchItems: [
+        { id: '1', text: 'Точка принятия решения' },
+        { id: '2', text: 'Событие' },
+        { id: '3', text: 'Шлюзы' },
+        { id: '4', text: 'Ключевой показатель эффективности (KPI)' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'Конкретный момент в бизнес-процессе, когда необходимо принять решение' },
+        { id: 'Б', text: 'Элементы моделирования в BPMN, представляющие точки процесса, где принимаются решения' },
+        {
+          id: 'В',
+          text: 'Количественный показатель, используемый для оценки успеха или производительности бизнес-процесса'
+        },
+        { id: 'Г', text: 'Конкретное событие, которое запускает бизнес-процесс или влияет на него' }
+      ],
+      correctAnswer: { 1: 'А', 2: 'Г', 3: 'Б', 4: 'В' }
+    },
+    {
+      id: 160,
+      type: 'matching',
+      text: 'Соотнесите понятия моделирование бизнес-процессов с их содержанием',
+      matchItems: [
+        { id: '1', text: 'Моделирование процесса' },
+        { id: '2', text: 'Диаграмма «дорожки»' },
+        { id: '3', text: 'Подпроцесс' },
+        { id: '4', text: 'Системная интеграция' }
+      ],
+      matchTargets: [
+        {
+          id: 'А',
+          text: 'Создание графических представлений или диаграмм для иллюстрации этапов и хода бизнес-процесса'
+        },
+        {
+          id: 'Б',
+          text: 'Процесс подключения и интеграции различного программного обеспечения в бизнес-процесс для оптимизации операций'
+        },
+        { id: 'В', text: 'Меньший, автономный процесс в рамках более крупного бизнес-процесса' },
+        {
+          id: 'Г',
+          text: 'Вариант диаграммы процесса, которая распределяет действия и участников по горизонтальным или вертикальным полосам'
+        }
+      ],
+      correctAnswer: { 1: 'А', 2: 'Г', 3: 'В', 4: 'Б' }
+    },
+    {
+      id: 161,
+      type: 'matching',
+      text: 'Установите соответствие между понятиями развитие персонала в проектной деятельности с их характеристиками',
+      matchItems: [
+        { id: '1', text: 'Competence Group Manager (CGM)' },
+        { id: '2', text: 'Таймлайн (Timeline)' },
+        { id: '3', text: 'Грейдинг (Grading)' },
+        { id: '4', text: 'Training and development (T&D)' }
+      ],
+      matchTargets: [
+        {
+          id: 'А',
+          text: 'Распределение должностей, имеющих примерно одинаковую важность для компании, при этом функционал их может быть совершенно разным'
+        },
+        { id: 'Б', text: 'Менеджер, отвечающий за развитие конкретной компетенции' },
+        { id: 'В', text: 'Подразделение компании, специально выделенное для обучения персонала' },
+        {
+          id: 'Г',
+          text: 'Временная шкала, визуальное представление каких-либо событий, явлений в хронологическом порядке'
+        }
+      ],
+      correctAnswer: { 1: 'Б', 2: 'Г', 3: 'А', 4: 'В' }
+    },
+    {
+      id: 162,
+      type: 'matching',
+      text: 'Установите соответствие основных функций управления командой с их спецификой деятельности',
+      matchItems: [
+        { id: '1', text: 'Формирование группы' },
+        { id: '2', text: 'Использование членов группы' },
+        { id: '3', text: 'Вознаграждение членов группы' },
+        { id: '4', text: 'Развитие сотрудников в рамках группы' }
+      ],
+      matchTargets: [
+        {
+          id: 'А',
+          text: 'Способ активизации потенциала членов группы путем создания и развития организационных программ стимулирования эффективности, способствующих достижению бизнес-целей'
+        },
+        {
+          id: 'Б',
+          text: 'Совокупность действий, направленных на укомплектованность рабочей группы квалифицированными, мотивированными и лояльными работниками'
+        },
+        {
+          id: 'В',
+          text: 'Целеориентированный процесс преобразования позиции организации путем достижения компромисса между личными потребностями члена группы в саморазвитии и интересов организации'
+        },
+        {
+          id: 'Г',
+          text: 'Совокупность действий, направленных на создание условий для реализации каждым членом группы своих потенциальных возможностей (способностей)'
+        }
+      ],
+      correctAnswer: { 1: 'Б', 2: 'Г', 3: 'А', 4: 'В' }
+    },
+    {
+      id: 163,
+      type: 'matching',
+      text: 'Установите соответствие общесистемных принципов управления работой в процессе реализации проекта с их описанием',
+      matchItems: [
+        { id: '1', text: 'Функциональность' },
+        { id: '2', text: 'Иерархичность' },
+        { id: '3', text: 'Организованность' },
+        { id: '4', text: 'Интегративность' }
+      ],
+      matchTargets: [
+        {
+          id: 'А',
+          text: 'Система может быть рассмотрена как элемент системы более высокого порядка, а каждый ее элемент, в свою очередь, является системой'
+        },
+        {
+          id: 'Б',
+          text: 'Элементы (части) системы имеют связи друг с другом, взаимосвязаны и взаимодействуют определенным образом, организованы в пространстве и времени'
+        },
+        { id: 'В', text: 'Принципиальная несводимость свойств системы к сумме свойств составляющих ее элементов' },
+        {
+          id: 'Г',
+          text: 'Создание системы обусловлено объективной необходимостью, она существует для выполнения определенной функции в среде'
+        }
+      ],
+      correctAnswer: { 1: 'Г', 2: 'А', 3: 'Б', 4: 'В' }
+    },
+    {
+      id: 164,
+      type: 'matching',
+      text: 'Соотнесите понятия контроля выполнения работ по проекту с их содержанием',
+      matchItems: [
+        { id: '1', text: 'Контроль рисков' },
+        { id: '2', text: 'Контроль изменений' },
+        { id: '3', text: 'Контроль коммуникации' },
+        { id: '4', text: 'Контроль ресурсов' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'Оценка запросов на изменения, определение их влияния и внедрение утвержденных изменений' },
+        { id: 'Б', text: 'Управление информационными потоками, решение любых коммуникационных проблем' },
+        {
+          id: 'В',
+          text: 'Выявление, оценка и управление негативными последствиями на протяжении всего жизненного цикла проекта с целью минимизировать их потенциальное негативное воздействие'
+        },
+        { id: 'Г', text: 'Управление и оптимизацию ресурсов проекта, включая персонал, оборудование и материалы' }
+      ],
+      correctAnswer: { 1: 'В', 2: 'А', 3: 'Б', 4: 'Г' }
+    },
+    {
+      id: 165,
+      type: 'matching',
+      text: 'Сопоставьте уровни оценки эффективности обучения и развития менеджеров ИТ-проектов Д. Кирпатрика с содержанием оценки',
+      matchItems: [
+        { id: '1', text: 'Reaction' },
+        { id: '2', text: 'Learning' },
+        { id: '3', text: 'Behavior' },
+        { id: '4', text: 'Results' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'Изменение установок, улучшение знаний и совершенствование навыков участников' },
+        { id: 'Б', text: 'Влияние на результаты бизнеса' },
+        { id: 'В', text: 'Реакция обучаемых' },
+        { id: 'Г', text: 'Изменение поведения участников на рабочем месте' }
+      ],
+      correctAnswer: { 1: 'В', 2: 'А', 3: 'Г', 4: 'Б' }
+    },
+    {
+      id: 166,
+      type: 'matching',
+      text: 'Соотнесите понятия контроля выполнения работ по проекту с их содержанием',
+      matchItems: [
+        { id: '1', text: 'Контроль выполнения проекта' },
+        { id: '2', text: 'Контроль содержания' },
+        { id: '3', text: 'Контроль расписания' },
+        { id: '4', text: 'Контроль затрат' }
+      ],
+      matchTargets: [
+        {
+          id: 'А',
+          text: 'Управление и контроль изменений содержания проекта, включая дополнения целей или требований проекта'
+        },
+        { id: 'Б', text: 'Процесс мониторинга и управления ходом проекта' },
+        { id: 'В', text: 'Мониторинг и управление бюджетом проекта' },
+        { id: 'Г', text: 'Отслеживание и управление графиком проекта' }
+      ],
+      correctAnswer: { 1: 'Б', 2: 'А', 3: 'Г', 4: 'В' }
+    },
+    {
+      id: 167,
+      type: 'matching',
+      text: 'Соотнесите понятия управление жизненным циклом ИТ-инфраструктуры с их содержанием',
+      matchItems: [
+        { id: '1', text: 'Виртуализация' },
+        { id: '2', text: 'Централизованное управление' },
+        { id: '3', text: 'Облачные технологии' },
+        { id: '4', text: 'Стандартизация' }
+      ],
+      matchTargets: [
+        {
+          id: 'А',
+          text: 'Технологии, позволяющие предоставлять доступ к вычислительным ресурсам и сервисам через интернет'
+        },
+        { id: 'Б', text: 'Технология, позволяющая создавать виртуальные экземпляры аппаратных ресурсов' },
+        {
+          id: 'В',
+          text: 'Процесс установления общих стандартов и правил для компонентов ИТ-инфраструктуры с целью повышения совместимости и упрощения управления'
+        },
+        {
+          id: 'Г',
+          text: 'Подход к управлению ИТ-инфраструктурой, при котором все ресурсы контролируются и управляются из центрального места'
+        }
+      ],
+      correctAnswer: { 1: 'Б', 2: 'Г', 3: 'А', 4: 'В' }
+    },
+    {
+      id: 168,
+      type: 'matching',
+      text: 'Установите соответствие определений с понятиями программного обеспечения, применяемого при ведении проекта',
+      matchItems: [
+        { id: '1', text: 'Программное обеспечение для управления проектами' },
+        { id: '2', text: 'Контроль версий' },
+        { id: '3', text: 'Отслеживание ошибок' },
+        { id: '4', text: 'Интегрированная среда разработки (IDE)' }
+      ],
+      matchTargets: [
+        {
+          id: 'А',
+          text: 'Программное обеспечение, используемое для записи, составления отчетов и отслеживания дефектов программного обеспечения или проблем'
+        },
+        {
+          id: 'Б',
+          text: 'Программное приложение, предоставляющее полный набор инструментов и функций для написания, редактирования, отладки и тестирования кода в единой среде разработки'
+        },
+        { id: 'В', text: 'Практика управления и отслеживания изменений в программном коде' },
+        { id: 'Г', text: 'Инструменты, используемые для планирования, организации и отслеживания деятельности проекта' }
+      ],
+      correctAnswer: { 1: 'Г', 2: 'В', 3: 'А', 4: 'Б' }
+    },
+    {
+      id: 169,
+      type: 'matching',
+      text: 'Соотнесите понятия управление жизненным циклом ИТ-инфраструктуры с их содержанием',
+      matchItems: [
+        { id: '1', text: 'Управление жизненным циклом ИТ-инфраструктуры' },
+        { id: '2', text: 'Планирование жизненного цикла' },
+        { id: '3', text: 'Развертывание' },
+        { id: '4', text: 'Управление' }
+      ],
+      matchTargets: [
+        {
+          id: 'А',
+          text: 'Процесс определения целей, потребностей и требований к ИТ-инфраструктуре предприятия на основе бизнес-стратегии и ожиданий пользователей'
+        },
+        {
+          id: 'Б',
+          text: 'Этап жизненного цикла, включающий приобретение, установку и настройку новых компонентов ИТ-инфраструктуры'
+        },
+        {
+          id: 'В',
+          text: 'Стратегический подход к планированию, развертыванию, управлению и обновлению всех компонентов ИТ-инфраструктуры организации'
+        },
+        {
+          id: 'Г',
+          text: 'Процесс контроля, мониторинга и обслуживания ИТ-инфраструктуры предприятия, включая резервное копирование, обновления и обеспечение безопасности'
+        }
+      ],
+      correctAnswer: { 1: 'В', 2: 'А', 3: 'Б', 4: 'Г' }
+    },
+    {
+      id: 170,
+      type: 'matching',
+      text: 'Соотнесите понятия управление жизненным циклом ИТ-инфраструктуры с их содержанием',
+      matchItems: [
+        { id: '1', text: 'Обновление' },
+        { id: '2', text: 'ИТ-инфраструктура предприятия' },
+        { id: '3', text: 'Жизненный цикл ИТ-системы' },
+        { id: '4', text: 'Техническое обслуживание' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'Процесс поддержки и обслуживания аппаратных и программных компонентов ИТ-инфраструктуры' },
+        {
+          id: 'Б',
+          text: 'Этап жизненного цикла, включающий в себя модернизацию и замену устаревших компонентов ИТ-инфраструктуры'
+        },
+        {
+          id: 'В',
+          text: 'Совокупность аппаратных, программных, коммуникационных и сетевых ресурсов, необходимых для функционирования информационных систем'
+        },
+        {
+          id: 'Г',
+          text: 'Последовательность этапов, через которые проходит информационная система, начиная от ее создания и внедрения до вывода из эксплуатации'
+        }
+      ],
+      correctAnswer: { 1: 'Б', 2: 'В', 3: 'Г', 4: 'А' }
+    },
+    {
+      id: 171,
+      type: 'open',
+      text: 'Каков первый шаг в управлении исследованием новых рынков ИТ-продуктов?',
+      correctAnswer: 'Определение целей исследования новых рынков'
+    },
+    {
+      id: 172,
+      type: 'open',
+      text: 'Какой метод предполагает сбор информации о потенциальных клиентах непосредственно из источника?',
+      correctAnswer: 'Опросы'
+    },
+    {
+      id: 173,
+      type: 'open',
+      text: 'Какова основная цель проведения анализа и исследования рынка ИТ-продукта?',
+      correctAnswer: 'Определение рыночных тенденций и определение потребностей клиентов'
+    },
+    {
+      id: 174,
+      type: 'open',
+      text: 'На чем следует сосредоточить внимание при анализе конкурентов при проведении исследования новых рынков ИТ-продуктов?',
+      correctAnswer: 'Оценка предложений продуктов конкурентов'
+    },
+    {
+      id: 175,
+      type: 'open',
+      text: 'Этап разработки подробных планов, включая определение объема проекта, создание иерархической структуры работ, оценку ресурсов и времени?',
+      correctAnswer: 'Планирование'
+    },
+    {
+      id: 176,
+      type: 'open',
+      text: 'Что определяет метод критического пути (CPM)?',
+      correctAnswer:
+        'Самую длинную последовательность зависимых действий и определяет минимальную продолжительность проекта'
+    },
+    {
+      id: 177,
+      type: 'open',
+      text: 'Какой подход предполагает партнерство с местными предприятиями или организациями для получения информации о новых рынках ИТ-продуктов?',
+      correctAnswer: 'Стратегические альянсы'
+    },
+    {
+      id: 178,
+      type: 'open',
+      text: 'Какова цель сегментации рынка ИТ-продуктов при исследовании новых рынков?',
+      correctAnswer: 'Определение конкретных целевых групп клиентов'
+    },
+    {
+      id: 179,
+      type: 'open',
+      text: 'Какой фактор имеет решающее значение в управлении исследованиями новых рынков для успешного выхода на них?',
+      correctAnswer: 'Постоянный мониторинг и оценка'
+    },
+    {
+      id: 180,
+      type: 'open',
+      text: 'Этап, на котором план проекта приводится в действие, выполняются задачи?',
+      correctAnswer: 'Реализация'
+    }
+  ],
+  title: 'Безопасность операционных систем и баз данных',
+  questions: [
+    {
+      id: 181,
+      type: 'single',
+      text: 'Как в 2026 году наиболее полно определяется безопасность операционной системы в условиях гибридных инфраструктур?',
+      options: [
+        { id: 'А', text: 'Только антивирусная защита ядра' },
+        { id: 'Б', text: 'Установка патчей раз в месяц' },
+        {
+          id: 'В',
+          text: 'Комплексная защита: изоляция процессов, контроль целостности, аппаратное доверие, мониторинг поведения'
+        },
+        { id: 'Г', text: 'Только шифрование диска' }
+      ],
+      correctAnswer: 'В'
+    },
+    {
+      id: 182,
+      type: 'single',
+      text: 'Какие три базовых принципа ИБ остаются фундаментальными для защиты ОС в эпоху AI и облаков?',
+      options: [
+        { id: 'А', text: 'Шифрование, аутентификация, логирование' },
+        { id: 'Б', text: 'EDR, SIEM, SOAR' },
+        { id: 'В', text: 'Политики, процедуры, KPI' },
+        { id: 'Г', text: 'Конфиденциальность, целостность, доступность (CIA)' }
+      ],
+      correctAnswer: 'Г'
+    },
+    {
+      id: 183,
+      type: 'single',
+      text: 'Что означает целостность ОС в контексте защиты от rootkit и fileless-атак в 2026?',
+      options: [
+        { id: 'А', text: 'Регулярное резервное копирование' },
+        { id: 'Б', text: 'Контроль целостности ядра, драйверов и системных вызовов через TPM и измеримую загрузку' },
+        { id: 'В', text: 'Только антивирусное сканирование' },
+        { id: 'Г', text: 'Запрет на установку стороннего ПО' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 184,
+      type: 'single',
+      text: 'Как обеспечивается безопасная загрузка (Secure Boot) в современных ОС с учётом угроз 2026?',
+      options: [
+        { id: 'А', text: 'Только пароль на BIOS' },
+        { id: 'Б', text: 'Цепочка доверия от UEFI до ядра с верификацией подписей и измерением компонентов' },
+        { id: 'В', text: 'Отключение всех внешних устройств' },
+        { id: 'Г', text: 'Использование только отечественного ПО' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 185,
+      type: 'single',
+      text: 'Что подразумевает защита памяти в ОС 2026 для предотвращения эксплойтов типа ROP/JOP?',
+      options: [
+        { id: 'А', text: 'Только DEP/NX-bit' },
+        {
+          id: 'Б',
+          text: 'ASLR + CFG + CET + изоляция кучи/стека + использование memory-safe языков в критических компонентах'
+        },
+        { id: 'В', text: 'Увеличение объёма RAM' },
+        { id: 'Г', text: 'Запрет на выполнение кода в пользовательском пространстве' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 186,
+      type: 'single',
+      text: 'Какой механизм ОС критичен для защиты от эскалации привилегий через уязвимости ядра?',
+      options: [
+        { id: 'А', text: 'Брандмауэр Windows' },
+        { id: 'Б', text: 'Mandatory Access Control (SELinux/AppArmor/SMACK) + sandboxing процессов' },
+        { id: 'В', text: 'Антивирус в реальном времени' },
+        { id: 'Г', text: 'Регулярная дефрагментация' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 187,
+      type: 'single',
+      text: 'Какова главная цель применения Confidential Computing в ОС 2026?',
+      options: [
+        { id: 'А', text: 'Ускорение работы приложений' },
+        { id: 'Б', text: 'Защита данных в использовании (in-use) через аппаратные анклавы (SGX/SEV/TDX)' },
+        { id: 'В', text: 'Снижение потребления энергии' },
+        { id: 'Г', text: 'Упрощение администрирования' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 188,
+      type: 'single',
+      text: 'Какой аспект безопасности ОС обеспечивает устойчивость к компрометации учётных записей с высокими привилегиями?',
+      options: [
+        { id: 'А', text: 'Сложные пароли' },
+        { id: 'Б', text: 'LAPS + PAM-модули + JIT-привилегии + аудит сессий' },
+        { id: 'В', text: 'Запрет на удалённый вход' },
+        { id: 'Г', text: 'Только двухфакторная аутентификация' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 189,
+      type: 'single',
+      text: 'В чём ключевой риск использования неподписанных драйверов в ОС 2026?',
+      options: [
+        { id: 'А', text: 'Замедление загрузки' },
+        { id: 'Б', text: 'Возможность обхода механизмов защиты ядра и установки rootkit' },
+        { id: 'В', text: 'Несовместимость с облачными сервисами' },
+        { id: 'Г', text: 'Увеличение потребления трафика' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 190,
+      type: 'single',
+      text: 'Какой метод защиты данных на уровне ОС остаётся наиболее эффективным против физического доступа к устройству?',
+      options: [
+        { id: 'А', text: 'Пароль на вход' },
+        {
+          id: 'Б',
+          text: 'Полнодисковое шифрование (LUKS/BitLocker) с привязкой к TPM и предзагрузочной аутентификацией'
+        },
+        { id: 'В', text: 'Скрытие разделов' },
+        { id: 'Г', text: 'Только биометрия' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 191,
+      type: 'single',
+      text: 'Как обеспечивается изоляция контейнеров от хост-ОС в 2026?',
+      options: [
+        { id: 'А', text: 'Только namespaces' },
+        {
+          id: 'Б',
+          text: 'Namespaces + cgroups + seccomp + AppArmor/SELinux + gVisor/Kata Containers для повышенной изоляции'
+        },
+        { id: 'В', text: 'Запуск от root' },
+        { id: 'Г', text: 'Отключение сети' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 192,
+      type: 'single',
+      text: 'Что является базовым элементом защиты периметра на уровне ОС при исчезновении классического сетевого периметра?',
+      options: [
+        { id: 'А', text: 'Физическая охрана сервера' },
+        { id: 'Б', text: 'Host-based firewall + eBPF-фильтрация + микросегментация на уровне процессов' },
+        { id: 'В', text: 'Запрет на использование Wi-Fi' },
+        { id: 'Г', text: 'Только антивирус' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 193,
+      type: 'single',
+      text: 'Какой компонент ОС является ключевым для контроля доступа в Zero Trust-модели на уровне хоста?',
+      options: [
+        { id: 'А', text: 'Локальный файрвол' },
+        { id: 'Б', text: 'Identity-aware PAM + контекстная авторизация + непрерывная аттестация состояния хоста' },
+        { id: 'В', text: 'DNS-фильтрация' },
+        { id: 'Г', text: 'Антивирус на шлюзе' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 194,
+      type: 'single',
+      text: 'Какая технология ОС наиболее эффективна для предотвращения утечек через неавторизованные процессы?',
+      options: [
+        { id: 'А', text: 'Запрет на копирование файлов' },
+        { id: 'Б', text: 'DLP-агент на уровне ядра + контроль буфера обмена + маркировка данных через LSM' },
+        { id: 'В', text: 'Блокировка USB' },
+        { id: 'Г', text: 'Только шифрование' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 195,
+      type: 'single',
+      text: 'Какая современная угроза наиболее актуальна для ядра ОС в 2026?',
+      options: [
+        { id: 'А', text: 'Только переполнение буфера' },
+        {
+          id: 'Б',
+          text: 'Supply chain-атаки на компоненты ядра + AI-генерируемые эксплойты + уязвимости в eBPF-программах'
+        },
+        { id: 'В', text: 'Только фишинг' },
+        { id: 'Г', text: 'Физическая кража' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 196,
+      type: 'single',
+      text: 'Какой механизм ОС обеспечивает верификацию целостности системных файлов и конфигураций?',
+      options: [
+        { id: 'А', text: 'Регулярное резервное копирование' },
+        { id: 'Б', text: 'IMA/EVM + dm-verity + подписанные обновления через OSTree' },
+        { id: 'В', text: 'Ручная проверка администратором' },
+        { id: 'Г', text: 'Только контрольные суммы' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 197,
+      type: 'single',
+      text: 'Какая практика повышает устойчивость ОС к zero-day уязвимостям в 2026?',
+      options: [
+        { id: 'А', text: 'Использование только сертифицированного ПО' },
+        { id: 'Б', text: 'Hardening по CIS/STIG + минимизация attack surface + runtime protection (EDR) + sandboxing' },
+        { id: 'В', text: 'Только установка патчей' },
+        { id: 'Г', text: 'Ежегодный аудит' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 198,
+      type: 'single',
+      text: 'Какой тип атак на уровне ОС доминирует в ландшафте угроз 2026?',
+      options: [
+        { id: 'А', text: 'Только брутфорс паролей' },
+        {
+          id: 'Б',
+          text: 'Атаки на цепочки поставок ПО + компрометация CI/CD + эксплуатация уязвимостей в механизмах виртуализации'
+        },
+        { id: 'В', text: 'Только SQL-инъекции' },
+        { id: 'Г', text: 'Физическое проникновение' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 199,
+      type: 'single',
+      text: 'Какой инструмент критичен для проактивного анализа безопасности на уровне ОС в 2026?',
+      options: [
+        { id: 'А', text: 'Только антивирусы' },
+        { id: 'Б', text: 'EDR/XDR с телеметрией ядра + поведенческий анализ через eBPF + AI-детекция аномалий' },
+        { id: 'В', text: 'Ручной анализ логов' },
+        { id: 'Г', text: 'Только сканеры уязвимостей' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 200,
+      type: 'single',
+      text: 'Какой метод наиболее эффективен для предотвращения несанкционированного доступа к сессиям в ОС?',
+      options: [
+        { id: 'А', text: 'Ежемесячная смена паролей' },
+        { id: 'Б', text: 'Credential Guard + LSA isolation + WebAuthn + адаптивная MFA на уровне PAM' },
+        { id: 'В', text: 'Запрет на удалённую работу' },
+        { id: 'Г', text: 'Только сложные пароли' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 201,
+      type: 'single',
+      text: 'Какая категория инсайдеров представляет наибольший риск для безопасности ОС в 2026?',
+      options: [
+        { id: 'А', text: 'Только стажёры' },
+        {
+          id: 'Б',
+          text: 'Учётные записи с избыточными привилегиями + скомпрометированные сервисные аккаунты + злонамеренные администраторы'
+        },
+        { id: 'В', text: 'Только бывшие сотрудники' },
+        { id: 'Г', text: 'Только недовольные сотрудники' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 202,
+      type: 'single',
+      text: 'Какая мера защиты от вредоносного ПО актуальна в эпоху fileless-атак на уровне ОС?',
+      options: [
+        { id: 'А', text: 'Только брандмауэры' },
+        { id: 'Б', text: 'AMSI + ETW-мониторинг + поведенческий анализ PowerShell/WMI + блокировка LOLBins' },
+        { id: 'В', text: 'Запрет на загрузку файлов' },
+        { id: 'Г', text: 'Только сигнатурные антивирусы' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 203,
+      type: 'single',
+      text: 'Какая стратегия предотвращает утечки через системные журналы и телеметрию ОС?',
+      options: [
+        { id: 'А', text: 'Только отключение логирования' },
+        {
+          id: 'Б',
+          text: 'Централизованный сбор логов с шифрованием + маскирование PII + контроль доступа к audit-подсистеме'
+        },
+        { id: 'В', text: 'Запрет на облака' },
+        { id: 'Г', text: 'Только блокировка внешних сервисов' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 204,
+      type: 'single',
+      text: 'Какая организационная мера наиболее эффективна для формирования культуры безопасности администрирования ОС?',
+      options: [
+        { id: 'А', text: 'Штрафы за нарушения' },
+        { id: 'Б', text: 'Непрерывное микрообучение + симуляции атак на ОС + геймификация hardening-практик' },
+        { id: 'В', text: 'Только подписание NDA' },
+        { id: 'Г', text: 'Ежегодные лекции' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 205,
+      type: 'single',
+      text: 'Какая технология защищает межпроцессное взаимодействие (IPC) в ОС 2026?',
+      options: [
+        { id: 'А', text: 'Только права доступа к файлам' },
+        { id: 'Б', text: 'Mandatory IPC control + sandboxing + верификация источников сообщений через capabilities' },
+        { id: 'В', text: 'Только VPN' },
+        { id: 'Г', text: 'Только SSL/TLS' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 206,
+      type: 'single',
+      text: 'Какой шаг входит в современный процесс реагирования на инциденты на уровне ОС?',
+      options: [
+        { id: 'А', text: 'Только отключение заражённых систем' },
+        {
+          id: 'Б',
+          text: 'Автоматизированная изоляция процесса + сбор форензики через Volatility/eBPF + сохранение памяти для анализа'
+        },
+        { id: 'В', text: 'Только уведомление руководства' },
+        { id: 'Г', text: 'Только восстановление из бэкапа' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 207,
+      type: 'single',
+      text: 'Какова основная цель требований ФСТЭК к защите ОС в РФ к 2026?',
+      options: [
+        { id: 'А', text: 'Упрощение требований для малого бизнеса' },
+        { id: 'Б', text: 'Полный запрет на иностранные ОС' },
+        { id: 'В', text: 'Унификация с международными стандартами любой ценой' },
+        { id: 'Г', text: 'Баланс между суверенитетом, защитой от уязвимостей и поддержкой современных архитектур' }
+      ],
+      correctAnswer: 'Г'
+    },
+    {
+      id: 208,
+      type: 'single',
+      text: 'Кто несёт персональную ответственность за безопасность конфигурации ОС в организации?',
+      options: [
+        { id: 'А', text: 'Внешние аудиторы' },
+        { id: 'Б', text: 'Только системные администраторы' },
+        { id: 'В', text: 'Владелец актива + CISO + ответственный за эксплуатацию с чётким разделением обязанностей' },
+        { id: 'Г', text: 'Только CISO' }
+      ],
+      correctAnswer: 'В'
+    },
+    {
+      id: 209,
+      type: 'single',
+      text: 'Что включает compliance с требованиями по защите ОС в 2026?',
+      options: [
+        { id: 'А', text: 'Только использование сертифицированных СКЗИ' },
+        { id: 'Б', text: 'Только ежегодный отчёт' },
+        {
+          id: 'В',
+          text: 'Непрерывный мониторинг конфигураций + автоматизированная проверка hardening + сбор доказательств через SCM'
+        },
+        { id: 'Г', text: 'Только формальное соответствие' }
+      ],
+      correctAnswer: 'В'
+    },
+    {
+      id: 210,
+      type: 'single',
+      text: 'Как изменилась роль регуляторов в части требований к ОС в 2026?',
+      options: [
+        { id: 'А', text: 'Только реагирование на инциденты' },
+        { id: 'Б', text: 'Только лицензирование' },
+        { id: 'В', text: 'Только контроль и штрафы' },
+        {
+          id: 'Г',
+          text: 'Проактивное взаимодействие + риск-ориентированный надзор + регуляторные sandbox для тестирования защищённых ОС'
+        }
+      ],
+      correctAnswer: 'Г'
+    },
+    {
+      id: 211,
+      type: 'multiple',
+      text: 'Какие KPI используются для оценки системы защиты ОС?',
+      options: [
+        { id: 'А', text: '% хостов с актуальным hardening-конфигурациям' },
+        { id: 'Б', text: 'Среднее время устранения уязвимостей критического уровня' },
+        { id: 'В', text: 'Уровень удовлетворенности клиентов' },
+        { id: 'Г', text: 'Число проведенных совещаний' }
+      ],
+      correctAnswer: ['А', 'Б']
+    },
+    {
+      id: 212,
+      type: 'multiple',
+      text: 'Какие меры обеспечивают отказоустойчивость ОС при форс-мажорных обстоятельствах?',
+      options: [
+        { id: 'А', text: 'Резервное копирование конфигураций и состояний' },
+        { id: 'Б', text: 'Кластеризация + автоматический failover на уровне гипервизора/оркестратора' },
+        { id: 'В', text: 'Архивное хранение логов' },
+        { id: 'Г', text: 'Экспорт данных в другие форматы' }
+      ],
+      correctAnswer: ['А', 'Б']
+    },
+    {
+      id: 213,
+      type: 'multiple',
+      text: 'Какие меры применяются для защиты от угроз внутренней безопасности на уровне ОС?',
+      options: [
+        { id: 'А', text: 'Разграничение прав через sudo/PAM + mandatory access control' },
+        { id: 'Б', text: 'Аудит действий привилегированных пользователей + UEBA для детекции аномалий' },
+        { id: 'В', text: 'Использование облачных хранилищ' },
+        { id: 'Г', text: 'Постоянный контроль качества работы оборудования' }
+      ],
+      correctAnswer: ['А', 'Б']
+    },
+    {
+      id: 214,
+      type: 'multiple',
+      text: 'Какие современные технологии используют для обеспечения безопасности в IoT-ОС?',
+      options: [
+        { id: 'А', text: 'Минималистичное ядро + верификация обновлений' },
+        { id: 'Б', text: 'Secure boot + TPM + регулярное OTA-обновление с подписью' },
+        { id: 'В', text: 'Отключение устройств от интернета' },
+        { id: 'Г', text: 'Уникальные идентификаторы устройств + аттестация состояния' }
+      ],
+      correctAnswer: ['А', 'Б', 'Г']
+    },
+    {
+      id: 215,
+      type: 'multiple',
+      text: 'Какие процессы включают эксплуатацию защищённой ОС?',
+      options: [
+        { id: 'А', text: 'Непрерывный мониторинг целостности и конфигураций' },
+        { id: 'Б', text: 'Автоматизированная реакция на инциденты (SOAR) на уровне хоста' },
+        { id: 'В', text: 'Установка новых программ без контроля' },
+        { id: 'Г', text: 'Продажа устаревшего оборудования' }
+      ],
+      correctAnswer: ['А', 'Б']
+    },
+    {
+      id: 216,
+      type: 'multiple',
+      text: 'Какие компоненты включены в типичную модель многорубежной защиты ОС?',
+      options: [
+        { id: 'А', text: 'Физическая защита (TPM, secure boot)' },
+        { id: 'Б', text: 'Технические средства (LSM, firewall, EDR)' },
+        { id: 'В', text: 'Организационные меры (политики, аудит, разделение обязанностей)' },
+        { id: 'Г', text: 'Обучение пользователей правилам этикета' }
+      ],
+      correctAnswer: ['А', 'Б', 'В']
+    },
+    {
+      id: 217,
+      type: 'multiple',
+      text: 'Какие меры принимаются для защиты данных в процессе их передачи на уровне ОС?',
+      options: [
+        { id: 'А', text: 'Шифрование на уровне socket/TLS' },
+        { id: 'Б', text: 'VPN на уровне ядра (WireGuard/IPsec) + контроль маршрутизации' },
+        { id: 'В', text: 'Использование публичных каналов связи без шифрования' },
+        { id: 'Г', text: 'Отправка данных через почтовые сервисы' }
+      ],
+      correctAnswer: ['А', 'Б']
+    },
+    {
+      id: 218,
+      type: 'multiple',
+      text: 'Какие угрозы могут исходить изнутри организации на уровне ОС?',
+      options: [
+        { id: 'А', text: 'Злоупотребление правами root/sudo' },
+        { id: 'Б', text: 'Несанкционированный доступ к /etc/shadow, ключам, журналам' },
+        { id: 'В', text: 'Конкуренция между отделами' },
+        { id: 'Г', text: 'Непродуманная политика увольнений' }
+      ],
+      correctAnswer: ['А', 'Б']
+    },
+    {
+      id: 219,
+      type: 'multiple',
+      text: 'Какие преимущества даёт разработка политик безопасности ОС?',
+      options: [
+        { id: 'А', text: 'Повышение осведомлённости администраторов' },
+        { id: 'Б', text: 'Соответствие требованиям ФСТЭК/ФСБ' },
+        { id: 'В', text: 'Экономия на закупке оборудования' },
+        { id: 'Г', text: 'Снижение количества инцидентов за счёт стандартизации hardening' }
+      ],
+      correctAnswer: ['А', 'Б', 'Г']
+    },
+    {
+      id: 220,
+      type: 'multiple',
+      text: 'Какие угрозы безопасности ОС особенно актуальны для облачных виртуальных машин?',
+      options: [
+        { id: 'А', text: 'Атаки на гипервизор (VM escape)' },
+        { id: 'Б', text: 'Misconfiguration security groups и IAM-ролей ВМ' },
+        { id: 'В', text: 'Уязвимости в cloud-init и metadata-сервисах' },
+        { id: 'Г', text: 'Проблемы с электропитанием' }
+      ],
+      correctAnswer: ['А', 'Б', 'В']
+    },
+    {
+      id: 221,
+      type: 'multiple',
+      text: 'Какие данные на уровне ОС подлежат обязательной защите в соответствии с законодательством?',
+      options: [
+        { id: 'А', text: 'Персональные данные в логах и журналах' },
+        { id: 'Б', text: 'Ключи шифрования и сертификаты в хранилищах ОС' },
+        { id: 'В', text: 'Данные медицинских обследований в файловых системах' },
+        { id: 'Г', text: 'История посещений сайта организацией' }
+      ],
+      correctAnswer: ['А', 'Б', 'В']
+    },
+    {
+      id: 222,
+      type: 'multiple',
+      text: 'Какие меры предосторожности принимаются для защиты конфиденциальной информации на уровне ОС?',
+      options: [
+        { id: 'А', text: 'Ограничение доступа через DAC/MAC' },
+        { id: 'Б', text: 'Мониторинг доступа к чувствительным файлам через auditd/ETW' },
+        { id: 'В', text: 'Удаленное уничтожение данных' },
+        { id: 'Г', text: 'Разделение обязанностей (sudoers, RBAC)' }
+      ],
+      correctAnswer: ['А', 'Б', 'Г']
+    },
+    {
+      id: 223,
+      type: 'multiple',
+      text: 'Какие процессы необходимы для поддержания безопасности ОС?',
+      options: [
+        { id: 'А', text: 'Регулярное обновление ядра и пакетов' },
+        { id: 'Б', text: 'Проведение аудитов конфигураций (CIS benchmarks)' },
+        { id: 'В', text: 'Резервное копирование критических конфигураций и состояний' },
+        { id: 'Г', text: 'Ежегодное планирование бюджета на ИТ' }
+      ],
+      correctAnswer: ['А', 'Б', 'В']
+    },
+    {
+      id: 224,
+      type: 'multiple',
+      text: 'Какие проблемы могут возникнуть при несоблюдении правил безопасности ОС?',
+      options: [
+        { id: 'А', text: 'Потеря данных из-за ransomware' },
+        { id: 'Б', text: 'Нецелевое использование привилегий для эксфильтрации' },
+        { id: 'В', text: 'Повреждение оборудования' },
+        { id: 'Г', text: 'Увеличение затрат на восстановление после инцидентов' }
+      ],
+      correctAnswer: ['А', 'Б', 'Г']
+    },
+    {
+      id: 225,
+      type: 'multiple',
+      text: 'Какие действия предпринимает служба безопасности при инциденте на уровне ОС?',
+      options: [
+        { id: 'А', text: 'Сбор форензики: память, диски, журналы' },
+        { id: 'Б', text: 'Составление отчёта с цепочкой атаки (kill chain)' },
+        { id: 'В', text: 'Сообщение руководству и регулятору при необходимости' },
+        { id: 'Г', text: 'Проведение тренингов для сотрудников' }
+      ],
+      correctAnswer: ['А', 'Б', 'В']
+    },
+    {
+      id: 226,
+      type: 'multiple',
+      text: 'Какие типы политик безопасности могут существовать для ОС?',
+      options: [
+        { id: 'А', text: 'Политика управления привилегиями (sudo/PAM)' },
+        { id: 'Б', text: 'Политика обновления и патчинга' },
+        { id: 'В', text: 'Политика использования контейнеров и sandboxing' },
+        { id: 'Г', text: 'Политика уборки рабочего места' }
+      ],
+      correctAnswer: ['А', 'Б', 'В']
+    },
+    {
+      id: 227,
+      type: 'multiple',
+      text: 'Какие виды внутренних угроз актуальны для ОС?',
+      options: [
+        { id: 'А', text: 'Несанкционированный доступ к /root, /etc' },
+        { id: 'Б', text: 'Злоупотребление правами для установки backdoor' },
+        { id: 'В', text: 'Отключение электроэнергии' },
+        { id: 'Г', text: 'Природные катастрофы' }
+      ],
+      correctAnswer: ['А', 'Б']
+    },
+    {
+      id: 228,
+      type: 'multiple',
+      text: 'Какие меры применяются для защиты ОС от внешнего вмешательства?',
+      options: [
+        { id: 'А', text: 'Host-based firewall (nftables/iptables/Windows Firewall)' },
+        { id: 'Б', text: 'EDR с детекцией аномального поведения процессов' },
+        { id: 'В', text: 'Установка датчиков движения' },
+        { id: 'Г', text: 'Перевод данных на бумажные носители' }
+      ],
+      correctAnswer: ['А', 'Б']
+    },
+    {
+      id: 229,
+      type: 'multiple',
+      text: 'Какие средства несанкционированного доступа к видеоинформации могут использовать злоумышленники через ОС?',
+      options: [
+        { id: 'А', text: 'Вредоносное ПО для доступа к камере' },
+        { id: 'Б', text: 'Компрометация сервисов видеонаблюдения на хосте' },
+        { id: 'В', text: 'Гороскоп' },
+        { id: 'Г', text: 'Карточная игра' }
+      ],
+      correctAnswer: ['А', 'Б']
+    },
+    {
+      id: 230,
+      type: 'multiple',
+      text: 'Какие показатели используются для оценки эффективности защиты ОС?',
+      options: [
+        { id: 'А', text: 'Время обнаружения аномалий в ядре/процессах' },
+        { id: 'Б', text: 'Частота инцидентов, связанных с компрометацией хоста' },
+        { id: 'В', text: 'Готовность сотрудников к производственным соревнованиям' },
+        { id: 'Г', text: 'Количество наград компании' }
+      ],
+      correctAnswer: ['А', 'Б']
+    },
+    {
+      id: 231,
+      type: 'matching',
+      text: 'Установите соответствие между базовыми терминами ИБ и их определениями:',
+      matchItems: [
+        { id: '1', text: 'Киберустойчивость (Resilience)' },
+        { id: '2', text: 'Киберугроза (AI-driven)' },
+        { id: '3', text: 'Кибератака' },
+        { id: '4', text: 'Вредоносный код (Polymorphic)' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'Способность системы восстанавливаться и функционировать при атаках' },
+        { id: 'Б', text: 'Угроза, использующая нейросети для генерации фишинга или кода' },
+        { id: 'В', text: 'Реализованное действие по нарушению конфиденциальности, целостности или доступности' },
+        { id: 'Г', text: 'Код, автоматически изменяющий свою структуру для обхода сигнатур' }
+      ],
+      correctAnswer: { 1: 'А', 2: 'Б', 3: 'В', 4: 'Г' }
+    },
+    {
+      id: 232,
+      type: 'matching',
+      text: 'Установите соответствие между элементами управления и их назначением:',
+      matchItems: [
+        { id: '1', text: 'Стратегия ИБ' },
+        { id: '2', text: 'Реестр рисков' },
+        { id: '3', text: 'Киберинцидент' },
+        { id: '4', text: 'Модель угроз (Threat Modeling)' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'Документ, определяющий цели защиты и архитектуру безопасности' },
+        { id: 'Б', text: 'Динамический список рисков с оценкой вероятности и ущерба' },
+        { id: 'В', text: 'Событие, нарушающее политики безопасности или работу сервисов' },
+        { id: 'Г', text: 'Процесс выявления потенциальных векторов атак на этапе проектирования' }
+      ],
+      correctAnswer: { 1: 'А', 2: 'Б', 3: 'В', 4: 'Г' }
+    },
+    {
+      id: 233,
+      type: 'matching',
+      text: 'Установите соответствие между принципами защиты и требованиями:',
+      matchItems: [
+        { id: '1', text: 'Доступность (Availability)' },
+        { id: '2', text: 'Целостность (Integrity)' },
+        { id: '3', text: 'Конфиденциальность (Confidentiality)' },
+        { id: '4', text: 'Суверенитет данных' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'Гарантия точности и неизменности данных в ОС и БД' },
+        { id: 'Б', text: 'Гарантия доступа к сервисам 24/7 (SLA)' },
+        { id: 'В', text: 'Защита от несанкционированного доступа (в т.ч. AI-анализ)' },
+        { id: 'Г', text: 'Требование хранения данных в юрисдикции государства (152-ФЗ)' }
+      ],
+      correctAnswer: { 1: 'Б', 2: 'А', 3: 'В', 4: 'Г' }
+    },
+    {
+      id: 234,
+      type: 'matching',
+      text: 'Установите соответствие между технологиями защиты и их функциями:',
+      matchItems: [
+        { id: '1', text: 'EDR/XDR (Kernel level)' },
+        { id: '2', text: 'PQC (Post-Quantum Crypto)' },
+        { id: '3', text: 'NGFW (Next-Gen)' },
+        { id: '4', text: 'Immutable Backup' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'Мониторинг процессов на уровне ядра ОС для выявления угроз' },
+        { id: 'Б', text: 'Алгоритмы шифрования, устойчивые к квантовым вычислениям' },
+        { id: 'В', text: 'Межсетевой экран с анализом трафика L7 и поведенческим анализом' },
+        { id: 'Г', text: 'Резервная копия, защищенная от изменения (WORM)' }
+      ],
+      correctAnswer: { 1: 'А', 2: 'Б', 3: 'В', 4: 'Г' }
+    },
+    {
+      id: 235,
+      type: 'matching',
+      text: 'Установите соответствие между концепциями ИБ и их сутью:',
+      matchItems: [
+        { id: '1', text: 'Zero Trust' },
+        { id: '2', text: 'DevSecOps' },
+        { id: '3', text: 'Регуляторные требования (ФСТЭК/ЦБ)' },
+        { id: '4', text: 'Киберстрахование' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'Архитектура «Никому не доверяй, проверяй каждый запрос»' },
+        { id: 'Б', text: 'Встраивание проверок безопасности в CI/CD пайплайн' },
+        { id: 'В', text: 'Обязательные стандарты (КЗС, СЗИ) для банков' },
+        { id: 'Г', text: 'Финансовая защита от убытков после инцидента' }
+      ],
+      correctAnswer: { 1: 'А', 2: 'Б', 3: 'В', 4: 'Г' }
+    },
+    {
+      id: 236,
+      type: 'matching',
+      text: 'Установите соответствие между современными угрозами и их векторами:',
+      matchItems: [
+        { id: '1', text: 'Supply Chain Attack' },
+        { id: '2', text: 'Климатические риски ЦОД' },
+        { id: '3', text: 'Deepfake-инжиниринг' },
+        { id: '4', text: 'IoT-угрозы' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'Компрометация через обновления ПО сторонних вендоров' },
+        { id: 'Б', text: 'Риск отключения ЦОД из-за экстремальных погодных явлений' },
+        { id: 'В', text: 'Использование синтезированного голоса/видео для обмана' },
+        { id: 'Г', text: 'Взлом периферийных устройств (камеры, датчики) в сети' }
+      ],
+      correctAnswer: { 1: 'А', 2: 'Б', 3: 'В', 4: 'Г' }
+    },
+    {
+      id: 237,
+      type: 'matching',
+      text: 'Установите соответствие между типами атак и их методами:',
+      matchItems: [
+        { id: '1', text: 'DDoS (L7)' },
+        { id: '2', text: 'Ransomware (Double Extortion)' },
+        { id: '3', text: 'API Abuse' },
+        { id: '4', text: 'Shadow IT' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'Атака на уровень приложений для исчерпания ресурсов' },
+        { id: 'Б', text: 'Шифрование данных + угроза публикации украденного' },
+        { id: 'В', text: 'Эксплуатация уязвимостей в интерфейсах интеграции' },
+        { id: 'Г', text: 'Использование неутвержденных облачных сервисов сотрудниками' }
+      ],
+      correctAnswer: { 1: 'А', 2: 'Б', 3: 'В', 4: 'Г' }
+    },
+    {
+      id: 238,
+      type: 'matching',
+      text: 'Установите соответствие между уровнями и типами рисков:',
+      matchItems: [
+        { id: '1', text: 'Тактические угрозы' },
+        { id: '2', text: 'Стратегические угрозы' },
+        { id: '3', text: 'Операционные риски' },
+        { id: '4', text: 'Репутационные риски' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'Угрозы бизнес-модели в долгосрочной перспективе' },
+        { id: 'Б', text: 'Конкретные техники атак (TTPs) здесь и сейчас' },
+        { id: 'В', text: 'Риски сбоев в ежедневных процессах и ОС' },
+        { id: 'Г', text: 'Потеря доверия клиентов и партнеров' }
+      ],
+      correctAnswer: { 1: 'Б', 2: 'А', 3: 'В', 4: 'Г' }
+    },
+    {
+      id: 239,
+      type: 'matching',
+      text: 'Установите соответствие между специализированным вредоносным ПО и его действием:',
+      matchItems: [
+        { id: '1', text: 'Fileless Malware' },
+        { id: '2', text: 'Crypto Drainer' },
+        { id: '3', text: 'Ботнет' },
+        { id: '4', text: 'Zero-day Exploit' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'Код, исполняемый в оперативной памяти без записи на диск' },
+        { id: 'Б', text: 'Сеть зараженных устройств для атак' },
+        { id: 'В', text: 'Атака на уязвимость, о которой вендор еще не знает' },
+        { id: 'Г', text: 'Скрипт для хищения средств из веб3-кошельков' }
+      ],
+      correctAnswer: { 1: 'А', 2: 'Г', 3: 'Б', 4: 'В' }
+    },
+    {
+      id: 240,
+      type: 'matching',
+      text: 'Установите соответствие между этапами контроля доступа:',
+      matchItems: [
+        { id: '1', text: 'Аутентификация' },
+        { id: '2', text: 'Авторизация' },
+        { id: '3', text: 'Идентификация' },
+        { id: '4', text: 'Adaptive Access' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'Присвоение уникального ID (Login)' },
+        { id: 'Б', text: 'Динамический запрос MFA в зависимости от риска' },
+        { id: 'В', text: 'Подтверждение личности (пароль, биометрия)' },
+        { id: 'Г', text: 'Проверка прав на выполнение действия' }
+      ],
+      correctAnswer: { 1: 'В', 2: 'Г', 3: 'А', 4: 'Б' }
+    },
+    {
+      id: 241,
+      type: 'matching',
+      text: 'Установите соответствие между архитектурными решениями и их ролью:',
+      matchItems: [
+        { id: '1', text: 'Микросервисы' },
+        { id: '2', text: 'API Gateway' },
+        { id: '3', text: 'Контейнеры (K8s)' },
+        { id: '4', text: 'Гибридное облако' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'Единая точка входа, аутентификации и лимитирования API' },
+        { id: 'Б', text: 'Инфраструктура, сочетающая Private и Public Cloud' },
+        { id: 'В', text: 'Изолированная среда исполнения приложений' },
+        { id: 'Г', text: 'Декомпозиция монолита на независимые сервисы' }
+      ],
+      correctAnswer: { 1: 'Г', 2: 'А', 3: 'В', 4: 'Б' }
+    },
+    {
+      id: 242,
+      type: 'matching',
+      text: 'Установите соответствие между методами обработки и технологиями данных:',
+      matchItems: [
+        { id: '1', text: 'Real-time Processing' },
+        { id: '2', text: 'Night Batch' },
+        { id: '3', text: 'Edge Computing' },
+        { id: '4', text: 'DLT (Distributed Ledger)' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'Мгновенные платежи (SEPA Instant, СПФС)' },
+        { id: 'Б', text: 'Обработка данных на периферийных устройствах' },
+        { id: 'В', text: 'Пакетная обработка транзакций в конце дня' },
+        { id: 'Г', text: 'Синхронизация данных без центрального арбитра' }
+      ],
+      correctAnswer: { 1: 'А', 2: 'В', 3: 'Б', 4: 'Г' }
+    },
+    {
+      id: 243,
+      type: 'matching',
+      text: 'Установите соответствие между системами анализа и их функционалом:',
+      matchItems: [
+        { id: '1', text: 'SIEM' },
+        { id: '2', text: 'SOAR' },
+        { id: '3', text: 'Logging' },
+        { id: '4', text: 'UEBA' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'Оркестрация и автоматизация реагирования на инциденты' },
+        { id: 'Б', text: 'Анализ аномалий в поведении пользователей (ML)' },
+        { id: 'В', text: 'Агрегация и корреляция логов безопасности' },
+        { id: 'Г', text: 'Запись событий для аудита и форензики' }
+      ],
+      correctAnswer: { 1: 'В', 2: 'А', 3: 'Г', 4: 'Б' }
+    },
+    {
+      id: 244,
+      type: 'matching',
+      text: 'Установите соответствие между сетевыми идентификаторами и их определениями:',
+      matchItems: [
+        { id: '1', text: 'Узел (Node)' },
+        { id: '2', text: 'Доменное имя' },
+        { id: '3', text: 'IPv6 адрес' },
+        { id: '4', text: 'Порт сервиса' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'Человеко-читаемый адрес ресурса (DNS)' },
+        { id: 'Б', text: 'Логический номер сетевого сервиса (TCP/UDP)' },
+        { id: 'В', text: 'Физическое или виртуальное устройство в сети' },
+        { id: 'Г', text: '128-битный адрес нового поколения' }
+      ],
+      correctAnswer: { 1: 'В', 2: 'А', 3: 'Г', 4: 'Б' }
+    },
+    {
+      id: 245,
+      type: 'matching',
+      text: 'Установите соответствие между сетевым оборудованием и решаемыми задачами:',
+      matchItems: [
+        { id: '1', text: 'SD-WAN' },
+        { id: '2', text: 'Маршрутизатор' },
+        { id: '3', text: 'L3 Switch' },
+        { id: '4', text: 'Load Balancer' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'Распределение входящего трафика между серверами' },
+        { id: 'Б', text: 'Программное управление глобальной сетью' },
+        { id: 'В', text: 'Маршрутизация пакетов между разными сетями' },
+        { id: 'Г', text: 'Коммутация и маршрутизация внутри сегмента' }
+      ],
+      correctAnswer: { 1: 'Б', 2: 'В', 3: 'Г', 4: 'А' }
+    },
+    {
+      id: 246,
+      type: 'sequence',
+      text: 'Установите правильную последовательность жизненного цикла ПО (DevSecOps):',
+      options: [
+        { id: 'А', text: 'Тестирование безопасности (SAST/DAST)' },
+        { id: 'Б', text: 'Проектирование архитектуры (Threat Model)' },
+        { id: 'В', text: 'Мониторинг в продуктиве (RASP)' },
+        { id: 'Г', text: 'Сбор требований (Security Req)' },
+        { id: 'Д', text: 'Вывод из эксплуатации (Decommissioning)' }
+      ],
+      correctAnswer: ['Г', 'Б', 'А', 'В', 'Д']
+    },
+    {
+      id: 247,
+      type: 'sequence',
+      text: 'Установите последовательность реагирования на инцидент (NIST SP 800-61):',
+      options: [
+        { id: 'А', text: 'Анализ и форензика' },
+        { id: 'Б', text: 'Сдерживание (Containment)' },
+        { id: 'В', text: 'Восстановление (Recovery)' },
+        { id: 'Г', text: 'Обнаружение (Detection)' },
+        { id: 'Д', text: 'Извлечение уроков (Lessons Learned)' }
+      ],
+      correctAnswer: ['Г', 'Б', 'А', 'В', 'Д']
+    },
+    {
+      id: 248,
+      type: 'sequence',
+      text: 'Установите этапы разработки политики ИБ в правильном порядке:',
+      options: [
+        { id: 'А', text: 'Утверждение Советом Директоров' },
+        { id: 'Б', text: 'Оценка зрелости (Gap Analysis)' },
+        { id: 'В', text: 'Написание текста' },
+        { id: 'Г', text: 'Аудит и актуализация' },
+        { id: 'Д', text: 'Определение бизнес-целей' }
+      ],
+      correctAnswer: ['Д', 'Б', 'В', 'А', 'Г']
+    },
+    {
+      id: 249,
+      type: 'sequence',
+      text: 'Расположите этапы управления доступом (IAM) в логической последовательности:',
+      options: [
+        { id: 'А', text: 'Предоставление прав (Provisioning)' },
+        { id: 'Б', text: 'Идентификация' },
+        { id: 'В', text: 'Аутентификация' },
+        { id: 'Г', text: 'Отзыв прав (Deprovisioning)' }
+      ],
+      correctAnswer: ['Б', 'В', 'А', 'Г']
+    },
+    {
+      id: 250,
+      type: 'sequence',
+      text: 'Установите порядок реализации стратегии резервного копирования 3-2-1:',
+      options: [
+        { id: 'А', text: 'Выбор типа (Full/Inc)' },
+        { id: 'Б', text: 'Копирование на отдельный носитель' },
+        { id: 'В', text: 'Копия вне площадки (Offsite)' },
+        { id: 'Г', text: 'Создание двух локальных копий' }
+      ],
+      correctAnswer: ['А', 'Г', 'Б', 'В']
+    },
+    {
+      id: 251,
+      type: 'sequence',
+      text: 'Установите этапы управления ключами шифрования (KMS):',
+      options: [
+        { id: 'А', text: 'Генерация пары ключей' },
+        { id: 'Б', text: 'Использование для шифрования' },
+        { id: 'В', text: 'Ротация ключей' },
+        { id: 'Г', text: 'Уничтожение (Crypto-shredding)' }
+      ],
+      correctAnswer: ['А', 'Б', 'В', 'Г']
+    },
+    {
+      id: 252,
+      type: 'sequence',
+      text: 'Расположите этапы Pentest (тест на проникновение) в правильном порядке:',
+      options: [
+        { id: 'А', text: 'Отчет и рекомендации' },
+        { id: 'Б', text: 'Разведка (Recon)' },
+        { id: 'В', text: 'Эксплуатация (Exploitation)' },
+        { id: 'Г', text: 'Сканирование (Scanning)' }
+      ],
+      correctAnswer: ['Б', 'Г', 'В', 'А']
+    },
+    {
+      id: 253,
+      type: 'sequence',
+      text: 'Установите последовательность шагов при внедрении Zero Trust:',
+      options: [
+        { id: 'А', text: 'Строгая аутентификация (MFA)' },
+        { id: 'Б', text: 'Картирование потоков данных' },
+        { id: 'В', text: 'Микросегментация сети' },
+        { id: 'Г', text: 'Непрерывный мониторинг' }
+      ],
+      correctAnswer: ['Б', 'А', 'В', 'Г']
+    },
+    {
+      id: 254,
+      type: 'sequence',
+      text: 'Установите этапы цикла управления рисками ИБ:',
+      options: [
+        { id: 'А', text: 'Выявление рисков' },
+        { id: 'Б', text: 'Оценка (Qual/Quant)' },
+        { id: 'В', text: 'Выбор стратегии (Treatment)' },
+        { id: 'Г', text: 'Мониторинг' }
+      ],
+      correctAnswer: ['А', 'Б', 'В', 'Г']
+    },
+    {
+      id: 255,
+      type: 'sequence',
+      text: 'Расположите этапы создания защиты периметра:',
+      options: [
+        { id: 'А', text: 'Анализ векторов атак' },
+        { id: 'Б', text: 'Настройка правил NGFW' },
+        { id: 'В', text: 'Проектирование схемы сети' },
+        { id: 'Г', text: 'Тестирование (Pentest)' }
+      ],
+      correctAnswer: ['А', 'В', 'Б', 'Г']
+    },
+    {
+      id: 256,
+      type: 'sequence',
+      text: 'Укажите последовательность оценки эффективности ИБ:',
+      options: [
+        { id: 'А', text: 'Сбор метрик (KPI/KRI)' },
+        { id: 'Б', text: 'Сравнение с бенчмарками' },
+        { id: 'В', text: 'План улучшений' },
+        { id: 'Г', text: 'Отчетность регулятору' }
+      ],
+      correctAnswer: ['А', 'Б', 'В', 'Г']
+    },
+    {
+      id: 257,
+      type: 'sequence',
+      text: 'Порядок управления привилегированным доступом (PAM):',
+      options: [
+        { id: 'А', text: 'Выделение привилегированных учеток' },
+        { id: 'Б', text: 'Внедрение сейфа паролей' },
+        { id: 'В', text: 'Запись сессий' },
+        { id: 'Г', text: 'Проверка необходимости прав (Recertification)' }
+      ],
+      correctAnswer: ['А', 'Б', 'В', 'Г']
+    },
+    {
+      id: 258,
+      type: 'sequence',
+      text: 'Установите этапы внедрения DLP-системы:',
+      options: [
+        { id: 'А', text: 'Инвентаризация данных' },
+        { id: 'Б', text: 'Настройка политик запрета' },
+        { id: 'В', text: 'Режим мониторинга (Shadow)' },
+        { id: 'Г', text: 'Режим активной защиты (Block)' }
+      ],
+      correctAnswer: ['А', 'В', 'Б', 'Г']
+    },
+    {
+      id: 259,
+      type: 'sequence',
+      text: 'Укажите этапы создания плана восстановления (DRP):',
+      options: [
+        { id: 'А', text: 'Определение RTO/RPO' },
+        { id: 'Б', text: 'Сценарии аварий' },
+        { id: 'В', text: 'Учения' },
+        { id: 'Г', text: 'Актуализация плана' }
+      ],
+      correctAnswer: ['А', 'Б', 'В', 'Г']
+    },
+    {
+      id: 260,
+      type: 'sequence',
+      text: 'Установите алгоритм действий при обработке утечки данных:',
+      options: [
+        { id: 'А', text: 'Фиксация факта' },
+        { id: 'Б', text: 'Оценка масштаба' },
+        { id: 'В', text: 'Уведомление (Регулятор/Клиенты)' },
+        { id: 'Г', text: 'Локализация канала' }
+      ],
+      correctAnswer: ['А', 'Г', 'Б', 'В']
+    },
+    {
+      id: 261,
+      type: 'open',
+      text: 'Что такое безопасность ОС в банке?',
+      correctAnswer: 'Защищённая платформа'
+    },
+    {
+      id: 262,
+      type: 'open',
+      text: 'Что такое угроза целостности ядра ОС?',
+      correctAnswer: 'Компрометация ядра'
+    },
+    {
+      id: 263,
+      type: 'open',
+      text: 'Что такое атака на уровень гипервизора?',
+      correctAnswer: 'Виртуальный прорыв'
+    },
+    {
+      id: 264,
+      type: 'open',
+      text: 'Что такое вредоносный модуль ядра?',
+      correctAnswer: 'Зловредный драйвер'
+    },
+    {
+      id: 265,
+      type: 'open',
+      text: 'Что такое политика безопасности ОС в банке?',
+      correctAnswer: 'Принудительный контроль'
+    },
+    {
+      id: 266,
+      type: 'open',
+      text: 'Что такое модель угроз для ОС банка?',
+      correctAnswer: 'Карта эксплойтов'
+    },
+    {
+      id: 267,
+      type: 'open',
+      text: 'Что такое риски безопасности ОС?',
+      correctAnswer: 'Эксплуатация уязвимостей'
+    },
+    {
+      id: 268,
+      type: 'open',
+      text: 'Что такое событие безопасности ОС?',
+      correctAnswer: 'Аномальная активность'
+    },
+    {
+      id: 269,
+      type: 'open',
+      text: 'Что такое доступность ОС в банке?',
+      correctAnswer: 'Непрерывная работа'
+    },
+    {
+      id: 270,
+      type: 'open',
+      text: 'Что такое целостность ОС в банке?',
+      correctAnswer: 'Верификация целостности'
+    }
+  ],
+  title: 'Разработка серверных приложений для WEB',
+  questions: [
+    {
+      id: 271,
+      type: 'single',
+      text: 'Какой из следующих компонентов является клиентом в клиент-серверной архитектуре?',
+      options: [
+        { id: 'А', text: 'Веб-сервер' },
+        { id: 'Б', text: 'База данных' },
+        { id: 'В', text: 'Веб-браузер' },
+        { id: 'Г', text: 'Сервер приложений' }
+      ],
+      correctAnswer: 'В'
+    },
+    {
+      id: 272,
+      type: 'single',
+      text: 'Какой принцип взаимодействия используется в клиент-серверной архитектуре?',
+      options: [
+        { id: 'А', text: 'Модель "публикация-подписка"' },
+        { id: 'Б', text: 'Модель "запрос-ответ"' },
+        { id: 'В', text: 'Модель "потоковая передача"' },
+        { id: 'Г', text: 'Модель "многоуровневая архитектура"' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 273,
+      type: 'single',
+      text: 'Какой из следующих протоколов чаще всего используется для обмена данными между клиентом и сервером в веб-приложениях?',
+      options: [
+        { id: 'А', text: 'FTP' },
+        { id: 'Б', text: 'SMTP' },
+        { id: 'В', text: 'HTTP' },
+        { id: 'Г', text: 'SNMP' }
+      ],
+      correctAnswer: 'В'
+    },
+    {
+      id: 274,
+      type: 'single',
+      text: 'Что происходит, когда клиент отправляет запрос на сервер?',
+      options: [
+        { id: 'А', text: 'Сервер игнорирует запрос' },
+        { id: 'Б', text: 'Сервер обрабатывает запрос и отправляет ответ' },
+        { id: 'В', text: 'Клиент получает ответ мгновенно' },
+        { id: 'Г', text: 'Запрос отправляется на другой клиент' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 275,
+      type: 'single',
+      text: 'Что происходит, когда клиент отправляет запрос на сервер?',
+      options: [
+        { id: 'А', text: 'Клиент, который требует постоянного подключения к серверу' },
+        { id: 'Б', text: 'Клиент, который выполняет большую часть обработки на стороне пользователя' },
+        { id: 'В', text: 'Клиент, который не требует установки на локальном устройстве' },
+        { id: 'Г', text: 'Клиент, который полностью зависит от сервера для выполнения всех функций' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 276,
+      type: 'single',
+      text: 'Что такое клиент-серверная архитектура?',
+      options: [
+        { id: 'А', text: 'Модель, в которой все вычисления выполняются на клиенте' },
+        { id: 'Б', text: 'Модель, в которой задачи распределены между клиентами и серверами' },
+        { id: 'В', text: 'Модель, в которой все данные хранятся на клиенте' },
+        { id: 'Г', text: 'Модель, в которой все файлы хранятся на сервере' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 277,
+      type: 'single',
+      text: 'Какие основные компоненты входят в клиент-серверную систему?',
+      options: [
+        { id: 'А', text: 'Клиент, сервер, сеть и приложения' },
+        { id: 'Б', text: 'Только клиент и сервер' },
+        { id: 'В', text: 'Только сервер и база данных' },
+        { id: 'Г', text: 'Клиент, сервер и база данных' }
+      ],
+      correctAnswer: 'А'
+    },
+    {
+      id: 278,
+      type: 'single',
+      text: 'Какой язык используется для взаимодействия между клиентской частью приложения и сервером баз данных?',
+      options: [
+        { id: 'А', text: 'HTML' },
+        { id: 'Б', text: 'SQL' },
+        { id: 'В', text: 'JavaScript' },
+        { id: 'Г', text: 'CSS' },
+        { id: 'Д', text: 'PHP' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 279,
+      type: 'single',
+      text: 'Какой из следующих этапов не является частью создания клиент-серверного приложения?',
+      options: [
+        { id: 'А', text: 'Обработка изображений и звука' },
+        { id: 'Б', text: 'Создание рекламной кампании' },
+        { id: 'В', text: 'Регистрация доменного имени' },
+        { id: 'Г', text: 'Тестирование' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 280,
+      type: 'single',
+      text: 'Что такое логическая структура веб-приложения?',
+      options: [
+        { id: 'А', text: 'Физическое расположение файлов на сервере' },
+        { id: 'Б', text: 'Система взаимного расположения частей веб-приложения' },
+        { id: 'В', text: 'Дизайн веб-приложения' },
+        { id: 'Г', text: 'Навигация по сайту' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 281,
+      type: 'single',
+      text: 'Что такое программирование серверной части?',
+      options: [
+        { id: 'А', text: 'Процесс создания статических страниц' },
+        { id: 'Б', text: 'Процесс написания кода, который обрабатывает запросы и управляет данными на сервере' },
+        { id: 'В', text: 'Процесс создания дизайна веб-приложения' },
+        { id: 'Г', text: 'Обработка текстовых данных от клиента' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 282,
+      type: 'single',
+      text: 'Метод объекта JSON, который переводит JS-объект в строковое представление – это …',
+      options: [
+        { id: 'А', text: 'toString' },
+        { id: 'Б', text: 'stringify' },
+        { id: 'В', text: 'parse' },
+        { id: 'Г', text: 'верного ответа нет' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 283,
+      type: 'single',
+      text: 'Результатом выполнения выражения 3>4 ? 5:6 будет …',
+      options: [
+        { id: 'А', text: '3' },
+        { id: 'Б', text: '4' },
+        { id: 'В', text: '5' },
+        { id: 'Г', text: '6' }
+      ],
+      correctAnswer: 'Г'
+    },
+    {
+      id: 284,
+      type: 'single',
+      text: 'Что вернёт функция sum? function sum(a,b=3){ a+b; } console.log(sum(2));',
+      options: [
+        { id: 'А', text: '2' },
+        { id: 'Б', text: '3' },
+        { id: 'В', text: '5' },
+        { id: 'Г', text: 'undefined' }
+      ],
+      correctAnswer: 'Г'
+    },
+    {
+      id: 285,
+      type: 'single',
+      text: 'Какой оператор определяет тип переменной?',
+      options: [
+        { id: 'А', text: 'instanceof' },
+        { id: 'Б', text: 'typeof' },
+        { id: 'В', text: '!' },
+        { id: 'Г', text: 'in' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 286,
+      type: 'single',
+      text: 'Для повторного использования кода в javaScript есть...',
+      options: [
+        { id: 'А', text: 'циклы' },
+        { id: 'Б', text: 'функции' },
+        { id: 'В', text: 'массивы' },
+        { id: 'Г', text: 'переменные' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 287,
+      type: 'single',
+      text: 'Сколько операторов return может содержать функция?',
+      options: [
+        { id: 'А', text: '0' },
+        { id: 'Б', text: '1' },
+        { id: 'В', text: '2' },
+        { id: 'Г', text: 'сколько угодно' }
+      ],
+      correctAnswer: 'Г'
+    },
+    {
+      id: 288,
+      type: 'single',
+      text: 'Что будет результатом выражения 67 + "45"?',
+      options: [
+        { id: 'А', text: '"6745"' },
+        { id: 'Б', text: '"112"' },
+        { id: 'В', text: '112' },
+        { id: 'Г', text: '6745' }
+      ],
+      correctAnswer: 'А'
+    },
+    {
+      id: 289,
+      type: 'single',
+      text: 'Какой из операторов объединяет строки?',
+      options: [
+        { id: 'А', text: '%' },
+        { id: 'Б', text: '/' },
+        { id: 'В', text: '*' },
+        { id: 'Г', text: '+' }
+      ],
+      correctAnswer: 'Г'
+    },
+    {
+      id: 290,
+      type: 'single',
+      text: 'Сколько переменных определено в записи: let myVar, myvar, _myvar?',
+      options: [
+        { id: 'А', text: '1' },
+        { id: 'Б', text: '2' },
+        { id: 'В', text: '3' },
+        { id: 'Г', text: '4' }
+      ],
+      correctAnswer: 'В'
+    },
+    {
+      id: 291,
+      type: 'single',
+      text: 'Какой метод добавляет аргументы в начало массива?',
+      options: [
+        { id: 'А', text: 'unshift' },
+        { id: 'Б', text: 'push' },
+        { id: 'В', text: 'reverse' },
+        { id: 'Г', text: 'concat' }
+      ],
+      correctAnswer: 'А'
+    },
+    {
+      id: 292,
+      type: 'single',
+      text: 'Метод, который используется в JavaScript для объединения двух, или более массивов в один – это …',
+      options: [
+        { id: 'А', text: 'unshift' },
+        { id: 'Б', text: 'push' },
+        { id: 'В', text: 'reverse' },
+        { id: 'Г', text: 'concat' }
+      ],
+      correctAnswer: 'Г'
+    },
+    {
+      id: 293,
+      type: 'single',
+      text: 'Директива, которая указывает, что код JavaScript должен выполняться в «строгом режиме»',
+      options: [
+        { id: 'А', text: 'use strict' },
+        { id: 'Б', text: 'defer' },
+        { id: 'В', text: '#ifdef' },
+        { id: 'Г', text: 'async' }
+      ],
+      correctAnswer: 'А'
+    },
+    {
+      id: 294,
+      type: 'single',
+      text: 'Где верно указан запуск всплывающего окна?',
+      options: [
+        { id: 'А', text: 'new alert ("Hi")' },
+        { id: 'Б', text: 'info ("Hi")' },
+        { id: 'В', text: 'Нет верных вариантов' },
+        { id: 'Г', text: 'alert ("Hi")' }
+      ],
+      correctAnswer: 'Г'
+    },
+    {
+      id: 295,
+      type: 'single',
+      text: 'Какой метод используется для преобразования строки в число?',
+      options: [
+        { id: 'А', text: 'parseInt()' },
+        { id: 'Б', text: 'toString()' },
+        { id: 'В', text: 'Number()' },
+        { id: 'Г', text: 'strToNum' }
+      ],
+      correctAnswer: 'В'
+    },
+    {
+      id: 296,
+      type: 'single',
+      text: "'this' в JavaScript – это …",
+      options: [
+        { id: 'А', text: 'Ссылка на глобальный объект' },
+        { id: 'Б', text: 'Ссылка на текущий объект' },
+        { id: 'В', text: 'Ссылка на родительский объект' },
+        { id: 'Г', text: 'Ссылка на дочерний объект' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 297,
+      type: 'single',
+      text: 'Что делает свойство display: none;?',
+      options: [
+        { id: 'А', text: 'Скрывает элемент' },
+        { id: 'Б', text: 'Убирает элемент из потока документа' },
+        { id: 'В', text: 'Устанавливает элемент как блочный' },
+        { id: 'Г', text: 'Устанавливает элемент как строчный' }
+      ],
+      correctAnswer: 'А'
+    },
+    {
+      id: 298,
+      type: 'single',
+      text: 'Какой метод используется для выбора элемента по ID в JavaScript?',
+      options: [
+        { id: 'А', text: 'getElementById()' },
+        { id: 'Б', text: 'querySelector()' },
+        { id: 'В', text: 'getElementsByClassName()' },
+        { id: 'Г', text: 'selectById()' }
+      ],
+      correctAnswer: 'А'
+    },
+    {
+      id: 299,
+      type: 'single',
+      text: 'Какой из следующих методов используется для обработки событий в JavaScript?',
+      options: [
+        { id: 'А', text: 'addEventListener()' },
+        { id: 'Б', text: 'onEvent()' },
+        { id: 'В', text: 'handleEvent()' },
+        { id: 'Г', text: 'triggerEvent()' }
+      ],
+      correctAnswer: 'А'
+    },
+    {
+      id: 300,
+      type: 'single',
+      text: 'Какое событие формы проверки используется для (валидации) формы перед её отправкой на сервер или для предотвращения отправки и обработки её с помощью JavaScript?',
+      options: [
+        { id: 'А', text: 'submit' },
+        { id: 'Б', text: 'change' },
+        { id: 'В', text: 'focus' },
+        { id: 'Г', text: 'blur' }
+      ],
+      correctAnswer: 'А'
+    },
+    {
+      id: 301,
+      type: 'multiple',
+      text: 'Где применяются дашборды в аналитике Big Data?',
+      options: [
+        { id: 'А', text: 'Мониторинг KPI' },
+        { id: 'Б', text: 'Поддержка управленческих решений' },
+        { id: 'В', text: 'Хранение резервных копий' },
+        { id: 'Г', text: 'Аналитическая отчётность' }
+      ],
+      correctAnswer: ['А', 'Б', 'Г']
+    },
+    {
+      id: 302,
+      type: 'multiple',
+      text: 'Какие из следующих этапов являются частью создания клиент-серверного приложения?',
+      options: [
+        { id: 'А', text: 'Обработка изображений и звука' },
+        { id: 'Б', text: 'Создание рекламной кампании' },
+        { id: 'В', text: 'Регистрация доменного имени' },
+        { id: 'Г', text: 'Обучение персонала' }
+      ],
+      correctAnswer: ['А', 'В', 'Г']
+    },
+    {
+      id: 303,
+      type: 'multiple',
+      text: 'Какой из следующих элементов является частью внешней структуры сайта?',
+      options: [
+        { id: 'А', text: 'Шапка (header)' },
+        { id: 'Б', text: 'Нижний колонтитул (footer)' },
+        { id: 'В', text: 'База данных' },
+        { id: 'Г', text: 'Инструменты настройки' }
+      ],
+      correctAnswer: ['А', 'Б']
+    },
+    {
+      id: 304,
+      type: 'multiple',
+      text: 'Какие из следующих методов относятся к информационному обеспечению сайта?',
+      options: [
+        { id: 'А', text: 'SEO-оптимизация' },
+        { id: 'Б', text: 'Создание форумов' },
+        { id: 'В', text: 'Установка антивируса' },
+        { id: 'Г', text: 'Настройка процедур' }
+      ],
+      correctAnswer: ['А', 'Б']
+    },
+    {
+      id: 305,
+      type: 'multiple',
+      text: 'Какие из следующих языков используются для создания статических страниц?',
+      options: [
+        { id: 'А', text: 'PHP' },
+        { id: 'Б', text: 'HTML' },
+        { id: 'В', text: 'Python' },
+        { id: 'Г', text: 'CSS' }
+      ],
+      correctAnswer: ['Б', 'Г']
+    },
+    {
+      id: 306,
+      type: 'multiple',
+      text: 'Какие из следующих элементов является частью внутренней структуры веб-приложения?',
+      options: [
+        { id: 'А', text: 'Главная страница' },
+        { id: 'Б', text: 'Рубрики' },
+        { id: 'В', text: 'Доменное имя' },
+        { id: 'Г', text: 'База данных' }
+      ],
+      correctAnswer: ['А', 'Б']
+    },
+    {
+      id: 307,
+      type: 'multiple',
+      text: 'Этапы работы с веб-приложением после его запуска',
+      options: [
+        { id: 'А', text: 'Определение цели сайта' },
+        { id: 'Б', text: 'Настройка процедур обслуживания' },
+        { id: 'В', text: 'Резервное копирование данных' },
+        { id: 'Г', text: 'Автоматическое отслеживание работоспособности веб-сервера' },
+        { id: 'Д', text: 'Протокол обмена гипертекстовой информацией' }
+      ],
+      correctAnswer: ['Б', 'В', 'Г']
+    },
+    {
+      id: 308,
+      type: 'multiple',
+      text: 'Основные задачи при планировании клиент-серверного приложения …',
+      options: [
+        { id: 'А', text: 'Настройка процедур обслуживания' },
+        { id: 'Б', text: 'Резервное копирование данных' },
+        { id: 'В', text: 'Определение цели сайта' },
+        { id: 'Г', text: 'Определение целевой аудитории' },
+        { id: 'Д', text: 'Определение необходимой информации для размещения' }
+      ],
+      correctAnswer: ['В', 'Г', 'Д']
+    },
+    {
+      id: 309,
+      type: 'multiple',
+      text: 'Как можно обеспечить безопасность данных в клиент-серверных приложениях?',
+      options: [
+        { id: 'А', text: 'Использование шифрования данных' },
+        { id: 'Б', text: 'Аутентификация и авторизация пользователей' },
+        { id: 'В', text: 'Регулярные обновления и патчи для серверного ПО' },
+        { id: 'Г', text: 'Мониторинг и аудит безопасности' },
+        { id: 'Д', text: 'Резервное копирование данных' }
+      ],
+      correctAnswer: ['А', 'Б', 'В', 'Г']
+    },
+    {
+      id: 310,
+      type: 'multiple',
+      text: 'Для функций в JavaScript верно, что …',
+      options: [
+        { id: 'А', text: 'функция может содержать несколько операторов return' },
+        { id: 'Б', text: 'аргументам функции можно задавать значения по умолчанию' },
+        { id: 'В', text: 'внутри функции можно использовать arguments' },
+        { id: 'Г', text: 'функция не может принимать в качестве аргументов другую функцию' }
+      ],
+      correctAnswer: ['А', 'Б', 'В']
+    },
+    {
+      id: 311,
+      type: 'multiple',
+      text: 'Обратиться к свойству name объекта const user={name:"Иван"} можно следующим образом:',
+      options: [
+        { id: 'А', text: 'user.name' },
+        { id: 'Б', text: 'user["name"]' },
+        { id: 'В', text: 'user[name]' },
+        { id: 'Г', text: 'user(name)' }
+      ],
+      correctAnswer: ['А', 'Б']
+    },
+    {
+      id: 312,
+      type: 'multiple',
+      text: 'Как увеличить переменную на 5, если она объявлена следующим образом: let n = 0',
+      options: [
+        { id: 'А', text: 'n = n + 5' },
+        { id: 'Б', text: 'n += 5' },
+        { id: 'В', text: 'n = n - 5' },
+        { id: 'Г', text: 'n -= 5' }
+      ],
+      correctAnswer: ['А', 'Б']
+    },
+    {
+      id: 313,
+      type: 'multiple',
+      text: 'Типы данных, которые есть в JavaScript',
+      options: [
+        { id: 'А', text: 'char' },
+        { id: 'Б', text: 'string' },
+        { id: 'В', text: 'boolean' },
+        { id: 'Г', text: 'number' },
+        { id: 'Д', text: 'real' }
+      ],
+      correctAnswer: ['Б', 'В', 'Г']
+    },
+    {
+      id: 314,
+      type: 'multiple',
+      text: 'Варианты правильного объявления переменных в JavaScript …',
+      options: [
+        { id: 'А', text: 'declare' },
+        { id: 'Б', text: 'var' },
+        { id: 'В', text: 'let' },
+        { id: 'Г', text: 'constant' }
+      ],
+      correctAnswer: ['Б', 'В']
+    },
+    {
+      id: 315,
+      type: 'multiple',
+      text: 'К арифметическим операторам в JavaScript относятся …',
+      options: [
+        { id: 'А', text: '+' },
+        { id: 'Б', text: '&&' },
+        { id: 'В', text: '>=' },
+        { id: 'Г', text: '*' }
+      ],
+      correctAnswer: ['А', 'Г']
+    },
+    {
+      id: 316,
+      type: 'multiple',
+      text: 'К типам данных в PHP относят',
+      options: [
+        { id: 'А', text: 'byte' },
+        { id: 'Б', text: 'string' },
+        { id: 'В', text: 'decimal' },
+        { id: 'Г', text: 'object' }
+      ],
+      correctAnswer: ['Б', 'Г']
+    },
+    {
+      id: 317,
+      type: 'multiple',
+      text: 'Из перечисленных тегов подходят для открытия и закрытия PHP блока следующие:',
+      options: [
+        { id: 'А', text: '<% %>' },
+        { id: 'Б', text: '<? ?>' },
+        { id: 'В', text: '<?= ?>' },
+        { id: 'Г', text: '<! !>' },
+        { id: 'Д', text: '<?php ?>' }
+      ],
+      correctAnswer: ['А', 'Б', 'Д']
+    },
+    {
+      id: 318,
+      type: 'multiple',
+      text: 'Из перечисленных тегов при создании страницы не являются обязательными следующие:',
+      options: [
+        { id: 'А', text: 'body' },
+        { id: 'Б', text: 'doctype' },
+        { id: 'В', text: 'head' },
+        { id: 'Г', text: 'strong' },
+        { id: 'Д', text: 'style' }
+      ],
+      correctAnswer: ['Б', 'В', 'Г', 'Д']
+    },
+    {
+      id: 319,
+      type: 'multiple',
+      text: 'Правильно начать комментарии в php можно с символов:',
+      options: [
+        { id: 'А', text: '//' },
+        { id: 'Б', text: '@@' },
+        { id: 'В', text: '**' },
+        { id: 'Г', text: '#' },
+        { id: 'Д', text: '/*' },
+        { id: 'Е', text: '<!--' }
+      ],
+      correctAnswer: ['А', 'Г', 'Д']
+    },
+    {
+      id: 320,
+      type: 'multiple',
+      text: 'Верные способы создания циклов:',
+      options: [
+        { id: 'А', text: 'foreach ($collection as $item) {}' },
+        { id: 'Б', text: 'for ($item of $collection) {}' },
+        { id: 'В', text: 'for ($i = 0; $i < 5; $i++) {}' },
+        { id: 'Г', text: 'foreach ($i = 0; $i < 5; $i++)' }
+      ],
+      correctAnswer: ['А', 'В']
+    },
+    {
+      id: 321,
+      type: 'matching',
+      text: 'Установите соответствие между типами сайтов и их описаниями',
+      matchItems: [
+        { id: '1', text: 'Статический сайт' },
+        { id: '2', text: 'Динамический сайт' },
+        { id: '3', text: 'Веб-приложение' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'Генерирует контент на основе запросов пользователя' },
+        { id: 'Б', text: 'Возвращает один и тот же контент при каждом запросе' },
+        { id: 'В', text: 'Клиентом выступает браузер, а сервером — веб-сервер' }
+      ],
+      correctAnswer: { 1: 'Б', 2: 'А', 3: 'В' }
+    },
+    {
+      id: 322,
+      type: 'matching',
+      text: 'Установите соответствие между этапами разработки и их описаниями',
+      matchItems: [
+        { id: '1', text: 'Разработка дизайна' },
+        { id: '2', text: 'Программирование динамических страниц' },
+        { id: '3', text: 'Регистрация доменного имени' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'Определение внешнего вида приложения' },
+        { id: 'Б', text: 'Создание страниц, которые генерируются на сервере' },
+        { id: 'В', text: 'Выбор уникального адреса для сайта' }
+      ],
+      correctAnswer: { 1: 'А', 2: 'Б', 3: 'В' }
+    },
+    {
+      id: 323,
+      type: 'matching',
+      text: 'Установите соответствие между языками программирования и их назначением',
+      matchItems: [
+        { id: '1', text: 'HTML' },
+        { id: '2', text: 'JavaScript' },
+        { id: '3', text: 'PHP' },
+        { id: '4', text: 'CSS' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'Язык описания каскадных таблиц стилей' },
+        { id: 'Б', text: 'Язык разметки для создания веб-страниц' },
+        { id: 'В', text: 'Язык сценариев для интерактивности на стороне клиента' },
+        { id: 'Г', text: 'Серверный язык для динамического создания страниц' }
+      ],
+      correctAnswer: { 1: 'Б', 2: 'В', 3: 'Г', 4: 'А' }
+    },
+    {
+      id: 324,
+      type: 'matching',
+      text: 'Установите соответствие между задачами информационного обеспечения сайта и их описаниями',
+      matchItems: [
+        { id: '1', text: 'Обеспечение актуальной информации' },
+        { id: '2', text: 'Ведение новостных лент' },
+        { id: '3', text: 'Создание FAQ разделов' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'Поддержка интереса пользователей' },
+        { id: 'Б', text: 'Ответы на часто задаваемые вопросы' },
+        { id: 'В', text: 'Обновление контента для повышения значимости сайта' }
+      ],
+      correctAnswer: { 1: 'Б', 2: 'В', 3: 'А' }
+    },
+    {
+      id: 325,
+      type: 'matching',
+      text: 'Установите соответствие между преимуществами и недостатками использования клиент-серверной модели по сравнению с одноуровневыми архитектурами',
+      matchItems: [
+        { id: '1', text: 'Преимущества' },
+        { id: '2', text: 'Недостатки' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'Централизованное управление ресурсами' },
+        { id: 'Б', text: 'Легкость в обновлении и поддержке' },
+        { id: 'В', text: 'Возможность масштабирования' },
+        { id: 'Г', text: 'Зависимость от сервера; если сервер выходит из строя, клиенты теряют доступ к ресурсам' },
+        { id: 'Д', text: 'Возможные проблемы с производительностью при увеличении числа клиентов' }
+      ],
+      correctAnswer: { 1: 'А,Б,В', 2: 'Г,Д' }
+    },
+    {
+      id: 326,
+      type: 'matching',
+      text: 'Установите соответствие между компонентами клиент-серверной архитектуры и их функциями',
+      matchItems: [
+        { id: '1', text: 'Клиент' },
+        { id: '2', text: 'Сервер' },
+        { id: '3', text: 'Сеть' }
+      ],
+      matchTargets: [
+        {
+          id: 'А',
+          text: 'Устройство или программа, которая отправляет запросы на сервер для получения ресурсов или услуг'
+        },
+        {
+          id: 'Б',
+          text: 'Инфраструктура, обеспечивающая связь между клиентами и серверами, позволяющая обмениваться данными'
+        },
+        {
+          id: 'В',
+          text: 'Мощная машина или программа, которая обрабатывает запросы клиентов и предоставляет необходимые ресурсы или услуги'
+        }
+      ],
+      correctAnswer: { 1: 'А', 2: 'В', 3: 'Б' }
+    },
+    {
+      id: 327,
+      type: 'matching',
+      text: 'Установите соответствие между методами JavaScript и их действиями',
+      matchItems: [
+        { id: '1', text: 'querySelectorAll' },
+        { id: '2', text: 'createElement' },
+        { id: '3', text: 'innerHTML' },
+        { id: '4', text: 'remove' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'позволяет удалить элемент (применяется к тому элементу, который нужно удалить)' },
+        { id: 'Б', text: 'позволяет создать новый элемент, передав в параметре имя тега' },
+        { id: 'В', text: 'позволяет добавить или изменить элементу текст' },
+        { id: 'Г', text: 'возвращает все элементы, удовлетворяющие CSS-селектору' }
+      ],
+      correctAnswer: { 1: 'Г', 2: 'Б', 3: 'В', 4: 'А' }
+    },
+    {
+      id: 328,
+      type: 'matching',
+      text: 'Установите соответствие между событиями JavaScript и их действиями',
+      matchItems: [
+        { id: '1', text: 'onFocus' },
+        { id: '2', text: 'onKeyDown' },
+        { id: '3', text: 'onDblClick' },
+        { id: '4', text: 'onLoad' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'Двойной щелчок' },
+        { id: 'Б', text: 'Закончена загрузка документа' },
+        { id: 'В', text: 'Нажата и отпущена клавиша на клавиатуре' },
+        {
+          id: 'Г',
+          text: 'Получение элементом фокуса (щелчок мышью на элементе или очередное нажатие клавиши табуляции)'
+        }
+      ],
+      correctAnswer: { 1: 'Г', 2: 'В', 3: 'А', 4: 'Б' }
+    },
+    {
+      id: 329,
+      type: 'matching',
+      text: 'Установите соответствие между типами данных в JavaScript и их обозначениями',
+      matchItems: [
+        { id: '1', text: 'целое число произвольной длины' },
+        { id: '2', text: 'строка' },
+        { id: '3', text: 'отдельный тип, для неизвестных значений, имеющий одно значение' },
+        { id: '4', text: 'отдельный тип, для неприсвоеных значений, имеющий одно значение' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'bigint' },
+        { id: 'Б', text: 'string' },
+        { id: 'В', text: 'null' },
+        { id: 'Г', text: 'undefined' }
+      ],
+      correctAnswer: { 1: 'А', 2: 'Б', 3: 'В', 4: 'Г' }
+    },
+    {
+      id: 330,
+      type: 'matching',
+      text: 'Установите соответствие между операторами JavaScript и их обозначениями',
+      matchItems: [
+        { id: '1', text: 'побитовое И' },
+        { id: '2', text: 'побитовое ИЛИ' },
+        { id: '3', text: 'побитовое исключающее ИЛИ' },
+        { id: '4', text: 'побитовый сдвиг влево' }
+      ],
+      matchTargets: [
+        { id: 'А', text: '&' },
+        { id: 'Б', text: '|' },
+        { id: 'В', text: '^' },
+        { id: 'Г', text: '<<' }
+      ],
+      correctAnswer: { 1: 'А', 2: 'Б', 3: 'В', 4: 'Г' }
+    },
+    {
+      id: 331,
+      type: 'matching',
+      text: 'Установите соответствие между методами JS и их назначением',
+      matchItems: [
+        { id: '1', text: 'toUpperCase()' },
+        { id: '2', text: 'indexOf()' },
+        { id: '3', text: 'substr()' },
+        { id: '4', text: 'shift()' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'используется для преобразования всех символов в строке в верхний регистр' },
+        { id: 'Б', text: 'возвращает индекс первого вхождения указанного значения в строке' },
+        { id: 'В', text: 'возвращает указанное количество символов из строки, начиная с указанной позиции' },
+        { id: 'Г', text: 'удаляет первый элемент из массива и возвращает его значение' }
+      ],
+      correctAnswer: { 1: 'А', 2: 'Б', 3: 'В', 4: 'Г' }
+    },
+    {
+      id: 332,
+      type: 'matching',
+      text: 'Установите соответствие между методами объекта Math и их назначением',
+      matchItems: [
+        { id: '1', text: 'абсолютная величина аргумента' },
+        { id: '2', text: 'наименьшее/большее или равное целое' },
+        { id: '3', text: 'наибольшее/наименьшее/равное число' },
+        { id: '4', text: 'округление до целого' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'abs' },
+        { id: 'Б', text: 'ceil' },
+        { id: 'В', text: 'floor' },
+        { id: 'Г', text: 'round' }
+      ],
+      correctAnswer: { 1: 'А', 2: 'Б', 3: 'В', 4: 'Г' }
+    },
+    {
+      id: 333,
+      type: 'matching',
+      text: 'Установите соответствие между методами для работы с объектами в JavaScript и их назначением',
+      matchItems: [
+        { id: '1', text: 'Object.values()' },
+        { id: '2', text: 'Object.keys()' },
+        { id: '3', text: 'Object.freeze()' },
+        { id: '4', text: 'Object.seal()' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'Позволяет получить все значения, заключённые в объекте' },
+        { id: 'Б', text: 'Возвращает массив, содержащий все ключи внутри объекта' },
+        { id: 'В', text: 'Позволяет заморозить объект, передаваемый ему в качестве аргумента' },
+        { id: 'Г', text: 'Предотвращает добавление новых свойств к объекту' }
+      ],
+      correctAnswer: { 1: 'А', 2: 'Б', 3: 'В', 4: 'Г' }
+    },
+    {
+      id: 334,
+      type: 'matching',
+      text: 'Установите соответствие между обработчиками событий JavaScript и их описанием',
+      matchItems: [
+        { id: '1', text: 'onClick' },
+        { id: '2', text: 'onDblClick' },
+        { id: '3', text: 'onFocus' },
+        { id: '4', text: 'onKeyDown' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'Одинарный щелчок (нажата и отпущена кнопка мыши)' },
+        { id: 'Б', text: 'Двойной щелчок' },
+        {
+          id: 'В',
+          text: 'Получение элементом фокуса (щелчок мышью на элементе или очередное нажатие клавиши табуляции)'
+        },
+        { id: 'Г', text: 'Нажата клавиша на клавиатуре' }
+      ],
+      correctAnswer: { 1: 'А', 2: 'Б', 3: 'В', 4: 'Г' }
+    },
+    {
+      id: 335,
+      type: 'matching',
+      text: 'Установите соответствие между обозначением элементов JS и их назначением',
+      matchItems: [
+        { id: '1', text: 'promise' },
+        { id: '2', text: 'event' },
+        { id: '3', text: 'callback' },
+        { id: '4', text: 'DOM' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'Объект для асинхронных операций' },
+        { id: 'Б', text: 'Событие, которое может вызываться пользователем' },
+        { id: 'В', text: 'Функция, переданная в другую функцию' },
+        { id: 'Г', text: 'Модель для работы с HTML-элементами' }
+      ],
+      correctAnswer: { 1: 'А', 2: 'Б', 3: 'В', 4: 'Г' }
+    },
+    {
+      id: 336,
+      type: 'sequence',
+      text: 'Определите последовательность этапов анализа предметной области при планировании веб-сайта',
+      options: [
+        { id: 'А', text: 'Определение информационных объектов и связей между ними' },
+        { id: 'Б', text: 'Конструирование концептуальной модели предметной области' },
+        { id: 'В', text: 'Анализ требований и информационных потребностей' }
+      ],
+      correctAnswer: ['Б', 'В', 'А']
+    },
+    {
+      id: 337,
+      type: 'sequence',
+      text: 'Определите последовательность этапов работы с веб-приложением после его запуска',
+      options: [
+        { id: 'А', text: 'Резервное копирование данных' },
+        { id: 'Б', text: 'Автоматическое отслеживание работоспособности веб-сервера' },
+        { id: 'В', text: 'Настройка процедур обслуживания' }
+      ],
+      correctAnswer: ['Б', 'В', 'А']
+    },
+    {
+      id: 338,
+      type: 'sequence',
+      text: 'Определите последовательность этапов загрузки кода JavaScript на страницу',
+      options: [
+        { id: 'А', text: 'Загрузка кода обработчиков событий в тегах' },
+        { id: 'Б', text: 'Загрузка кода в параметрах тегов' },
+        { id: 'В', text: 'Загрузка кода тега script в разделе head' },
+        { id: 'Г', text: 'Загрузка внешних скриптов в разделе head' }
+      ],
+      correctAnswer: ['Г', 'В', 'Б', 'А']
+    },
+    {
+      id: 339,
+      type: 'sequence',
+      text: 'Определите последовательность выполнения операций в JavaScript в соответствии с их приоритетом (по возрастанию)',
+      options: [
+        { id: 'А', text: 'Присваивание' },
+        { id: 'Б', text: 'Деление' },
+        { id: 'В', text: 'Возведение в степень' },
+        { id: 'Г', text: 'Унарный минус' }
+      ],
+      correctAnswer: ['А', 'Б', 'В', 'Г']
+    },
+    {
+      id: 340,
+      type: 'sequence',
+      text: 'Определите последовательность выполнения операций в JavaScript в соответствии с их приоритетом (по возрастанию)',
+      options: [
+        { id: 'А', text: 'Возведение в степень' },
+        { id: 'Б', text: 'Сложение' },
+        { id: 'В', text: 'Умножение' },
+        { id: 'Г', text: 'Унарный плюс' }
+      ],
+      correctAnswer: ['Б', 'В', 'А', 'Г']
+    },
+    {
+      id: 341,
+      type: 'sequence',
+      text: 'Определите последовательность этапов загрузки кода JavaScript на страницу',
+      options: [
+        { id: 'А', text: 'Загрузка кода обработчиков событий в тегах' },
+        { id: 'Б', text: 'Загрузка кода в параметрах тегов' },
+        { id: 'В', text: 'Загрузка кода тега script в разделе head' },
+        { id: 'Г', text: 'Загрузка внешних скриптов в разделе head' }
+      ],
+      correctAnswer: ['Г', 'В', 'Б', 'А']
+    },
+    {
+      id: 342,
+      type: 'sequence',
+      text: 'Определите последовательность формирования узлов в DOM на основании порядка появления в html-документе тегов',
+      options: [
+        { id: 'А', text: '<head>' },
+        { id: 'Б', text: '<title>' },
+        { id: 'В', text: '<html>' },
+        { id: 'Г', text: '<h1>' }
+      ],
+      correctAnswer: ['В', 'А', 'Б', 'Г']
+    },
+    {
+      id: 343,
+      type: 'sequence',
+      text: 'Определите последовательность действий для просмотра в консоли элемента из js-переменной',
+      options: [
+        { id: 'А', text: 'Выбрать соответствующий пункт меню' },
+        { id: 'Б', text: 'Кликнуть на выводе в консоли правой кнопкой мыши' },
+        { id: 'В', text: 'Вывести переменную в консоль при помощи console.log' }
+      ],
+      correctAnswer: ['В', 'Б', 'А']
+    },
+    {
+      id: 344,
+      type: 'sequence',
+      text: 'Определите последовательность изучения веб-технологий (от простого к сложному)',
+      options: [
+        { id: 'А', text: 'Создание активных веб-страниц' },
+        { id: 'Б', text: 'Создание динамических веб-страниц' },
+        { id: 'В', text: 'Html' },
+        { id: 'Г', text: 'Динамические страницы с базами данных' },
+        { id: 'Д', text: 'Веб-сервер' }
+      ],
+      correctAnswer: ['В', 'А', 'Д', 'Б', 'Г']
+    },
+    {
+      id: 345,
+      type: 'sequence',
+      text: 'Определите последовательность статического запроса браузера к серверу',
+      options: [
+        {
+          id: 'А',
+          text: 'веб-браузер обрабатывает возвращенный HTML, отправив отдельные запросы, чтобы получить любые другие файлы CSS или JavaScript, на которые он ссылается'
+        },
+        { id: 'Б', text: 'Веб-браузер создает HTTP-запрос на сервер' },
+        {
+          id: 'В',
+          text: 'Веб-сервер загружает статические файлы из файловой системы и возвращает их непосредственно в браузер'
+        }
+      ],
+      correctAnswer: ['Б', 'В', 'А']
+    },
+    {
+      id: 346,
+      type: 'sequence',
+      text: 'Определите последовательность, в которой будут выполняться операторы в зависимости от приоритетов в выражении: $a = $b += (1 – 2 ) * (79 % 10 / 2)',
+      options: [
+        { id: 'А', text: '=' },
+        { id: 'Б', text: '+=' },
+        { id: 'В', text: '-' },
+        { id: 'Г', text: '*' },
+        { id: 'Д', text: '%' },
+        { id: 'Е', text: '/' }
+      ],
+      correctAnswer: ['В', 'Д', 'Е', 'Г', 'Б', 'А']
+    },
+    {
+      id: 347,
+      type: 'sequence',
+      text: 'Определите последовательность выполнения регулярного цикла',
+      options: [
+        { id: 'А', text: 'Установка начального значения счетчика' },
+        { id: 'Б', text: 'Проверка достижения счетчиком конечного значения' },
+        { id: 'В', text: 'Тело цикла' },
+        { id: 'Г', text: 'Модификация счетчика' }
+      ],
+      correctAnswer: ['А', 'Б', 'В', 'Г']
+    },
+    {
+      id: 348,
+      type: 'sequence',
+      text: 'Определите последовательность действий при работе с файлами',
+      options: [
+        { id: 'А', text: 'открытие файла' },
+        { id: 'Б', text: 'чтение/модификация файла' },
+        { id: 'В', text: 'чтение имени файла в переменную' },
+        { id: 'Г', text: 'закрытие файла' }
+      ],
+      correctAnswer: ['В', 'А', 'Б', 'Г']
+    },
+    {
+      id: 349,
+      type: 'sequence',
+      text: 'Определите последовательность этапы формирования запроса при передаче данных на сервер из форм html',
+      options: [
+        { id: 'А', text: 'Браузер посылает серверу запрос' },
+        { id: 'Б', text: 'Браузер устанавливает соединение с Web-сервером по адресу сервер:порт' },
+        { id: 'В', text: 'браузер формирует строку запроса к серверу' },
+        { id: 'Г', text: 'Пользователь набирает данные в форме и нажимает кнопку «Отправить»' },
+        {
+          id: 'Д',
+          text: 'Браузер анализирует данные тега form, выделяет из нее имя сервера и порт, имя протокола и имя обрабатывающего скрипта'
+        }
+      ],
+      correctAnswer: ['Г', 'Д', 'В', 'Б', 'А']
+    },
+    {
+      id: 350,
+      type: 'sequence',
+      text: 'Определите последовательность работы PHP с базами данных используя PDO',
+      options: [
+        { id: 'А', text: 'Подключение к базе данных' },
+        { id: 'Б', text: 'подготовка запроса' },
+        { id: 'В', text: 'Выполнение запроса' },
+        { id: 'Г', text: 'освобождение памяти' },
+        { id: 'Д', text: 'связывание параметров' },
+        { id: 'Е', text: 'закрытие соединения с сервером БД' },
+        { id: 'Ж', text: 'обработка результата' }
+      ],
+      correctAnswer: ['А', 'Б', 'Д', 'В', 'Ж', 'Г', 'Е']
+    },
+    {
+      id: 351,
+      type: 'open',
+      text: 'Три главные компоненты Всемирной паутины …',
+      correctAnswer:
+        'Язык разметки гипертекста HTML, Универсальный идентификатор ресурса URL, Протокол обмена гипертекстовой информацией HTTP'
+    },
+    {
+      id: 352,
+      type: 'open',
+      text: 'Методы тестирования обязательные для клиент-серверного приложения – это …',
+      correctAnswer: 'Функциональное, нагрузочное и тестирование безопасности'
+    },
+    {
+      id: 353,
+      type: 'open',
+      text: 'Типичные проблемы эксплуатации клиент-серверного приложения – это ...',
+      correctAnswer: 'Проблема производительности при большом количестве запросов'
+    },
+    {
+      id: 354,
+      type: 'open',
+      text: 'Распределение входящих запросов между несколькими серверами для предотвращения перегрузки одного сервера, что улучшает производительность, повышает доступность и надежность системы – это …',
+      correctAnswer: 'Балансировка нагрузки'
+    },
+    {
+      id: 355,
+      type: 'open',
+      text: 'Протокол, который используется для передачи данных в интернете, работающий по модели запрос-ответ – это …',
+      correctAnswer: 'HTTP (Hypertext Transfer Protocol)'
+    },
+    {
+      id: 356,
+      type: 'open',
+      text: 'Защищенная версия протокола HTTP, которая использует шифрование (обычно SSL/TLS) для защиты данных, передаваемых между клиентом и сервером – это …',
+      correctAnswer: 'HTTPS (HTTP Secure)'
+    },
+    {
+      id: 357,
+      type: 'open',
+      text: 'Основные преимущества клиент-серверной архитектуры – это …',
+      correctAnswer:
+        'распределение нагрузки между клиентами и серверами, возможность централизованного управления данными, улучшение безопасности, возможность масштабирования системы и упрощение обновлений программного обеспечения'
+    },
+    {
+      id: 358,
+      type: 'open',
+      text: 'Роль браузера в клиент-серверной архитектуре …',
+      correctAnswer:
+        'Браузер выступает в роли клиента, который отправляет запросы на сервер, получает данные и отображает их пользователю. Он также обрабатывает взаимодействие с пользователем и может выполнять JavaScript для динамического обновления контента'
+    },
+    {
+      id: 359,
+      type: 'open',
+      text: 'Процесс улучшения видимости веб-сайта в поисковых системах – это …',
+      correctAnswer: 'SEO-оптимизация (поисковая оптимизация)'
+    },
+    {
+      id: 360,
+      type: 'open',
+      text: 'Задачи SEO-оптимизации веб-приложения – это …',
+      correctAnswer: 'привлечь больше посетителей, улучшить рейтинг сайта и увеличить его значимость для пользователей'
+    }
+  ],
+  title: 'Реинжиниринг бизнес-процессов',
+  questions: [
+    {
+      id: 361,
+      type: 'single',
+      text: 'Организационная структура управления организацией - это …',
+      options: [
+        { id: 'А', text: 'Упорядоченная совокупность звеньев управления организацией' },
+        { id: 'Б', text: 'Перечень органов управления организацией' },
+        { id: 'В', text: 'Штатное расписание, представленное графически' },
+        { id: 'Г', text: 'Бизнес-модель' }
+      ],
+      correctAnswer: 'А'
+    },
+    {
+      id: 362,
+      type: 'single',
+      text: '… - это такая структура органов управления, в которой каждый орган управления специализирован на выполнении определенного круга производственных, технологических, проектных, финансовых, информационных или обеспечивающих функций.',
+      options: [
+        { id: 'А', text: 'линейная структура управления' },
+        { id: 'Б', text: 'линейно-функциональная структура управления' },
+        { id: 'В', text: 'функциональная структура управления' },
+        { id: 'Г', text: 'матричная структура управления' }
+      ],
+      correctAnswer: 'В'
+    },
+    {
+      id: 363,
+      type: 'single',
+      text: 'Проект реинжиниринга бизнес-процессов предприятия предполагает построение моделей двух видов …',
+      options: [
+        { id: 'А', text: '«в чем суть проблемы» и «как мы ее будем решать»' },
+        { id: 'Б', text: '«место на рынке» и «наша стратегия»' },
+        { id: 'В', text: '«как есть» и «как должно быть»' },
+        { id: 'Г', text: '«стратегическая цель» и «способы ее достижения»' }
+      ],
+      correctAnswer: 'В'
+    },
+    {
+      id: 364,
+      type: 'single',
+      text: 'К недостаткам функционального управления относят…',
+      options: [
+        { id: 'А', text: 'нескоординированность подразделений' },
+        { id: 'Б', text: 'заинтересованность в результатах труда' },
+        { id: 'В', text: 'сложность структуры управления' },
+        { id: 'Г', text: 'энергоемкость' }
+      ],
+      correctAnswer: 'А'
+    },
+    {
+      id: 365,
+      type: 'single',
+      text: 'Цепочки создания добавленной стоимости подразделяются на …',
+      options: [
+        { id: 'А', text: 'первичные и вторичные' },
+        { id: 'Б', text: 'основные и дополнительные' },
+        { id: 'В', text: 'главные и второстепенные' },
+        { id: 'Г', text: 'основные и вспомогательные' }
+      ],
+      correctAnswer: 'А'
+    },
+    {
+      id: 366,
+      type: 'single',
+      text: 'Статус центра прибыли имеет …',
+      options: [
+        { id: 'А', text: 'основное производственное подразделение' },
+        { id: 'Б', text: 'предприятие' },
+        { id: 'В', text: 'финансовая служба предприятия' },
+        { id: 'Г', text: 'отдел' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 367,
+      type: 'single',
+      text: 'Основной деятельностью компании является производство счетчиков расхода жидкостей и оказание услуг по их монтажу на местах эксплуатации. Для обеспечения этой деятельности компания также осуществляет изготовление упаковочной тары и доставку счетчиков клиентам. Сколько первичных цепочек создания добавленной стоимости существует на предприятии?',
+      options: [
+        { id: 'А', text: '1' },
+        { id: 'Б', text: '2' },
+        { id: 'В', text: '4' },
+        { id: 'Г', text: '5' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 368,
+      type: 'single',
+      text: 'Предприятие, занимающееся производством, поставкой и обслуживанием компьютерных систем, создало свой учебный центр для подготовки производственного персонала. В дальнейшем центр стал осуществлять также самостоятельную деятельность по переподготовке сотрудников компаний-заказчиков. К какому виду цепочек создания добавленной стоимости относится деятельность учебного центра теперь?',
+      options: [
+        { id: 'А', text: 'к вторичной, так как не связана с основной деятельностью' },
+        { id: 'Б', text: 'к первичной, так как это стало новым видом деятельности предприятия' },
+        {
+          id: 'В',
+          text: 'к первичной для внешних заказчиков, так как это стало новым видом деятельности предприятия, к вторичной - для внутренних заказчиков'
+        },
+        { id: 'Г', text: 'к вторичной, так как связана с основной деятельностью' }
+      ],
+      correctAnswer: 'В'
+    },
+    {
+      id: 369,
+      type: 'single',
+      text: 'Основные подходы к моделированию бизнес-процессов делятся на:',
+      options: [
+        { id: 'А', text: 'функциональные и объектно-ориентированные' },
+        { id: 'Б', text: 'детерминированные и стохастические' },
+        { id: 'В', text: 'информационные и причинно-следственные' },
+        { id: 'Г', text: 'логические и диаграммные' }
+      ],
+      correctAnswer: 'А'
+    },
+    {
+      id: 370,
+      type: 'single',
+      text: 'Целями моделирования бизнес-процессов являются:',
+      options: [
+        { id: 'А', text: 'построение наилучшей модели' },
+        { id: 'Б', text: 'ускорение выполнения проекта' },
+        { id: 'В', text: 'анализ недостатков фирмы и построение лучшей модели фирмы' },
+        { id: 'Г', text: 'минимизация стоимости проекта' }
+      ],
+      correctAnswer: 'В'
+    },
+    {
+      id: 371,
+      type: 'single',
+      text: 'Технология моделирования бизнес-процессов - это процесс …',
+      options: [
+        {
+          id: 'А',
+          text: 'отражения субъективного видения потока работ в виде формальной модели, состоящей из взаимосвязанных операций'
+        },
+        { id: 'Б', text: 'определения стоимости рабочего места исполнителя процесса' },
+        { id: 'В', text: 'использования машинных программ классификации и структуризации бизнес-процессов' },
+        { id: 'Г', text: 'поэтапного описания существующих бизнес-процессов' }
+      ],
+      correctAnswer: 'А'
+    },
+    {
+      id: 372,
+      type: 'single',
+      text: 'Функция управления - это …',
+      options: [
+        {
+          id: 'А',
+          text: 'направление деятельности элемента организационной структуры, представляющее собой совокупность однородных операций (действий), выполняемых на постоянной основе'
+        },
+        { id: 'Б', text: 'математическая модель, описывающая действия аппарата управления' },
+        {
+          id: 'В',
+          text: 'направление деятельности элемента организационной структуры, представляющее собой совокупность однородных операций (действий)'
+        },
+        { id: 'Г', text: 'определение стоимости рабочего места исполнителя процесса' }
+      ],
+      correctAnswer: 'А'
+    },
+    {
+      id: 373,
+      type: 'single',
+      text: 'Функционально-стоимостный анализ - это …',
+      options: [
+        {
+          id: 'А',
+          text: 'метод определения стоимости и других характеристик изделий, услуг и потребителей, в основе которого лежит использование функций и ресурсов, задействованных в производстве, маркетинге, продаже, доставке, технической поддержке, оказании услуг, обслуживании клиентов, а также в обеспечении качества'
+        },
+        {
+          id: 'Б',
+          text: 'определение стоимости рабочего места исполнителя процесса, определение коэффициента трудового вклада исполнителя и других корректирующих коэффициентов, а также формирование отчета по результатам функционально-стоимостного анализа'
+        },
+        {
+          id: 'В',
+          text: 'один из методов, позволяющий указать на возможные пути улучшения стоимостных показателей, цель которого - достичь улучшений в работе предприятий по показателям стоимости, трудоемкости и производительности'
+        },
+        { id: 'Г', text: 'математическая модель, описывающая действия аппарата управления' }
+      ],
+      correctAnswer: 'А'
+    },
+    {
+      id: 374,
+      type: 'single',
+      text: 'Методология функционально-стоимостного анализа при моделировании бизнес-процессов - это …',
+      options: [
+        {
+          id: 'А',
+          text: 'анализ функций, который позволяет сначала определять стоимостные затраты на выполнение процессов, далее стоимость функций переносится на стоимостные объекты'
+        },
+        {
+          id: 'Б',
+          text: 'анализ бизнес-процессов с целью выбрать процессы с наиболее низкой стоимостью и рекомендовать увеличить их долю в структуре выпускаемых изделий производстве'
+        },
+        {
+          id: 'В',
+          text: 'анализ бизнес-процессов с целью максимально сократить количество выпускаемой продукции, не добавляющей стоимость предприятию'
+        },
+        {
+          id: 'Г',
+          text: 'определение стоимости рабочего места исполнителя процесса, определение коэффициента трудового вклада исполнителя и других корректирующих коэффициентов, а также формирование отчета по результатам функционально-стоимостного анализа'
+        }
+      ],
+      correctAnswer: 'А'
+    },
+    {
+      id: 375,
+      type: 'single',
+      text: 'В основе метода … лежит предположение, что «деятельность потребляет ресурсы, а продукция потребляет деятельность».',
+      options: [
+        { id: 'А', text: 'ABC' },
+        { id: 'Б', text: 'АСЦ' },
+        { id: 'В', text: 'SWOT' },
+        { id: 'Г', text: 'PEST' }
+      ],
+      correctAnswer: 'А'
+    },
+    {
+      id: 376,
+      type: 'single',
+      text: '… - это экономические элементы, необходимые для осуществления деятельности, источник затрат.',
+      options: [
+        { id: 'А', text: 'механизмы' },
+        { id: 'Б', text: 'ресурсы' },
+        { id: 'В', text: 'связи' },
+        { id: 'Г', text: 'воздействия' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 377,
+      type: 'single',
+      text: 'Фактор затрат - это …',
+      options: [
+        { id: 'А', text: 'показатель, оценивающий результаты деятельности' },
+        {
+          id: 'Б',
+          text: 'характеристика, определяющая рабочую нагрузку и усилия, требуемые для осуществления деятельности, а также необходимые ресурсы'
+        },
+        {
+          id: 'В',
+          text: 'показатель потребления ресурса, используемый для определения доли от общих затрат ресурсов, присваиваемой каждому виду деятельности, использующему данный ресурс'
+        },
+        { id: 'Г', text: 'математическая модель, описывающая действия аппарата управления' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 378,
+      type: 'single',
+      text: 'Для окраски готового изделия требуется 1,5 банки краски стоимостью 200 рублей за банку, процесс длится 1 час. Какова стоимость окраски изделия, если нормо-час работы маляра стоит 300 рублей, а другие ресурсы не используются?',
+      options: [
+        { id: 'А', text: '500 рублей' },
+        { id: 'Б', text: '600 рублей' },
+        { id: 'В', text: '650 рублей' },
+        { id: 'Г', text: '950 рублей' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 379,
+      type: 'single',
+      text: 'Как повлияет на стоимость замена краски, если при стоимости банки 100 рублей время процесса увеличится на 50%?',
+      options: [
+        { id: 'А', text: 'стоимость уменьшится вдвое' },
+        { id: 'Б', text: 'стоимость увеличится вдвое' },
+        { id: 'В', text: 'стоимость не изменится' },
+        { id: 'Г', text: 'стоимость попеременно будет меняться' }
+      ],
+      correctAnswer: 'В'
+    },
+    {
+      id: 380,
+      type: 'single',
+      text: 'Бизнес-процесс оказания услуг включает функцию 1, повторяющуюся в разных комбинациях 5 раз, и функцию 2, повторяющуюся 4 раза. Чему равна стоимость бизнес-процесса, если стоимость функции 1 составляет 600 рублей, а функции 2 - 800 рублей?',
+      options: [
+        { id: 'А', text: '6200 рублей' },
+        { id: 'Б', text: '6400 рублей' },
+        { id: 'В', text: '64000 рублей' },
+        { id: 'Г', text: '62000 рублей' }
+      ],
+      correctAnswer: 'А'
+    },
+    {
+      id: 381,
+      type: 'single',
+      text: 'Если в результате оптимизации любой из этих функций (но только одной одновременно) можно снизить ее стоимость на 100 рублей, какую функцию стоит оптимизировать?',
+      options: [
+        { id: 'А', text: 'функцию 2, так как ее стоимость выше' },
+        { id: 'Б', text: 'функцию 1, так как она повторяется чаще' },
+        { id: 'В', text: 'в обоих случаях результат равнозначен' },
+        { id: 'Г', text: 'в обоих случаях результат неравнозначен' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 382,
+      type: 'single',
+      text: 'Предприятие, работающее на конкурентном и динамичном рынке услуг, собирается реализовать ИСУП. Поступили предложения от интеграторов: внедрить монолитную систему, решающую все текущие задачи, и построить сервисно-ориентированную систему на основе действующих продуктов. Какой путь Вы выберите, если ценовые предложения интеграторов равны? Почему?',
+      options: [
+        {
+          id: 'А',
+          text: 'сервисно-ориентированную систему, так как она позволяет повысить скорость адаптации бизнеса к быстроменяющимся требованиям рынка'
+        },
+        {
+          id: 'Б',
+          text: 'рыночную систему, так как она не позволяет сократить расходы на ИТ-системы на основе повторного использования их функциональных компонентов'
+        },
+        { id: 'В', text: 'монолитную систему, так как отказ от разнородных систем позволяет снизить расходы на ИТ' },
+        { id: 'Г', text: 'монолитную систему, так как подобные системы опираются на лучшие практики бизнес-процессов' }
+      ],
+      correctAnswer: 'А'
+    },
+    {
+      id: 383,
+      type: 'single',
+      text: 'Физическая сущность реинжиниринга - это …',
+      options: [
+        {
+          id: 'А',
+          text: 'разделение предприятия на самостоятельно функционирующие участки с контролем на входе и выходе процессов'
+        },
+        { id: 'Б', text: 'технологическая модернизация предприятия' },
+        { id: 'В', text: 'переформирование подразделений предприятия на основе новой структуры' },
+        { id: 'Г', text: 'перераспределение прав, ответственности и полномочий в соответствии с выбранной стратегией' }
+      ],
+      correctAnswer: 'А'
+    },
+    {
+      id: 384,
+      type: 'single',
+      text: 'Логическая сущность реинжиниринга - это …',
+      options: [
+        { id: 'А', text: 'технико-технологическая модернизация предприятия на основе информационных технологий' },
+        { id: 'Б', text: 'оптимизация организационной структуры предприятия в соответствии с выбранной стратегией' },
+        { id: 'В', text: 'переход организации на выпуск конкурентоспособной продукции' },
+        { id: 'Г', text: 'новая структурированная форма управления предприятием на основе информационных технологий' }
+      ],
+      correctAnswer: 'Г'
+    },
+    {
+      id: 385,
+      type: 'single',
+      text: 'Каковы ключевые факторы успеха реинжиниринга бизнес-процессов?',
+      options: [
+        { id: 'А', text: 'мотивация персонала в РБП' },
+        { id: 'Б', text: 'привлечение консультантов к РБП' },
+        { id: 'В', text: 'переход организации на выпуск конкурентоспособной продукции' },
+        { id: 'Г', text: 'оптимизация организационной структуры предприятия' }
+      ],
+      correctAnswer: 'А'
+    },
+    {
+      id: 386,
+      type: 'single',
+      text: '… бизнес-процесса - это степень соответствия реального бизнес-процесса своему документальному описанию.',
+      options: [
+        { id: 'А', text: 'эффективность' },
+        { id: 'Б', text: 'определенность' },
+        { id: 'В', text: 'результативность' },
+        { id: 'Г', text: 'ресурсоемкость' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 387,
+      type: 'single',
+      text: 'Прямой инжиниринг - это…',
+      options: [
+        { id: 'А', text: 'построение новой организации бизнес-процессов' },
+        { id: 'Б', text: 'исследование существующей организации бизнес-процессов' },
+        { id: 'В', text: 'оптимизация бизнес-процессов' },
+        { id: 'Г', text: 'привлечение консультантов к РБП' }
+      ],
+      correctAnswer: 'А'
+    },
+    {
+      id: 388,
+      type: 'single',
+      text: 'Процессное управление предприятием - это …',
+      options: [
+        {
+          id: 'А',
+          text: 'описанные и утвержденные конкретные процессы управления протекающими на предприятии производственными процессами'
+        },
+        { id: 'Б', text: 'управление производством деталей и выполнением услуг на предприятии' },
+        {
+          id: 'В',
+          text: 'совокупность взаимосвязанных или взаимодействующих видов деятельности, преобразующая «входы» в «выходы»'
+        },
+        { id: 'Г', text: 'исследование существующей организации бизнес-процессов' }
+      ],
+      correctAnswer: 'А'
+    },
+    {
+      id: 389,
+      type: 'single',
+      text: 'Вы собираетесь открыть собственный интернет-магазин и задумались о проектировании его бизнес-процессов. Чем это будет являться в отношении бизнес-процессов?',
+      options: [
+        { id: 'А', text: 'обратным инжинирингом' },
+        { id: 'Б', text: 'прямым инжинирингом' },
+        { id: 'В', text: 'реинжинирингом' },
+        { id: 'Г', text: 'коинжинирингом' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 390,
+      type: 'single',
+      text: 'Первой фазой действий станет …',
+      options: [
+        { id: 'А', text: 'анализ текущих бизнес-процессов' },
+        { id: 'Б', text: 'планирование бизнес-процессов' },
+        { id: 'В', text: 'мониторинг бизнес-процессов' },
+        { id: 'Г', text: 'прогнозирование бизнес-процессов' }
+      ],
+      correctAnswer: 'Б'
+    },
+    {
+      id: 391,
+      type: 'multiple',
+      text: 'Какие из перечисленных характеристик являются обязательными признаками проекта?',
+      options: [
+        { id: 'А', text: 'Временный характер' },
+        { id: 'Б', text: 'Большой бюджет' },
+        { id: 'В', text: 'Уникальность цели' },
+        { id: 'Г', text: 'Использование аутсорсинга' }
+      ],
+      correctAnswer: ['А', 'В']
+    },
+    {
+      id: 392,
+      type: 'multiple',
+      text: 'Какие из следующих ролей в процессном управлении несут ответственность за непосредственное управление и результаты процесса?',
+      options: [
+        { id: 'А', text: 'Владелец процесса' },
+        { id: 'Б', text: 'Процессный аналитик' },
+        { id: 'В', text: 'Менеджер процесса' },
+        { id: 'Г', text: 'Проектировщик процессов' }
+      ],
+      correctAnswer: ['А', 'В']
+    },
+    {
+      id: 393,
+      type: 'multiple',
+      text: 'Какие из перечисленных методов являются правильными для сбора информации при моделировании бизнес-процессов?',
+      options: [
+        { id: 'А', text: 'Рабочие семинары с участниками процесса' },
+        { id: 'Б', text: 'Последовательное интервьюирование экспертов' },
+        { id: 'В', text: 'Анализ существующей документации компании' },
+        { id: 'Г', text: 'Использование только должностных инструкций' }
+      ],
+      correctAnswer: ['А', 'Б', 'В']
+    },
+    {
+      id: 394,
+      type: 'multiple',
+      text: 'Какие из перечисленных элементов относятся к основным WF-паттернам (шаблонам workflow)?',
+      options: [
+        { id: 'А', text: 'Последовательность (Sequence)' },
+        { id: 'Б', text: 'Параллельное расщепление (AND-split)' },
+        { id: 'В', text: 'Дискриминатор (Discriminator)' },
+        { id: 'Г', text: 'Исключающий выбор (XOR-split)' }
+      ],
+      correctAnswer: ['А', 'Б', 'Г']
+    },
+    {
+      id: 395,
+      type: 'multiple',
+      text: 'Какие из перечисленных технологий и стандартов относятся к экосистеме BPM (Business Process Management)?',
+      options: [
+        { id: 'А', text: 'Системы управления бизнес-процессами (BPMS)' },
+        { id: 'Б', text: 'Сервис-ориентированная архитектура (SOA)' },
+        { id: 'В', text: 'Системы управления бизнес-правилами (BRMS)' },
+        { id: 'Г', text: 'Системы управления взаимоотношениями с клиентами (CRM)' }
+      ],
+      correctAnswer: ['А', 'Б', 'В']
+    },
+    {
+      id: 396,
+      type: 'multiple',
+      text: 'Какие из следующих принципов относятся к принципам перепроектирования бизнес-процессов по Хаммеру?',
+      options: [
+        { id: 'А', text: 'Горизонтальное сжатие процессов' },
+        { id: 'Б', text: 'Увеличение количества проверок и согласований' },
+        { id: 'В', text: 'Децентрализация ответственности' },
+        { id: 'Г', text: 'Сохранение линейной последовательности этапов' }
+      ],
+      correctAnswer: ['А', 'В']
+    },
+    {
+      id: 397,
+      type: 'multiple',
+      text: 'Какие из перечисленных критериев используются для выбора приоритетных процессов для оптимизации?',
+      options: [
+        { id: 'А', text: 'Количество сотрудников в процессе' },
+        { id: 'Б', text: 'Важность процесса для стратегических целей' },
+        { id: 'В', text: 'Степень проблемности процесса' },
+        { id: 'Г', text: 'Возраст руководителя подразделения' }
+      ],
+      correctAnswer: ['Б', 'В']
+    },
+    {
+      id: 398,
+      type: 'multiple',
+      text: 'Какие из перечисленных уровней изменений бизнес-модели относятся к классификации Run-Change-Disrupt?',
+      options: [
+        { id: 'А', text: 'Run (автоматизация)' },
+        { id: 'Б', text: 'Improve (улучшение)' },
+        { id: 'В', text: 'Change (качественное изменение)' },
+        { id: 'Г', text: 'Disrupt (переосмысление)' }
+      ],
+      correctAnswer: ['А', 'В', 'Г']
+    },
+    {
+      id: 399,
+      type: 'multiple',
+      text: 'Какие из следующих характеристик должны быть у показателей эффективности процессов?',
+      options: [
+        { id: 'А', text: 'Сбалансированность и взаимосвязанность' },
+        { id: 'Б', text: 'Максимальная сложность расчета' },
+        { id: 'В', text: 'Ориентированность на внутренние удобства' },
+        { id: 'Г', text: 'Подкрепленность стимулами' }
+      ],
+      correctAnswer: ['А', 'Г']
+    },
+    {
+      id: 400,
+      type: 'multiple',
+      text: 'Какие из перечисленных ошибок являются типичными при проведении реинжиниринга?',
+      options: [
+        { id: 'А', text: 'Фундаментальное переосмысление процессов' },
+        { id: 'Б', text: 'Попытка улучшить, а не перепроектировать процесс' },
+        { id: 'В', text: 'Недостаточное ресурсное обеспечение' },
+        { id: 'Г', text: 'Слишком активное участие топ-менеджмента' }
+      ],
+      correctAnswer: ['Б', 'В']
+    },
+    {
+      id: 401,
+      type: 'multiple',
+      text: 'Какие из перечисленных характеристик являются обязательными признаками проекта?',
+      options: [
+        { id: 'А', text: 'Временный характер' },
+        { id: 'Б', text: 'Большой бюджет' },
+        { id: 'В', text: 'Уникальность цели' },
+        { id: 'Г', text: 'Использование аутсорсинга' }
+      ],
+      correctAnswer: ['А', 'В']
+    },
+    {
+      id: 402,
+      type: 'multiple',
+      text: 'Какие из следующих ролей в процессном управлении несут ответственность за непосредственное управление и результаты процесса?',
+      options: [
+        { id: 'А', text: 'Владелец процесса' },
+        { id: 'Б', text: 'Процессный аналитик' },
+        { id: 'В', text: 'Менеджер процесса' },
+        { id: 'Г', text: 'Проектировщик процессов' }
+      ],
+      correctAnswer: ['А', 'В']
+    },
+    {
+      id: 403,
+      type: 'multiple',
+      text: 'Какие из перечисленных методов являются правильными для сбора информации при моделировании бизнес-процессов?',
+      options: [
+        { id: 'А', text: 'Рабочие семинары с участниками процесса' },
+        { id: 'Б', text: 'Последовательное интервьюирование экспертов' },
+        { id: 'В', text: 'Анализ существующей документации компании' },
+        { id: 'Г', text: 'Использование только должностных инструкций' }
+      ],
+      correctAnswer: ['А', 'Б', 'В']
+    },
+    {
+      id: 404,
+      type: 'multiple',
+      text: 'Какие из перечисленных элементов относятся к основным WF-паттернам (шаблонам workflow)?',
+      options: [
+        { id: 'А', text: 'Последовательность (Sequence)' },
+        { id: 'Б', text: 'Параллельное расщепление (AND-split)' },
+        { id: 'В', text: 'Дискриминатор (Discriminator)' },
+        { id: 'Г', text: 'Исключающий выбор (XOR-split)' }
+      ],
+      correctAnswer: ['А', 'Б', 'Г']
+    },
+    {
+      id: 405,
+      type: 'multiple',
+      text: 'Какие из перечисленных технологий и стандартов относятся к экосистеме BPM (Business Process Management)?',
+      options: [
+        { id: 'А', text: 'Системы управления бизнес-процессами (BPMS)' },
+        { id: 'Б', text: 'Сервис-ориентированная архитектура (SOA)' },
+        { id: 'В', text: 'Системы управления бизнес-правилами (BRMS)' },
+        { id: 'Г', text: 'Системы управления взаимоотношениями с клиентами (CRM)' }
+      ],
+      correctAnswer: ['А', 'Б', 'В']
+    },
+    {
+      id: 406,
+      type: 'multiple',
+      text: 'Какие из следующих принципов относятся к принципам перепроектирования бизнес-процессов по Хаммеру?',
+      options: [
+        { id: 'А', text: 'Горизонтальное сжатие процессов' },
+        { id: 'Б', text: 'Увеличение количества проверок и согласований' },
+        { id: 'В', text: 'Децентрализация ответственности' },
+        { id: 'Г', text: 'Сохранение линейной последовательности этапов' }
+      ],
+      correctAnswer: ['А', 'В']
+    },
+    {
+      id: 407,
+      type: 'multiple',
+      text: 'Какие из перечисленных критериев используются для выбора приоритетных процессов для оптимизации?',
+      options: [
+        { id: 'А', text: 'Количество сотрудников в процессе' },
+        { id: 'Б', text: 'Важность процесса для стратегических целей' },
+        { id: 'В', text: 'Степень проблемности процесса' },
+        { id: 'Г', text: 'Возраст руководителя подразделения' }
+      ],
+      correctAnswer: ['Б', 'В']
+    },
+    {
+      id: 408,
+      type: 'multiple',
+      text: 'Какие из перечисленных уровней изменений бизнес-модели относятся к классификации Run-Change-Disrupt?',
+      options: [
+        { id: 'А', text: 'Run (автоматизация)' },
+        { id: 'Б', text: 'Improve (улучшение)' },
+        { id: 'В', text: 'Change (качественное изменение)' },
+        { id: 'Г', text: 'Disrupt (переосмысление)' }
+      ],
+      correctAnswer: ['А', 'В', 'Г']
+    },
+    {
+      id: 409,
+      type: 'multiple',
+      text: 'Какие из следующих характеристик должны быть у показателей эффективности процессов?',
+      options: [
+        { id: 'А', text: 'Сбалансированность и взаимосвязанность' },
+        { id: 'Б', text: 'Максимальная сложность расчета' },
+        { id: 'В', text: 'Ориентированность на внутренние удобства' },
+        { id: 'Г', text: 'Подкрепленность стимулами' }
+      ],
+      correctAnswer: ['А', 'Г']
+    },
+    {
+      id: 410,
+      type: 'multiple',
+      text: 'Какие из перечисленных ошибок являются типичными при проведении реинжиниринга?',
+      options: [
+        { id: 'А', text: 'Фундаментальное переосмысление процессов' },
+        { id: 'Б', text: 'Попытка улучшить, а не перепроектировать процесс' },
+        { id: 'В', text: 'Недостаточное ресурсное обеспечение' },
+        { id: 'Г', text: 'Слишком активное участие топ-менеджмента' }
+      ],
+      correctAnswer: ['Б', 'В']
+    },
+    {
+      id: 411,
+      type: 'matching',
+      text: 'Установите соответствие',
+      matchItems: [
+        { id: '1', text: 'Процесс' },
+        { id: '2', text: 'Информационный процесс' },
+        { id: '3', text: 'Бизнес-процесс' }
+      ],
+      matchTargets: [
+        {
+          id: 'А',
+          text: 'Совокупность взаимосвязанных операций по извлечению, хранению, передаче, преобразованию и предоставлению информации'
+        },
+        {
+          id: 'Б',
+          text: 'Целенаправленная последовательность действий, переводящая объект из исходного состояния в конечное'
+        },
+        {
+          id: 'В',
+          text: 'Совокупность взаимосвязанных мероприятий или задач, направленных на создание определенного продукта или услуги для потребителя'
+        }
+      ],
+      correctAnswer: { 1: 'Б', 2: 'А', 3: 'В' }
+    },
+    {
+      id: 412,
+      type: 'matching',
+      text: 'Соотнесите виды моделей бизнес-процессов и их характеристики',
+      matchItems: [
+        { id: '1', text: 'Функциональные' },
+        { id: '2', text: 'Поведенческие' },
+        { id: '3', text: 'Структурные' },
+        { id: '4', text: 'Информационные' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'Характеризуют морфологию системы - состав подсистем, их взаимосвязи' },
+        { id: 'Б', text: 'Описывают совокупность выполняемых системой функций и их входы и выходы' },
+        { id: 'В', text: 'Отражают структуры данных - их состав и взаимосвязи' },
+        {
+          id: 'Г',
+          text: 'Показывают, когда и/или при каких условиях выполняются бизнес-функции, с помощью таких категорий, как состояние системы, событие, переход из одного состояния в другое, условия перехода, последовательность событий'
+        }
+      ],
+      correctAnswer: { 1: 'Б', 2: 'Г', 3: 'А', 4: 'В' }
+    },
+    {
+      id: 413,
+      type: 'matching',
+      text: 'Соотнесите основные виды архитектур информационных систем и их характеристики',
+      matchItems: [
+        { id: '1', text: 'Файл-сервер' },
+        { id: '2', text: 'Клиент-сервер' },
+        { id: '3', text: 'Трехслойная архитектура' },
+        { id: '4', text: 'Интернет-архитектура' }
+      ],
+      matchTargets: [
+        {
+          id: 'А',
+          text: 'Базируется на дальнейшей специализации компонент архитектуры: клиент занимается только организацией интерфейса с пользователем, сервер баз данных - только стандартизованной обработкой данных'
+        },
+        {
+          id: 'Б',
+          text: 'Разновидность трехслойной архитектуры на основании использования web-технологий. В этой разновидности роль сервера приложений играет web-сервер, а в качестве клиента используется стандартный web-браузер'
+        },
+        {
+          id: 'В',
+          text: 'Как исполняемые модули, так и данные размещаются в отдельных файлах операционной системы. Доступ к данным осуществляется путем указания пути (path) и использования файловых операций (открыть, считать, записать). Для хранения данных используется выделенный сервер (отдельный компьютер), который и является файловым сервером'
+        },
+        {
+          id: 'Г',
+          text: 'Это не только архитектура, это - новая парадигма, пришедшая на смену устаревшим концепциям. Суть ее заключается в том, что клиент (исполняемый модуль) запрашивает те или иные сервисы в соответствии с определенным протоколом обмена данными. При этом нет необходимости в использовании прямых путей операционной системы'
+        }
+      ],
+      correctAnswer: { 1: 'В', 2: 'Г', 3: 'А', 4: 'Б' }
+    },
+    {
+      id: 414,
+      type: 'matching',
+      text: 'Установите соответствие между характеристиками архитектуры ИС',
+      matchItems: [
+        { id: '1', text: 'Файл-сервер' },
+        { id: '2', text: 'Клиент-сервер' },
+        { id: '3', text: 'Трехслойная архитектура' },
+        { id: '4', text: 'Интернет-архитектура' }
+      ],
+      matchTargets: [
+        {
+          id: 'А',
+          text: 'Несколько отдельных серверов для установки СУБД; очень большие объемы передаваемых данных; высокое число клиентов (свыше 100); затруднительно модернизировать (модификация затрагивает модули клиентского ПО)'
+        },
+        {
+          id: 'Б',
+          text: 'Отдельный сервер для установки СУБД; большие объемы передаваемых данных; среднее число клиентов (около 100); сложно модернизировать (модификация затрагивает часть клиентского ПО)'
+        },
+        {
+          id: 'В',
+          text: 'Несколько отдельных серверов для установки СУБД; очень большие объемы передаваемых данных; высокое число клиентов (свыше 1000); просто модернизировать (модификация не затрагивает клиентское ПО)'
+        },
+        {
+          id: 'Г',
+          text: 'Установка СУБД на клиентском компьютере; малые объемы передаваемых данных; малое число клиентов (около 10); очень сложно модернизировать (модификация затрагивает клиентское ПО)'
+        }
+      ],
+      correctAnswer: { 1: 'Г', 2: 'Б', 3: 'А', 4: 'В' }
+    },
+    {
+      id: 415,
+      type: 'matching',
+      text: 'Соотнесите параметры стоимостной информации и их содержание',
+      matchItems: [
+        { id: '1', text: 'Frequence Multiplier' },
+        { id: '2', text: 'Time Information' },
+        { id: '3', text: 'Cost information' },
+        { id: '4', text: 'Total' },
+        { id: '5', text: 'Total*Frequency' }
+      ],
+      matchTargets: [
+        {
+          id: 'А',
+          text: 'Единица измерений длительности (unit) в секундах, минутах, часах и т.д.; длительность (duration) одной операции; длительность*Частота - автоматически формируемый показатель'
+        },
+        { id: 'Б', text: 'Автоматически подсчитывается итог затрат по операции' },
+        {
+          id: 'В',
+          text: 'Устанавливается частота выполнения функции в одном экземпляре процесса или за определенной период времени'
+        },
+        {
+          id: 'Г',
+          text: 'Последовательно заполняются статьи затрат, часть из которых может быть связана прямой зависимостью с длительностью операции, например, заработная плата, амортизация и т.д.'
+        },
+        { id: 'Д', text: 'Автоматически рассчитывается сумма затрат по операции на процесс' }
+      ],
+      correctAnswer: { 1: 'В', 2: 'А', 3: 'Г', 4: 'Б', 5: 'Д' }
+    },
+    {
+      id: 416,
+      type: 'matching',
+      text: 'Соотнесите инструментальные методы оценки эффективности исполнения функций в ключевых бизнес-процессах и их характеристики',
+      matchItems: [
+        { id: '1', text: 'Функционально-стоимостной анализ' },
+        { id: '2', text: 'Анализ издержек по функциям' },
+        { id: '3', text: 'Анализ загруженности сотрудников' },
+        { id: '4', text: 'Информационный аудит' }
+      ],
+      matchTargets: [
+        {
+          id: 'А',
+          text: 'Позволяет оценить эффективность информационной системы, риски ее использования и выбрать направления для ее совершенствования'
+        },
+        {
+          id: 'Б',
+          text: 'Большинство отчетных форм о выполнении логистического плана содержат показатели логистических издержек, сгруппированные по функциональным областям логистики, например, издержки в материальном менеджменте, издержки на операции физического распределения и т.п., и внутри этих областей по логистическим функциям'
+        },
+        { id: 'В', text: 'Инструмент, предназначенный для оценки себестоимости продукта (услуги)' },
+        {
+          id: 'Г',
+          text: 'Позволяет сделать заключение о полноте и равномерности загрузки каждого работника, выявить существующие резервы в использовании рабочего времени, обнаружить возможные «узкие места», которые в дальнейшем могут привести к возникновению у компании проблем'
+        }
+      ],
+      correctAnswer: { 1: 'В', 2: 'Б', 3: 'Г', 4: 'А' }
+    },
+    {
+      id: 417,
+      type: 'matching',
+      text: 'Соотнесите используемые при проведении функционально-стоимостного анализа системы управления подходы и их характеристики',
+      matchItems: [
+        { id: '1', text: 'Функциональный подход' },
+        { id: '2', text: 'Стоимостной подход' },
+        { id: '3', text: 'Системный подход' },
+        { id: '4', text: 'Общенациональный подход' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'Определяет ту или иную выполняемую функцию управления' },
+        {
+          id: 'Б',
+          text: 'Предполагает исследование функций управления (выявление, определение, анализ, выводы с предложениями) с целью обеспечения наиболее полного и эффективного их выполнения'
+        },
+        { id: 'В', text: 'Оценивает результаты функционирования системы управления и затраты на ее обеспечение' },
+        {
+          id: 'Г',
+          text: 'Означает исследование управления как системы во взаимосвязи и взаимодействии всех ее элементов и подсистем между собой и с внешней средой'
+        }
+      ],
+      correctAnswer: { 1: 'Б', 2: 'А', 3: 'Г', 4: 'В' }
+    },
+    {
+      id: 418,
+      type: 'matching',
+      text: 'Соотнесите признаки классификации функций и их содержание',
+      matchItems: [
+        { id: '1', text: 'По области проявления' },
+        { id: '2', text: 'По роли в удовлетворении потребностей' },
+        { id: '3', text: 'По роли в рабочем процессе' },
+        { id: '4', text: 'По характеру проявления' },
+        { id: '5', text: 'По характеру получаемого результата' }
+      ],
+      matchTargets: [
+        {
+          id: 'А',
+          text: 'Основные функции подчинены главной и обусловливают работоспособность объекта, создание необходимых условий для осуществления главной функции. С помощью вспомогательных функций реализуются основные функции. В ходе оценки функций часто обнаруживается, что именно во вспомогательных функциях заложены основные резервы снижения себестоимости объекта'
+        },
+        {
+          id: 'Б',
+          text: 'Внешние функции выполняются объектом в целом и определяют его назначение при взаимодействии с внешней средой. Внутренние функции определяются составом действий и взаимосвязей внутри объекта и выполняются его элементами'
+        },
+        {
+          id: 'В',
+          text: 'Главная функция отражает главную цель создания объекта, второстепенная - побочную цель, но она может способствовать увеличению спроса на изделие'
+        },
+        { id: 'Г', text: 'Полезные и бесполезные, а последние делят на нейтральные и вредные' },
+        {
+          id: 'Д',
+          text: 'Номинальные функции создаются при формировании и создании объекта и обязательны для выполнения. Потенциальные функции отражают возможность выполнения объектом каких-либо функций при изменении условий его эксплуатации. Действительные функции - фактически выполняемые функции'
+        }
+      ],
+      correctAnswer: { 1: 'Б', 2: 'В', 3: 'А', 4: 'Д', 5: 'Г' }
+    },
+    {
+      id: 419,
+      type: 'matching',
+      text: 'Соотнесите этапы функционально-стоимостного анализа (ФСА) и их содержание',
+      matchItems: [
+        { id: '1', text: 'Подготовительный этап' },
+        { id: '2', text: 'Информационный этап' },
+        { id: '3', text: 'Аналитический этап' },
+        { id: '4', text: 'Творческий этап' },
+        { id: '5', text: 'Исследовательский этап' },
+        { id: '6', text: 'Разработка рекомендаций по внедрению результатов' }
+      ],
+      matchTargets: [
+        {
+          id: 'А',
+          text: 'Выбор наилучшего из предлагаемых вариантов усовершенствования объекта; экспериментальное испытание усовершенствованного объекта; оформление результатов ФСА, их согласование с заинтересованными лицами, подразделениями и утверждение'
+        },
+        {
+          id: 'Б',
+          text: 'Анализ функций объекта; определение значимости и стоимости функций объекта, их сравнение; выявление функциональных зон с превышением затрат над значимостью функций; постановка задач поиска более рациональных и оптимальных решений'
+        },
+        {
+          id: 'В',
+          text: 'Выбор объекта и определение цели ФСА; подбор и утверждение состава исследовательской рабочей группы; обучение специалистов основам ФСА'
+        },
+        {
+          id: 'Г',
+          text: 'Поиск оптимальных параметров улучшения моделей; поиск улучшенных структурно-функциональных моделей объекта'
+        },
+        {
+          id: 'Д',
+          text: 'Составление и оформление необходимой информации для внедрения результатов исследования; согласование предложений с заинтересованными подразделениями и их утверждение; организация работ по реализации предложений; материальное и моральное вознаграждение участников; оформление отчета о выполненной работе с предложениями по улучшению проведения ФСА'
+        },
+        {
+          id: 'Е',
+          text: 'Сбор и получение информации об объекте, его недостатках; определение списка основных показателей, характеризующих объект, требований к нему; построение структурно-функциональной модели объекта'
+        }
+      ],
+      correctAnswer: { 1: 'В', 2: 'Е', 3: 'Б', 4: 'Г', 5: 'А', 6: 'Д' }
+    },
+    {
+      id: 420,
+      type: 'matching',
+      text: 'Соотнесите методы анализа конкурентной среды и их характеристики',
+      matchItems: [
+        { id: '1', text: 'Опросы потребителей' },
+        { id: '2', text: 'Мониторинг мест продаж' },
+        { id: '3', text: 'Поиск в интернете' },
+        { id: '4', text: 'Интервьюирование экспертов' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'Дадут понимание качества продукта конкурентов, его имиджа на рынке' },
+        {
+          id: 'Б',
+          text: 'Демонстрирует качество и условия выкладки товаров, стратегии в области промо-акций и ассортименте'
+        },
+        {
+          id: 'В',
+          text: 'Количественный или качественный сбор и анализ мнений и представлений о конкурентах среди разных целевых групп для определения их слабых и сильных сторон'
+        },
+        { id: 'Г', text: 'Отзывы, сайты конкурентов, обзоры и пр.' }
+      ],
+      correctAnswer: { 1: 'В', 2: 'Б', 3: 'Г', 4: 'А' }
+    },
+    {
+      id: 421,
+      type: 'matching',
+      text: 'Соотнесите методы анализа конкурентной среды и их характеристики',
+      matchItems: [
+        { id: '1', text: 'Опрос менеджеров по продажам' },
+        { id: '2', text: 'Изучение отраслевых обзоров' },
+        { id: '3', text: 'Тематические выставки, конференции и семинары' }
+      ],
+      matchTargets: [
+        { id: 'А', text: 'Данные об участниках рынка, контактах и коммуникационной стратегии' },
+        {
+          id: 'Б',
+          text: 'Инсайдерские данные (торговый персонал может предоставить презентации, специальные программы конкурентов)'
+        },
+        {
+          id: 'В',
+          text: 'Изучение отраслевых обзоров. Публикации финансовых показателей, открытых рейтингов, иногда и принципиальных характеристик бизнеса'
+        }
+      ],
+      correctAnswer: { 1: 'Б', 2: 'В', 3: 'А' }
+    },
+    {
+      id: 422,
+      type: 'matching',
+      text: 'Соотнесите типы анализа конкурентной среды в интернете и их характеристики',
+      matchItems: [
+        { id: '1', text: 'Анализ конкурентной среды перед запуском проекта' },
+        { id: '2', text: 'Постанализ конкурентов' },
+        { id: '3', text: 'Регулярный мониторинг' }
+      ],
+      matchTargets: [
+        {
+          id: 'А',
+          text: 'Дополнение данных начального анализа конкурентов свежими сведениями. К нему обращаются, если, допустим, вы решили что-то принципиально модернизировать на сайте или на время отложить старт проекта'
+        },
+        {
+          id: 'Б',
+          text: 'Исследование активности конкурентов во время функционирования сайта. Это исследование и анализ публикаций о конкурентах в печати и СМИ, на форумах, в соцсетях, изучение обновлений на их сайтах. Он дает возможность иметь самую новую информацию обо всех происходящих изменениях, что делает ваши решения в бизнесе более продуктивными'
+        },
+        {
+          id: 'В',
+          text: 'Дает возможность определения стратегии запуска проекта и при необходимости актуальной и оперативной корректировки. Данный анализ делает возможной оценку загруженности рынка продуктами-конкурентами вашего товара и качественных характеристик ваших возможных соперников'
+        }
+      ],
+      correctAnswer: { 1: 'В', 2: 'А', 3: 'Б' }
+    },
+    {
+      id: 423,
+      type: 'matching',
+      text: 'Соотнесите этапы реализации проектов по совершенствованию бизнес-процессов и их содержание',
+      matchItems: [
+        { id: '1', text: 'Перепроектирование (совершенствование) бизнес-процесса' },
+        { id: '2', text: 'Развертывание (выполнение), усовершенствованного бизнес-процесса' },
+        { id: '3', text: 'Анализ бизнес-процесса' },
+        { id: '4', text: 'Оценка и измерение бизнес-процесса' },
+        { id: '5', text: 'Внедрение усовершенствованного бизнес-процесса' },
+        { id: '6', text: 'Понимание проекта' }
+      ],
+      matchTargets: [
+        {
+          id: 'А',
+          text: 'Этап подразумевает изменения в команде проекта, появление подпроектов и активную работу команды поддержки'
+        },
+        {
+          id: 'Б',
+          text: 'Это этап сбора и анализа идей и их воплощения в варианты совершенствования бизнес-процесса. На данном этапе важно создать и использовать максимально широкую информационную базу - как идей и предложений всех заинтересованных сторон, так и внешней информации'
+        },
+        {
+          id: 'В',
+          text: 'Разработка описания проблем, которые должны быть решены; разработка предварительного плана проекта, в том числе ключевых контрольных точек проекта; определение всех заинтересованных сторон процесса; определение полного состава команды проекта; определение предварительного объема работ по проекту; определение состава желаемых улучшений в процессе; определение потенциальных рисков проекта; подготовка предварительного экономического обоснования для изменений в процессе'
+        },
+        {
+          id: 'Г',
+          text: 'Фокусируется на внимательном изучении процесса (включая подпроцессы), который должен быть изменен. Необходимо собрать информацию о текущем («как есть») процессе различными способами'
+        },
+        {
+          id: 'Д',
+          text: 'Этап подразумевает определение ответственных за мониторинг и оценку достижения планируемых параметров и критериев бизнес-процесса. Это могут быть как члены проектной команды, так и новая межфункциональная команда, состоящая из представителей подразделений, непосредственно выполняющих бизнес-процесс'
+        },
+        {
+          id: 'Е',
+          text: 'На этом этапе в команду проекта включаются члены команды поддержки, которые до этого действовали независимо. Они становятся проводниками изменений для своих коллег, так как они могут ответить на возникающие вопросы и решить проблемы сотрудников, осваивающих новый бизнес-процесс'
+        }
+      ],
+      correctAnswer: { 1: 'В', 2: 'Г', 3: 'Б', 4: 'А', 5: 'Е', 6: 'Д' }
+    },
+    {
+      id: 424,
+      type: 'matching',
+      text: 'Соотнесите показатели эффективности бизнес-процессов и их характеристики',
+      matchItems: [
+        { id: '1', text: 'Сложность' },
+        { id: '2', text: 'Процессность' },
+        { id: '3', text: 'Контролируемость' },
+        { id: '4', text: 'Ресурсоемкость' },
+        { id: '5', text: 'Регулируемость' }
+      ],
+      matchTargets: [
+        {
+          id: 'А',
+          text: 'Меньшее значение данного коэффициента (низкий уровень ресурсоемкости) характеризует повышение эффективности использования ресурсов в бизнес-процессе'
+        },
+        {
+          id: 'Б',
+          text: 'При равенстве суммы собственников процессов и суммы классов бизнес-процессов (kотв=1) бизнес-процесс является контролируемым. При kотв<1 бизнес-процесс характеризуется пониженной степенью контролируемости'
+        },
+        { id: 'В', text: 'В случае значения kсл≤0,01 бизнес-процесс характеризуется как сложный' },
+        {
+          id: 'Г',
+          text: 'Уровень регулируемости бизнес-процесса снижается в случае, когда значение данного коэффициента kрег<1'
+        },
+        {
+          id: 'Д',
+          text: 'Достижение минимального значения kпр (0,5) характеризует модель бизнес-процессов как процессную'
+        }
+      ],
+      correctAnswer: { 1: 'В', 2: 'Д', 3: 'Б', 4: 'А', 5: 'Г' }
+    },
+    {
+      id: 425,
+      type: 'matching',
+      text: 'Соотнесите ключевые показатели оценки бизнес-процессов и их характеристики',
+      matchItems: [
+        { id: '1', text: 'Результативность бизнес-процесса' },
+        { id: '2', text: 'Стоимость бизнес-процесса' },
+        { id: '3', text: 'Время бизнес-процесса' },
+        { id: '4', text: 'Качество бизнес-процесса' },
+        { id: '5', text: 'Фрагментация бизнес-процесса' }
+      ],
+      matchTargets: [
+        {
+          id: 'А',
+          text: 'Определяет эффективность и конкурентоспособность организации с использованием показателей, характеризующих стоимость процесса, либо величину издержек, потребляемых в процессах'
+        },
+        {
+          id: 'Б',
+          text: 'Эти показатели можно оценить с использованием количественных показателей. Они достаточно специфичны, и для каждого бизнес-процесса индивидуальны'
+        },
+        {
+          id: 'В',
+          text: 'Могут быть использованы для оценки продукта. Такие показатели характеризуют продукт как параметр выхода оцениваемого бизнес-процесса'
+        },
+        {
+          id: 'Г',
+          text: 'Требовательные клиенты влияют на уровень конкурентоспособности компании. Наиболее конкурентной оказывается та компания, длительность выполнения бизнес-процессов которой имеет наиболее короткие сроки'
+        },
+        {
+          id: 'Д',
+          text: 'Можно использовать, измеряя любые бизнес-процессы для характеристики организационной сложности бизнес-процесса, которая определяется по количеству различных структурных подразделений и числу сотрудников компании, принимающих участие в нем'
+        }
+      ],
+      correctAnswer: { 1: 'В', 2: 'А', 3: 'Г', 4: 'Б', 5: 'Д' }
+    },
+    {
+      id: 426,
+      type: 'sequence',
+      text: 'Расположите функции производственной цепочки в логической последовательности',
+      options: [
+        { id: 'А', text: 'поставка' },
+        { id: 'Б', text: 'производство' },
+        { id: 'В', text: 'закупка' }
+      ],
+      correctAnswer: ['В', 'Б', 'А']
+    },
+    {
+      id: 427,
+      type: 'sequence',
+      text: 'Расположите инструменты моделирования бизнес-процессов в хронологической последовательности',
+      options: [
+        { id: 'А', text: 'ARIS' },
+        { id: 'Б', text: 'блок-схемы' },
+        { id: 'В', text: 'BPMS' }
+      ],
+      correctAnswer: ['Б', 'А', 'В']
+    },
+    {
+      id: 428,
+      type: 'sequence',
+      text: 'Установите последовательность реализации основных шагов при построении модели бизнес-процесса',
+      options: [
+        { id: 'А', text: 'Определение бизнес-функций' },
+        { id: 'Б', text: 'Определение ролей' },
+        { id: 'В', text: 'Добавление событий' },
+        { id: 'Г', text: 'Привязка ролей к бизнес-функциям' },
+        { id: 'Д', text: 'Определение порядка исполнения бизнес-функций' },
+        { id: 'Е', text: 'Добавление документов и ресурсов' }
+      ],
+      correctAnswer: ['Б', 'Г', 'В', 'А', 'Д', 'Е']
+    },
+    {
+      id: 429,
+      type: 'sequence',
+      text: 'Укажите последовательность действий для метода ABC',
+      options: [
+        {
+          id: 'А',
+          text: 'затраты по каждому виду деятельности, необходимые для изготовления продукции, определяют, как произведение средних затрат в единицу времени по данному виду деятельности на продолжительность данного вида деятельности'
+        },
+        {
+          id: 'Б',
+          text: 'в организации устанавливают все виды деятельности и определяют средние затраты по каждому виду деятельности'
+        },
+        { id: 'В', text: 'деятельность представляется как совокупность процессов (операций, переходов)' }
+      ],
+      correctAnswer: ['Б', 'В', 'А']
+    },
+    {
+      id: 430,
+      type: 'sequence',
+      text: 'Установите последовательность проведения функционально-стоимостного анализа системы управления',
+      options: [
+        {
+          id: 'А',
+          text: 'Исследовательско-проектная, включающая творческий, исследовательский и рекомендательный этапы'
+        },
+        {
+          id: 'Б',
+          text: 'Подготовительно-аналитическая, включающая подготовительный, информационный и аналитический этапы'
+        },
+        {
+          id: 'В',
+          text: 'Внедрение, включающее реализационный (непосредственно внедренческий) этап и этап оценки фактической эффективности'
+        }
+      ],
+      correctAnswer: ['Б', 'А', 'В']
+    },
+    {
+      id: 431,
+      type: 'sequence',
+      text: 'Расположите фазы проектирования бизнес-процессов в порядке их следования',
+      options: [
+        { id: 'А', text: 'планирование' },
+        { id: 'Б', text: 'использование' },
+        { id: 'В', text: 'реализация' },
+        { id: 'Г', text: 'анализ' }
+      ],
+      correctAnswer: ['А', 'В', 'Г', 'Б']
+    },
+    {
+      id: 432,
+      type: 'sequence',
+      text: 'Определите последовательность построения сервисно-ориентированной архитектуры (SOA)',
+      options: [
+        { id: 'А', text: 'организация сервисной шины' },
+        { id: 'Б', text: 'определение основных функций' },
+        { id: 'В', text: 'реинжиниринг бизнес-процессов на основе сервисов' },
+        { id: 'Г', text: 'разработка сервисов, соответствующих функциям' }
+      ],
+      correctAnswer: ['Б', 'Г', 'А', 'В']
+    },
+    {
+      id: 433,
+      type: 'sequence',
+      text: 'Стоимостная информация заполняется в следующем порядке',
+      options: [
+        {
+          id: 'А',
+          text: 'в окне Time Information определяются единица измерений длительности (unit) в секундах, минутах, часах и т.д., длительность (duration) одной операции, длительность*Частота - автоматически формируемый показатель'
+        },
+        { id: 'Б', text: 'в параметре Total автоматически подсчитывается итог затрат по операции' },
+        {
+          id: 'В',
+          text: 'в окне Cost information последовательно заполняются статьи затрат, часть из которых может быть связана прямой зависимостью с длительностью операции, например, заработная плата, амортизация и т.д.'
+        },
+        {
+          id: 'Г',
+          text: 'в параметре Frequence Multiplier устанавливается частота выполнения функции в одном экземпляре процесса или за определенной период времени. В примере частота соответствует числу заказов (процессов) 48 за неделю'
+        },
+        {
+          id: 'Д',
+          text: 'в параметре Total*Frequency автоматически рассчитывается сумма затрат по операции на процесс'
+        }
+      ],
+      correctAnswer: ['Г', 'А', 'В', 'Б', 'Д']
+    },
+    {
+      id: 434,
+      type: 'sequence',
+      text: 'Установите последовательность этапов реализации методики анализа и оценки конкурентной среды, разработанной ФАС',
+      options: [
+        { id: 'А', text: 'Определение степени концентрации товарного рынка' },
+        { id: 'Б', text: 'Выявление временного интервала исследования товарного рынка' },
+        { id: 'В', text: 'Оценка состояния конкурентной среды на товарном рынке' },
+        { id: 'Г', text: 'Обнаружение продуктовых и географических границ товарного рынка' },
+        { id: 'Д', text: 'Установление объема товарного рынка и долей компаний на рынке' },
+        { id: 'Е', text: 'Составление аналитического отчета' },
+        { id: 'Ж', text: 'Раскрытие количества компаний, функционирующих на товарном рынке' },
+        { id: 'З', text: 'Выявление входных барьеров товарного рынка' }
+      ],
+      correctAnswer: ['Б', 'Г', 'Ж', 'Д', 'А', 'З', 'В', 'Е']
+    },
+    {
+      id: 435,
+      type: 'sequence',
+      text: 'Установите последовательность этапов анализ состояния конкурентной среды на товарных рынках',
+      options: [
+        { id: 'А', text: 'Определение состава продавцов и покупателей' },
+        { id: 'Б', text: 'Анализ факторов, формирующих конкурентную среду отрасли' },
+        { id: 'В', text: 'Оценка интенсивности конкуренции в отрасли по существующим коэффициентам' },
+        { id: 'Г', text: 'Оценка рыночного потенциала и построение конкурентной карты рынка' },
+        { id: 'Д', text: 'Выявление показателей и барьеров' }
+      ],
+      correctAnswer: ['Б', 'А', 'В', 'Д', 'Г']
+    },
+    {
+      id: 436,
+      type: 'sequence',
+      text: 'Расположите элементы обобщенного бизнес-процесса в правильной последовательности',
+      options: [
+        { id: 'А', text: 'процесс' },
+        { id: 'Б', text: 'заказчик' },
+        { id: 'В', text: 'потребитель' }
+      ],
+      correctAnswer: ['Б', 'А', 'В']
+    },
+    {
+      id: 437,
+      type: 'sequence',
+      text: 'Установите последовательность этапов реализации проектов по совершенствованию бизнес-процессов',
+      options: [
+        { id: 'А', text: 'перепроектирование (совершенствование) бизнес-процесса' },
+        { id: 'Б', text: 'развертывание (выполнение), усовершенствованного бизнес-процесса' },
+        { id: 'В', text: 'анализ бизнес-процесса' },
+        { id: 'Г', text: 'оценка и измерение бизнес-процесса' },
+        { id: 'Д', text: 'внедрение усовершенствованного бизнес-процесса' },
+        { id: 'Е', text: 'понимание проекта' }
+      ],
+      correctAnswer: ['Е', 'В', 'А', 'Д', 'Б', 'Г']
+    },
+    {
+      id: 438,
+      type: 'sequence',
+      text: 'Определите последовательность этапов оценки эффективности изменений',
+      options: [
+        { id: 'А', text: 'Сбор данных' },
+        { id: 'Б', text: 'Корректировка процессов' },
+        { id: 'В', text: 'Анализ результатов' },
+        { id: 'Г', text: 'Подготовка отчёта' }
+      ],
+      correctAnswer: ['А', 'В', 'Б', 'Г']
+    },
+    {
+      id: 439,
+      type: 'sequence',
+      text: 'Определите последовательность внедрения IT-решений в промышленном реинжиниринге',
+      options: [
+        { id: 'А', text: 'Выбор технологии' },
+        { id: 'Б', text: 'Оценка потребностей' },
+        { id: 'В', text: 'Внедрение' },
+        { id: 'Г', text: 'Обучение персонала' }
+      ],
+      correctAnswer: ['Б', 'А', 'В', 'Г']
+    },
+    {
+      id: 440,
+      type: 'sequence',
+      text: 'Определите последовательность этапов работы с IT-персоналом при реинжиниринге',
+      options: [
+        { id: 'А', text: 'Мотивация' },
+        { id: 'Б', text: 'Обучение новым процессам' },
+        { id: 'В', text: 'Информирование сотрудников' },
+        { id: 'Г', text: 'Оценка вовлечённости' }
+      ],
+      correctAnswer: ['В', 'А', 'Б', 'Г']
+    },
+    {
+      id: 441,
+      type: 'open',
+      text: 'Студенту поручено самостоятельно подготовить реферат на основе выданного задания, соблюдая сроки и правила оформления, используя персональный компьютер и Интернет. Что будет являться входом, выходом, управлением и механизмами IDEF0-модели бизнес-процесса подготовки реферата?',
+      correctAnswer:
+        'Вход = задание; выход = реферат; механизмы: персональный компьютер и Интернет; управление: сроки и правила оформления.'
+    },
+    {
+      id: 442,
+      type: 'open',
+      text: 'Что такое бизнес-процесс?',
+      correctAnswer:
+        'Он представляет собой систему последовательных, целенаправленных и регламентированных видов деятельности, в которой посредством управляющего воздействия и с помощью определенных ресурсов за определенное время входы процесса преобразуются в выходы - в результаты, представляющие ценность для потребителя и приносящие прибыль изготовителю.'
+    },
+    {
+      id: 443,
+      type: 'open',
+      text: 'Какие выделяют виды бизнес-процессов в масштабах предприятия?',
+      correctAnswer: 'Основные, вспомогательные, поддерживающие и управленческие процессы.'
+    },
+    {
+      id: 444,
+      type: 'open',
+      text: 'От чего зависит разделение на основные и вспомогательные процессы?',
+      correctAnswer: 'В определяющей степени зависит от предметной области и направления деятельности предприятия.'
+    },
+    {
+      id: 445,
+      type: 'open',
+      text: 'Какие модели и каким образом используются при проектировании информационных систем?',
+      correctAnswer:
+        'На сегодняшний день получили распространение три основные методологии функционального моделирования (и сопутствующий им инструментарий): IDEF (Integrated DEFinition), UML (Unified Modeling Language) и ARIS (Architecture of Integrated Information Systems). Для каждой из них существуют определенные программные продукты, которые помимо разработки позволяют проводить преобразования и операции для последующей работы с полученными моделями.'
+    },
+    {
+      id: 446,
+      type: 'open',
+      text: 'Какие программные средства используются для моделирования процессов при разработке информационных систем?',
+      correctAnswer:
+        'Наибольшее распространение сегодня получили программные продукты BPWin, содержащие методологии IDEF0, IDEF3, DFD (Data Flow Diagrams) и ERWin (IDEF1x) от компании Computer Associates. В последнее время на российском рынке появился программный продукт Business Studio, который специально создан для работы с методами IDEF и обладает интуитивным и дружественным интерфейсом (User-friendly Interface).'
+    },
+    {
+      id: 447,
+      type: 'open',
+      text: 'На основании каких данных и информации разрабатываются модели состояния AS IS и AS TO BE?',
+      correctAnswer:
+        'Модель AS-IS строится на основе изучения документации, а модель ТО-ВЕ на основе производственных процессов. Модель AS-IS служит для выявления неуправляемых работ, а модель TO-BE - для дублирующих работ. Модель AS-IS - это модель существующей организации работы, а модель TO-BE - модель идеальной организации бизнес-процессов.'
+    },
+    {
+      id: 448,
+      type: 'open',
+      text: 'Перечислите основные фазы внедрения ИС.',
+      correctAnswer:
+        'Фаза «Предварительные работы по подготовке проекта внедрения ИС». В ходе предпроектного обследования предприятия происходит сбор подробной информации о структурном построении организации, функциональных связях, системе управления, об основных бизнес-процессах, о потоках внутри предприятия, необходимой для построения соответствующих моделей и выбора объектов для автоматизации. Фаза «Подготовка проекта». После завершения первой фазы осуществляется предварительное планирование и формирование процедур запуска проекта. Фаза «Концептуальная проработка проекта» и фаза «Реализация проекта».'
+    },
+    {
+      id: 449,
+      type: 'open',
+      text: 'Что предусматривает фаза «Подготовка проекта»?',
+      correctAnswer:
+        'Формирование проектной и экспертной групп; распределение полномочий и ответственности; определение организационно-технических требований к процессу внедрения; уточнение спецификаций и ожиданий заказчика; обучение группы внедрения, состоящей из специалистов предприятия-заказчика.'
+    },
+    {
+      id: 450,
+      type: 'open',
+      text: 'Что предусматривает фаза «Концептуальная проработка проекта»?',
+      correctAnswer:
+        'Формируется и утверждается концептуальный проект; достигается обязательное однозначное понимание намерений всех участников проекта относительно внедряемой ИС; уточняются и конкретизируются цели и задачи проекта; определяются размеры прототипа системы; согласуются укрупненный план работы, последовательность этапов и условия опытной эксплуатации, планово-финансовые и отчетные показатели.'
+    }
+  ]
+}
