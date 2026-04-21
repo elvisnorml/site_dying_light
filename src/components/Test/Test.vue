@@ -24,12 +24,15 @@ const checkCurrentQuestion = () => {
   const currentQuestion = questions.value[currentStep.value]
   const isCorrect = isQuestionCorrect(currentQuestion)
 
-  feedbackStatus.value = isCorrect ? 'correct' : 'error'
+  if (isCorrect) nextStep()
+  else {
+    feedbackStatus.value = isCorrect ? 'correct' : 'error'
+  }
 
   // Убираем фон через 5 секунд
   feedbackTimer = setTimeout(() => {
     feedbackStatus.value = null
-  }, 5000)
+  }, 3000)
 }
 const clearFeedback = () => {
   feedbackStatus.value = null
@@ -220,11 +223,11 @@ onMounted(() => {
 
       <template v-else>
         <VCardItem class="bg-primary text-white py-4">
-          <!-- <VCardTitle class="text-h5 text-wrap">{{ testTitle }}</VCardTitle> -->
-          <div class="d-flex align-center justify-space-between mb-6" :class="mobile && 'flex-column'">
+          <VCardTitle class="text-h5 text-wrap">{{ testTitle }}</VCardTitle>
+          <!-- <div class="d-flex align-center justify-space-between mb-6" :class="mobile && 'flex-column'">
             <VCardTitle class="text-h5 text-wrap">{{ testTitle }}</VCardTitle>
             <VBtn color="green" :icon="mdiCheckCircle" class="ml-4" @click="checkCurrentQuestion" />
-          </div>
+          </div> -->
           <VCardSubtitle class="text-white opacity-80 mt-1">
             Вопрос {{ currentStep + 1 }} из {{ questions.length }}
           </VCardSubtitle>
@@ -350,7 +353,7 @@ onMounted(() => {
         <VCardActions class="pa-4 flex-wrap gap-2 justify-space-between">
           <VBtn
             variant="outlined"
-            class="order-2 order-md-1"
+            class="order-3 order-md-1"
             :class="mobile && 'w-100'"
             @click="prevStep"
             :disabled="currentStep === 0"
@@ -375,6 +378,17 @@ onMounted(() => {
             color="primary"
             variant="flat"
             @click="nextStep"
+          >
+            Пропустить
+          </VBtn>
+
+          <VBtn
+            v-if="currentStep < questions.length - 1"
+            class="order-4"
+            :class="mobile && 'w-100'"
+            color="primary"
+            variant="flat"
+            @click="checkCurrentQuestion"
           >
             Далее
           </VBtn>
