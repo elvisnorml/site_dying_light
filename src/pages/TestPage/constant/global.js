@@ -1,5 +1,5 @@
 export const global = {
-  title: 'Разработка web-приложений на языке JavaScript',
+  title: 'Все предметы в 1 тесте',
   questions: [
     {
       id: 1,
@@ -1123,10 +1123,7 @@ export const global = {
       type: 'open',
       text: 'Чему будет равно значение переменной i после выполнения следующего кода?\nlet i=1;\ni=(i==1)?100:200;',
       correctAnswer: '100'
-    }
-  ],
-  title: 'Информационный менеджмент',
-  questions: [
+    },
     {
       id: 91,
       type: 'single',
@@ -2414,10 +2411,7 @@ export const global = {
       type: 'open',
       text: 'Этап, на котором план проекта приводится в действие, выполняются задачи?',
       correctAnswer: 'Реализация'
-    }
-  ],
-  title: 'Безопасность операционных систем и баз данных',
-  questions: [
+    },
     {
       id: 181,
       type: 'single',
@@ -3563,10 +3557,7 @@ export const global = {
       type: 'open',
       text: 'Что такое целостность ОС в банке?',
       correctAnswer: 'Верификация целостности'
-    }
-  ],
-  title: 'Разработка серверных приложений для WEB',
-  questions: [
+    },
     {
       id: 271,
       type: 'single',
@@ -4706,10 +4697,7 @@ export const global = {
       type: 'open',
       text: 'Задачи SEO-оптимизации веб-приложения – это …',
       correctAnswer: 'привлечь больше посетителей, улучшить рейтинг сайта и увеличить его значимость для пользователей'
-    }
-  ],
-  title: 'Реинжиниринг бизнес-процессов',
-  questions: [
+    },
     {
       id: 361,
       type: 'single',
