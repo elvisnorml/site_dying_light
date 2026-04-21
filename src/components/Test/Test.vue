@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { ref, computed, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
+import { useDisplay } from 'vuetify'
+const { mobile } = useDisplay()
 
 import { mdiCheckCircle, mdiAlertCircle, mdiEyeOutline } from '@mdi/js'
 
@@ -314,16 +316,35 @@ onMounted(() => {
 
         <VDivider />
 
-        <VCardActions class="pa-4 flex-wrap gap-2">
-          <VBtn variant="outlined" @click="prevStep" :disabled="currentStep === 0">Назад</VBtn>
+        <VCardActions class="pa-4 flex-wrap gap-2 justify-space-between">
+          <VBtn
+            variant="outlined"
+            class="order-2 order-md-1"
+            :class="mobile && 'w-100'"
+            @click="prevStep"
+            :disabled="currentStep === 0"
+            >Назад</VBtn
+          >
 
-          <VBtn color="orange-darken-2" variant="text" :prepend-icon="mdiEyeOutline" @click="showHint = !showHint">
+          <VBtn
+            color="orange-darken-2"
+            variant="text"
+            class="order-1 order-md-2"
+            :class="mobile && 'w-100'"
+            :prepend-icon="mdiEyeOutline"
+            @click="showHint = !showHint"
+          >
             {{ showHint ? 'Скрыть ответ' : 'Показать ответ' }}
           </VBtn>
 
-          <VSpacer />
-
-          <VBtn v-if="currentStep < questions.length - 1" color="primary" variant="flat" @click="nextStep">
+          <VBtn
+            v-if="currentStep < questions.length - 1"
+            class="order-3"
+            :class="mobile && 'w-100'"
+            color="primary"
+            variant="flat"
+            @click="nextStep"
+          >
             Далее
           </VBtn>
 
