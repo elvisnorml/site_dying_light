@@ -1113,13 +1113,13 @@ export const global = {
       correctAnswer: '1970'
     },
     {
-      id: 90,
+      id: 89,
       type: 'open',
       text: 'Что будет результатом выполнения выражения? 3>4 ? 5:6',
       correctAnswer: '6'
     },
     {
-      id: 919,
+      id: 90,
       type: 'open',
       text: 'Чему будет равно значение переменной i после выполнения следующего кода?\nlet i=1;\ni=(i==1)?100:200;',
       correctAnswer: '100'
