@@ -32,7 +32,7 @@ const checkCurrentQuestion = () => {
   // Убираем фон через 5 секунд
   feedbackTimer = setTimeout(() => {
     feedbackStatus.value = null
-  }, 3000)
+  }, 2500)
 }
 const clearFeedback = () => {
   feedbackStatus.value = null
@@ -90,7 +90,8 @@ const finalScore = computed(() => {
 const formatAnswer = (ans: any) => {
   if (!ans) return ''
   if (typeof ans === 'string') return ans
-  if (Array.isArray(ans)) return ans.sort().join(', ')
+  if (Array.isArray(ans)) return [...ans].join(' → ')
+
   if (typeof ans === 'object' && ans !== null) {
     // Если это последовательность (значения являются числами)
     const isSequence = Object.values(ans).some(v => typeof v === 'number')
