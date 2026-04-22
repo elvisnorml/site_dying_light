@@ -30,7 +30,7 @@ const currentData = computed(() => {
 })
 
 const updateScores = () => {
-  const ids = ['security', 'management', 'javascript', 'web', 'business']
+  const ids = ['security', 'management', 'javascript', 'web', 'business', 'global', 'global30']
   const results: Record<string, string | null> = {}
 
   ids.forEach(id => {
