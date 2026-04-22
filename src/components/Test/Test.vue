@@ -264,7 +264,7 @@ onMounted(() => {
               class="d-flex align-center text-white font-weight-bold"
               style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 1)"
             >
-              <span class="mr-2">Прогресс: {{ Math.ceil(value) }}%</span>
+              <span class="mr-2">Прогресс: {{ Math.floor(value) }}%</span>
 
               <VDivider vertical class="mx-2" color="white" />
 
