@@ -140,13 +140,13 @@ const finishTest = () => {
 
   console.log(`Результат сохранен в ${storageKey}: ${finalScore.value}`)
 }
-const restartTest = () => {
-  currentStep.value = 0
-  isFinished.value = false
-  showHint.value = false
-  questions.value = [...props.datatest.questions].sort(() => Math.random() - 0.5)
-  initAnswers()
-}
+// const restartTest = () => {
+//   currentStep.value = 0
+//   isFinished.value = false
+//   showHint.value = false
+//   questions.value = [...props.datatest.questions].sort(() => Math.random() - 0.5)
+//   initAnswers()
+// }
 
 const initAnswers = () => {
   questions.value.forEach(q => {
@@ -207,12 +207,62 @@ const liveIcon = computed(() => {
   return liveScore.value < 50 ? mdiAlertCircle : mdiCheckCircle
 })
 
-onMounted(() => {
-  if (props.datatest) {
+const pickRandom = (arr: any[], count: number) => {
+  return [...arr].sort(() => Math.random() - 0.5).slice(0, count)
+}
+
+// Обновляем стандартные методы
+const restartTest = () => {
+  setupQuestions()
+}
+
+const setupQuestions = () => {
+  if (!props.datatest?.questions) return
+
+  if (testId.value === 'global30') {
+    testTitle.value = '30 вопросов'
+    const all = props.datatest.questions
+
+    // Собираем по схеме: 3 open, 7 sequence, 7 matching, 6 multiple, 7 single
+    const pool = [
+      ...pickRandom(
+        all.filter(q => q.type === 'open'),
+        3
+      ),
+      ...pickRandom(
+        all.filter(q => q.type === 'sequence'),
+        7
+      ),
+      ...pickRandom(
+        all.filter(q => q.type === 'matching'),
+        7
+      ),
+      ...pickRandom(
+        all.filter(q => q.type === 'multiple'),
+        6
+      ),
+      ...pickRandom(
+        all.filter(q => q.type === 'single'),
+        7
+      )
+    ]
+
+    // Финальное перемешивание всего набора
+    questions.value = pool.sort(() => Math.random() - 0.5)
+  } else {
+    // Обычный режим (весь тест целиком)
     testTitle.value = props.datatest.title
     questions.value = [...props.datatest.questions].sort(() => Math.random() - 0.5)
-    initAnswers()
   }
+
+  currentStep.value = 0
+  isFinished.value = false
+  showHint.value = false
+  initAnswers()
+}
+
+onMounted(() => {
+  setupQuestions()
 })
 </script>
 

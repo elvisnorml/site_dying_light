@@ -19,7 +19,8 @@ const dataMap = {
   javascript,
   web,
   business,
-  global
+  global,
+  global30: global
 }
 
 const currentData = computed(() => {
@@ -64,7 +65,8 @@ watch(
           { id: 'javascript', text: 'Разработка web-приложений на языке JavaScript' },
           { id: 'web', text: 'Разработка серверных приложений для WEB' },
           { id: 'business', text: 'Реинжиниринг бизнес-процессов' },
-          { id: 'global', text: 'Все предметы в 1 тесте' }
+          { id: 'global', text: 'Все предметы в 1 тесте' },
+          { id: 'global30', text: '30 вопросов' }
         ]"
         :key="test.id"
         class="d-flex align-center mb-4"
