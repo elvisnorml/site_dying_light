@@ -3,7 +3,7 @@ import { ref, computed, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 import { useDisplay } from 'vuetify'
 
-import { mdiCheckCircle, mdiAlertCircle, mdiEyeOutline } from '@mdi/js'
+import { mdiCheckCircle, mdiAlertCircle, mdiEyeOutline, mdiCheck, mdiAlert } from '@mdi/js'
 
 const props = defineProps({
   datatest: {
@@ -174,6 +174,30 @@ const testId = computed(() => {
   return queryId ? String(queryId) : 'default'
 })
 
+// 1. Считаем процент успеха для уже пройденных вопросов
+const liveScore = computed(() => {
+  // Берем вопросы от 0 до текущего (не включая текущий, так как на него еще не ответили)
+  const pastQuestions = questions.value.slice(0, currentStep.value)
+
+  if (pastQuestions.length === 0) return 0
+
+  const correctSoFar = pastQuestions.filter(q => isQuestionCorrect(q)).length
+  return Math.round((correctSoFar / pastQuestions.length) * 100)
+})
+
+// 2. Определяем цвет в зависимости от процента
+const liveColor = computed(() => {
+  const score = liveScore.value
+  if (score < 50) return 'error' // Красный
+  if (score < 90) return 'warning' // Желтый/Оранжевый
+  return 'success' // Зеленый
+})
+
+// 3. Выбираем иконку
+const liveIcon = computed(() => {
+  return liveScore.value < 50 ? mdiAlertCircle : mdiCheckCircle
+})
+
 onMounted(() => {
   if (props.datatest) {
     testTitle.value = props.datatest.title
@@ -234,7 +258,21 @@ onMounted(() => {
           </VCardSubtitle>
         </VCardItem>
 
-        <VProgressLinear :model-value="progress" color="secondary" height="6"></VProgressLinear>
+        <VProgressLinear :model-value="progress" :color="liveColor" height="30" striped>
+          <template v-slot:default="{ value }">
+            <div
+              class="d-flex align-center text-white font-weight-bold"
+              style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 1)"
+            >
+              <span class="mr-2">Прогресс: {{ Math.ceil(value) }}%</span>
+
+              <VDivider vertical class="mx-2" color="white" />
+
+              <span class="ml-2">Точность: {{ liveScore }}%</span>
+              <VIcon :icon="liveIcon" size="small" :color="liveColor" class="ml-1" />
+            </div>
+          </template>
+        </VProgressLinear>
 
         <VCardText
           class="pa-6"

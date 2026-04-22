@@ -22,6 +22,7 @@ declare module 'vue' {
     Test: typeof import('./../components/Test/Test.vue')['default']
     TestLayout: typeof import('./../layout/TestLayout/TestLayout.vue')['default']
     TestPage: typeof import('./../pages/TestPage/TestPage.vue')['default']
+    TestResultPage: typeof import('./../pages/TestResultPage/TestResultPage.vue')['default']
     Weapons: typeof import('./../pages/Weapons/Weapons.vue')['default']
   }
 }
