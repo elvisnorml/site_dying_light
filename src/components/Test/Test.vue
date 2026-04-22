@@ -3,7 +3,7 @@ import { ref, computed, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 import { useDisplay } from 'vuetify'
 
-import { mdiCheckCircle, mdiAlertCircle, mdiEyeOutline, mdiCheck, mdiAlert } from '@mdi/js'
+import { mdiCheckCircle, mdiAlertCircle, mdiEyeOutline, mdiContentCopy, mdiCheck, mdiAlert } from '@mdi/js'
 
 const props = defineProps({
   datatest: {
@@ -16,6 +16,15 @@ const { mobile } = useDisplay()
 
 const feedbackStatus = ref<'correct' | 'error' | null>(null)
 let feedbackTimer: any = null
+const isCopied = ref(false)
+const copyToClipboard = (text: string) => {
+  navigator.clipboard.writeText(text).then(() => {
+    isCopied.value = true
+    setTimeout(() => {
+      isCopied.value = false
+    }, 2000)
+  })
+}
 
 const checkCurrentQuestion = () => {
   // Сбрасываем старый таймер, если он был
@@ -379,8 +388,23 @@ onMounted(() => {
               </template>
 
               <VExpandTransition>
-                <VAlert v-if="showHint" type="info" variant="tonal" class="mt-4" title="Подсказка (Правильный ответ):">
+                <VAlert v-if="showHint" type="info" variant="tonal" class="mt-4 text-subtitle-1" title="Подсказка:">
                   {{ formatAnswer(question.correctAnswer) }}
+
+                  <template v-if="question.type === 'open'" #append>
+                    <VBtn
+                      :icon="mdiContentCopy"
+                      icon
+                      color="success"
+                      density="comfortable"
+                      @click="copyToClipboard(formatAnswer(question.correctAnswer))"
+                    >
+                      <VIcon :src="mdiContentCopy" />
+                      <VTooltip activator="parent" location="top">
+                        {{ isCopied ? 'Скопировано!' : 'Копировать ответ' }}
+                      </VTooltip>
+                    </VBtn>
+                  </template>
                 </VAlert>
               </VExpandTransition>
             </VWindowItem>
