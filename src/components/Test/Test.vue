@@ -57,7 +57,11 @@ const isFinished = ref(false)
 const showHint = ref(false)
 
 // Расчеты
-const progress = computed(() => (questions.value.length ? ((currentStep.value + 1) / questions.value.length) * 100 : 0))
+const progress = computed(() => {
+  if (!questions.value.length) return 0
+  // Используем currentStep без +1, чтобы на первом вопросе был 0
+  return (currentStep.value / questions.value.length) * 100
+})
 
 // Логика проверки (сравнение ответов)
 const isQuestionCorrect = (q: any) => {
