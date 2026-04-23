@@ -14,7 +14,7 @@ export const management = {
         },
         { id: 'Г', text: 'Анализ документов' }
       ],
-      correctAnswer: 'В' // ID правильного варианта
+      correctAnswer: 'В'
     },
     {
       id: 2,
@@ -26,7 +26,7 @@ export const management = {
         { id: 'В', text: 'Наблюдения' },
         { id: 'Г', text: 'Все вышеперечисленное' }
       ],
-      correctAnswer: 'В' // ID правильного варианта
+      correctAnswer: 'Г'
     },
     {
       id: 3,
@@ -38,7 +38,7 @@ export const management = {
         { id: 'В', text: 'Расставить приоритеты в изменениях требований клиентов' },
         { id: 'Г', text: 'Документировать историю изменений требований заказчика' }
       ],
-      correctAnswer: 'А' // ID правильного варианта
+      correctAnswer: 'А'
     },
     {
       id: 4,
@@ -50,7 +50,7 @@ export const management = {
         { id: 'В', text: 'Программное обеспечение для управления требованиями' },
         { id: 'Г', text: 'Программное обеспечение для управления проектами' }
       ],
-      correctAnswer: 'В' // ID правильного варианта
+      correctAnswer: 'В'
     },
     {
       id: 5,
@@ -62,7 +62,7 @@ export const management = {
         { id: 'В', text: 'Опросы' },
         { id: 'Г', text: 'Наблюдение' }
       ],
-      correctAnswer: 'В' // ID правильного варианта
+      correctAnswer: 'В'
     },
     {
       id: 6,
@@ -74,7 +74,7 @@ export const management = {
         { id: 'В', text: 'Определение потребностей клиентов ' },
         { id: 'Г', text: 'все вышеперечисленное' }
       ],
-      correctAnswer: 'Г' // ID правильного варианта
+      correctAnswer: 'Г'
     },
     {
       id: 7,
@@ -86,7 +86,7 @@ export const management = {
         { id: 'В', text: 'Определение целевых рынков конкурентов ' },
         { id: 'Г', text: 'все вышеперечисленное' }
       ],
-      correctAnswer: 'Г' // ID правильного варианта
+      correctAnswer: 'Г'
     },
     {
       id: 8,
@@ -98,7 +98,7 @@ export const management = {
         { id: 'В', text: 'Стратегические альянсы' },
         { id: 'Г', text: 'все вышеперечисленное' }
       ],
-      correctAnswer: 'А' // ID правильного варианта
+      correctAnswer: 'А'
     },
     {
       id: 9,
@@ -110,7 +110,7 @@ export const management = {
         { id: 'В', text: 'Максимизация доли рынка в каждом сегменте' },
         { id: 'Г', text: 'все вышеперечисленное' }
       ],
-      correctAnswer: 'Г' // ID правильного варианта
+      correctAnswer: 'Г'
     },
     {
       id: 10,
@@ -122,7 +122,7 @@ export const management = {
         { id: 'В', text: 'Качественные исследования ' },
         { id: 'Г', text: 'Наблюдательные исследования' }
       ],
-      correctAnswer: 'В' // ID правильного варианта
+      correctAnswer: 'В'
     },
     {
       id: 11,
@@ -134,7 +134,7 @@ export const management = {
         { id: 'В', text: 'Веб-сайты и блоги' },
         { id: 'Г', text: 'Личные интервью' }
       ],
-      correctAnswer: 'В' // ID правильного варианта
+      correctAnswer: 'В'
     },
     {
       id: 12,
@@ -146,7 +146,7 @@ export const management = {
         { id: 'В', text: 'Тематическое исследование ' },
         { id: 'Г', text: 'Исследование действий' }
       ],
-      correctAnswer: 'Б' // ID правильного варианта
+      correctAnswer: 'Б'
     },
     {
       id: 13,
@@ -158,7 +158,7 @@ export const management = {
         { id: 'В', text: 'Протокол разногласий' },
         { id: 'Г', text: 'Договор подряда' }
       ],
-      correctAnswer: 'А' // ID правильного варианта
+      correctAnswer: 'А'
     },
     {
       id: 14,
@@ -170,7 +170,7 @@ export const management = {
         { id: 'В', text: 'Заказчик' },
         { id: 'Г', text: 'Тестировщик' }
       ],
-      correctAnswer: 'В' // ID правильного варианта
+      correctAnswer: 'В'
     },
     {
       id: 15,
@@ -182,7 +182,7 @@ export const management = {
         { id: 'В', text: 'Архивация' },
         { id: 'Г', text: 'Тестирование' }
       ],
-      correctAnswer: 'Б' // ID правильного варианта
+      correctAnswer: 'Б'
     },
     {
       id: 16,
@@ -194,7 +194,7 @@ export const management = {
         { id: 'В', text: 'Проведение опросов пользователей' },
         { id: 'Г', text: 'Аудит кода конкурентов' }
       ],
-      correctAnswer: 'Б' // ID правильного варианта
+      correctAnswer: 'Б'
     },
     {
       id: 17,
@@ -206,7 +206,7 @@ export const management = {
         { id: 'В', text: 'Пользовательские истории' },
         { id: 'Г', text: 'Маркетинговое исследование' }
       ],
-      correctAnswer: 'А' // ID правильного варианта
+      correctAnswer: 'А'
     },
     {
       id: 18,
@@ -218,7 +218,7 @@ export const management = {
         { id: 'В', text: 'Наблюдения' },
         { id: 'Г', text: 'Все вышеперечисленное' }
       ],
-      correctAnswer: 'Г' // ID правильного варианта
+      correctAnswer: 'Г'
     },
     {
       id: 19,
@@ -230,7 +230,7 @@ export const management = {
         { id: 'В', text: 'Финансовый план проекта' },
         { id: 'Г', text: 'Описание бизнес-процессов' }
       ],
-      correctAnswer: 'В' // ID правильного варианта
+      correctAnswer: 'В'
     },
     {
       id: 20,
@@ -242,7 +242,7 @@ export const management = {
         { id: 'В', text: 'IEEE 830' },
         { id: 'Г', text: 'ITIL' }
       ],
-      correctAnswer: 'А' // ID правильного варианта
+      correctAnswer: 'А'
     },
     {
       id: 21,
@@ -254,7 +254,7 @@ export const management = {
         { id: 'В', text: 'PowerPoint' },
         { id: 'Г', text: 'Trello' }
       ],
-      correctAnswer: 'Б' // ID правильного варианта
+      correctAnswer: 'Б'
     },
     {
       id: 22,
@@ -266,7 +266,7 @@ export const management = {
         { id: 'В', text: 'Реестр замечаний' },
         { id: 'Г', text: 'Дополнительное соглашение' }
       ],
-      correctAnswer: 'В' // ID правильного варианта
+      correctAnswer: 'В'
     },
     {
       id: 23,
@@ -278,7 +278,7 @@ export const management = {
         { id: 'В', text: 'Подписание бумажного экземпляра' },
         { id: 'Г', text: 'Видеозвонок' }
       ],
-      correctAnswer: 'В' // ID правильного варианта
+      correctAnswer: 'В'
     },
     {
       id: 24,
@@ -290,7 +290,7 @@ export const management = {
         { id: 'В', text: 'Jira' },
         { id: 'Г', text: 'Photoshop' }
       ],
-      correctAnswer: 'Б' // ID правильного варианта
+      correctAnswer: 'Б'
     },
     {
       id: 25,
@@ -302,7 +302,7 @@ export const management = {
         { id: 'В', text: 'Утвержден' },
         { id: 'Г', text: 'Архивный' }
       ],
-      correctAnswer: 'Б' // ID правильного варианта
+      correctAnswer: 'Б'
     },
     {
       id: 26,

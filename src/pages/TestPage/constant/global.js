@@ -1074,7 +1074,7 @@ export const global = {
       id: 82,
       type: 'open',
       text: 'Как правильно в переменную d поместить температуру человеческого тела тридцать шесть целых и шесть десятых?',
-      correctAnswer: 'let d=36.6;//разделитель - точка'
+      correctAnswer: 'let d=36.6'
     },
     {
       id: 83,
@@ -1137,7 +1137,7 @@ export const global = {
         },
         { id: 'Г', text: 'Анализ документов' }
       ],
-      correctAnswer: 'В' // ID правильного варианта
+      correctAnswer: 'В'
     },
     {
       id: 92,
@@ -1149,7 +1149,7 @@ export const global = {
         { id: 'В', text: 'Наблюдения' },
         { id: 'Г', text: 'Все вышеперечисленное' }
       ],
-      correctAnswer: 'В' // ID правильного варианта
+      correctAnswer: 'Г'
     },
     {
       id: 93,
@@ -1161,7 +1161,7 @@ export const global = {
         { id: 'В', text: 'Расставить приоритеты в изменениях требований клиентов' },
         { id: 'Г', text: 'Документировать историю изменений требований заказчика' }
       ],
-      correctAnswer: 'А' // ID правильного варианта
+      correctAnswer: 'А'
     },
     {
       id: 94,
@@ -1173,7 +1173,7 @@ export const global = {
         { id: 'В', text: 'Программное обеспечение для управления требованиями' },
         { id: 'Г', text: 'Программное обеспечение для управления проектами' }
       ],
-      correctAnswer: 'В' // ID правильного варианта
+      correctAnswer: 'В'
     },
     {
       id: 95,
@@ -1185,7 +1185,7 @@ export const global = {
         { id: 'В', text: 'Опросы' },
         { id: 'Г', text: 'Наблюдение' }
       ],
-      correctAnswer: 'В' // ID правильного варианта
+      correctAnswer: 'В'
     },
     {
       id: 96,
@@ -1197,7 +1197,7 @@ export const global = {
         { id: 'В', text: 'Определение потребностей клиентов ' },
         { id: 'Г', text: 'все вышеперечисленное' }
       ],
-      correctAnswer: 'Г' // ID правильного варианта
+      correctAnswer: 'Г'
     },
     {
       id: 97,
@@ -1209,7 +1209,7 @@ export const global = {
         { id: 'В', text: 'Определение целевых рынков конкурентов ' },
         { id: 'Г', text: 'все вышеперечисленное' }
       ],
-      correctAnswer: 'Г' // ID правильного варианта
+      correctAnswer: 'Г'
     },
     {
       id: 98,
@@ -1221,7 +1221,7 @@ export const global = {
         { id: 'В', text: 'Стратегические альянсы' },
         { id: 'Г', text: 'все вышеперечисленное' }
       ],
-      correctAnswer: 'А' // ID правильного варианта
+      correctAnswer: 'А'
     },
     {
       id: 99,
@@ -1233,7 +1233,7 @@ export const global = {
         { id: 'В', text: 'Максимизация доли рынка в каждом сегменте' },
         { id: 'Г', text: 'все вышеперечисленное' }
       ],
-      correctAnswer: 'Г' // ID правильного варианта
+      correctAnswer: 'Г'
     },
     {
       id: 100,
@@ -1245,7 +1245,7 @@ export const global = {
         { id: 'В', text: 'Качественные исследования ' },
         { id: 'Г', text: 'Наблюдательные исследования' }
       ],
-      correctAnswer: 'В' // ID правильного варианта
+      correctAnswer: 'В'
     },
     {
       id: 101,
@@ -1257,7 +1257,7 @@ export const global = {
         { id: 'В', text: 'Веб-сайты и блоги' },
         { id: 'Г', text: 'Личные интервью' }
       ],
-      correctAnswer: 'В' // ID правильного варианта
+      correctAnswer: 'В'
     },
     {
       id: 102,
@@ -1269,7 +1269,7 @@ export const global = {
         { id: 'В', text: 'Тематическое исследование ' },
         { id: 'Г', text: 'Исследование действий' }
       ],
-      correctAnswer: 'Б' // ID правильного варианта
+      correctAnswer: 'Б'
     },
     {
       id: 103,
@@ -1281,7 +1281,7 @@ export const global = {
         { id: 'В', text: 'Протокол разногласий' },
         { id: 'Г', text: 'Договор подряда' }
       ],
-      correctAnswer: 'А' // ID правильного варианта
+      correctAnswer: 'А'
     },
     {
       id: 104,
@@ -1293,7 +1293,7 @@ export const global = {
         { id: 'В', text: 'Заказчик' },
         { id: 'Г', text: 'Тестировщик' }
       ],
-      correctAnswer: 'В' // ID правильного варианта
+      correctAnswer: 'В'
     },
     {
       id: 105,
@@ -1305,7 +1305,7 @@ export const global = {
         { id: 'В', text: 'Архивация' },
         { id: 'Г', text: 'Тестирование' }
       ],
-      correctAnswer: 'Б' // ID правильного варианта
+      correctAnswer: 'Б'
     },
     {
       id: 106,
@@ -1317,7 +1317,7 @@ export const global = {
         { id: 'В', text: 'Проведение опросов пользователей' },
         { id: 'Г', text: 'Аудит кода конкурентов' }
       ],
-      correctAnswer: 'Б' // ID правильного варианта
+      correctAnswer: 'Б'
     },
     {
       id: 107,
@@ -1329,7 +1329,7 @@ export const global = {
         { id: 'В', text: 'Пользовательские истории' },
         { id: 'Г', text: 'Маркетинговое исследование' }
       ],
-      correctAnswer: 'А' // ID правильного варианта
+      correctAnswer: 'А'
     },
     {
       id: 108,
@@ -1341,7 +1341,7 @@ export const global = {
         { id: 'В', text: 'Наблюдения' },
         { id: 'Г', text: 'Все вышеперечисленное' }
       ],
-      correctAnswer: 'Г' // ID правильного варианта
+      correctAnswer: 'Г'
     },
     {
       id: 109,
@@ -1353,7 +1353,7 @@ export const global = {
         { id: 'В', text: 'Финансовый план проекта' },
         { id: 'Г', text: 'Описание бизнес-процессов' }
       ],
-      correctAnswer: 'В' // ID правильного варианта
+      correctAnswer: 'В'
     },
     {
       id: 110,
@@ -1365,7 +1365,7 @@ export const global = {
         { id: 'В', text: 'IEEE 830' },
         { id: 'Г', text: 'ITIL' }
       ],
-      correctAnswer: 'А' // ID правильного варианта
+      correctAnswer: 'А'
     },
     {
       id: 111,
@@ -1377,7 +1377,7 @@ export const global = {
         { id: 'В', text: 'PowerPoint' },
         { id: 'Г', text: 'Trello' }
       ],
-      correctAnswer: 'Б' // ID правильного варианта
+      correctAnswer: 'Б'
     },
     {
       id: 112,
@@ -1389,7 +1389,7 @@ export const global = {
         { id: 'В', text: 'Реестр замечаний' },
         { id: 'Г', text: 'Дополнительное соглашение' }
       ],
-      correctAnswer: 'В' // ID правильного варианта
+      correctAnswer: 'В'
     },
     {
       id: 113,
@@ -1401,7 +1401,7 @@ export const global = {
         { id: 'В', text: 'Подписание бумажного экземпляра' },
         { id: 'Г', text: 'Видеозвонок' }
       ],
-      correctAnswer: 'В' // ID правильного варианта
+      correctAnswer: 'В'
     },
     {
       id: 114,
@@ -1413,7 +1413,7 @@ export const global = {
         { id: 'В', text: 'Jira' },
         { id: 'Г', text: 'Photoshop' }
       ],
-      correctAnswer: 'Б' // ID правильного варианта
+      correctAnswer: 'Б'
     },
     {
       id: 115,
@@ -1425,7 +1425,7 @@ export const global = {
         { id: 'В', text: 'Утвержден' },
         { id: 'Г', text: 'Архивный' }
       ],
-      correctAnswer: 'Б' // ID правильного варианта
+      correctAnswer: 'Б'
     },
     {
       id: 116,

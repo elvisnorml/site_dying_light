@@ -634,7 +634,6 @@ export const security = {
       ],
       correctAnswer: ['А', 'Б']
     },
-    //совпадения
     {
       id: 51,
       type: 'matching',
