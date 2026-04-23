@@ -207,8 +207,19 @@ const liveIcon = computed(() => {
   return liveScore.value < 50 ? mdiAlertCircle : mdiCheckCircle
 })
 
+const shuffleArray = <T,>(array: T[]): T[] => {
+  const shuffled = [...array]
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]
+  }
+  return shuffled
+}
+
 const pickRandom = (arr: any[], count: number) => {
-  return [...arr].sort(() => Math.random() - 0.5).slice(0, count)
+  // Сначала полностью перемешиваем массив, потом берем нужные куски
+  const shuffled = shuffleArray(arr)
+  return shuffled.slice(0, count)
 }
 
 // Обновляем стандартные методы
@@ -223,7 +234,7 @@ const setupQuestions = () => {
     testTitle.value = '30 вопросов'
     const all = props.datatest.questions
 
-    // Собираем по схеме: 3 open, 7 sequence, 7 matching, 6 multiple, 7 single
+    // Собираем пул, используя новое честное перемешивание
     const pool = [
       ...pickRandom(
         all.filter(q => q.type === 'open'),
@@ -247,12 +258,12 @@ const setupQuestions = () => {
       )
     ]
 
-    // Финальное перемешивание всего набора
-    questions.value = pool.sort(() => Math.random() - 0.5)
+    // Финальное перемешивание пула той же функцией
+    questions.value = shuffleArray(pool)
   } else {
     // Обычный режим (весь тест целиком)
     testTitle.value = props.datatest.title
-    questions.value = [...props.datatest.questions].sort(() => Math.random() - 0.5)
+    questions.value = shuffleArray(props.datatest.questions)
   }
 
   currentStep.value = 0
