@@ -7,6 +7,8 @@ import tiles from './img/gray-texture-2.jpg'
     <VToolbarTitle>
       <RouterLink :to="'/test'" class="text-white"> Выбор теста </RouterLink>
     </VToolbarTitle>
+
+    <VBtn to="/test/result" variant="text" class="text-white"> Ответы </VBtn>
   </VAppBar>
 
   <VMain class="bg-black pb-8" :style="{ backgroundImage: `url(${tiles})`, backgroundRepeat: 'repeat' }">

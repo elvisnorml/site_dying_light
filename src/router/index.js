@@ -92,6 +92,16 @@ const router = createRouter({
         description: 'Тест',
         name: 'testresult'
       }
+    },
+    {
+      path: '/test/result',
+      component: () => import('@/pages/TestAnswersPage/TestAnswersPage.vue'),
+      meta: {
+        layout: 'TestLayout',
+        title: 'Тест',
+        description: 'Тест',
+        name: 'testanswers'
+      }
     }
   ],
 
