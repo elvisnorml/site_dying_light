@@ -11,6 +11,7 @@
     "preview": "vite preview",
     "predeploy": "rm -rf node_modules/.cache/gh-pages",
     "deploy": "vite build --mode prod && gh-pages -d dist",
+    "deploy-vps": "vite build --mode dev && gh-pages -d dist -b vps-pages",
     "test:unit": "vitest --environment jsdom"
   },
   "devDependencies": {
