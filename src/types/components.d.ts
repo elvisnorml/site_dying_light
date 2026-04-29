@@ -20,6 +20,7 @@ declare module 'vue' {
     RouterView: typeof import('vue-router')['RouterView']
     Story: typeof import('./../pages/Story/Story.vue')['default']
     Test: typeof import('./../components/Test/Test.vue')['default']
+    TestAnswersPage: typeof import('./../pages/TestAnswersPage/TestAnswersPage.vue')['default']
     TestLayout: typeof import('./../layout/TestLayout/TestLayout.vue')['default']
     TestPage: typeof import('./../pages/TestPage/TestPage.vue')['default']
     TestResultPage: typeof import('./../pages/TestResultPage/TestResultPage.vue')['default']
